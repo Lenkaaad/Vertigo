@@ -5,6 +5,7 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
   height: 100%;
+  font-family: Avenir;
 }
 
 *, *:before, *:after { /* stylelint-disable-line */
@@ -13,6 +14,85 @@ html {
 
 body {
   display: flex;
+  font-size: var(--text-size);
+  background-color: var(--background-light);
+}
+
+p {
+  margin-bottom: 1.2rem;
+}
+
+h1 {
+  font-family: Edo;
+  font-size: 8rem;
+}
+
+h2 {
+  font-family: Edo;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.3rem;
+}
+
+.header {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  padding: 3rem;
+  margin-top: 15rem;
+  height: 100vh;
+}
+
+.header > span {
+  text-transform: uppercase;
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+
+.intro {
+  padding: 4rem;
+}
+
+.twisted-youth {
+  padding: 4rem;
+  background-color: var(--background-dark);
+  color: var(--text-light);
+}
+
+.obsession {
+  padding: 4rem;
+}
+
+.fears {
+  padding: 4rem;
+}
+
+.humor {
+  padding: 4rem;
+  background-color: var(--background-dark);
+  color: var(--text-light);
+}
+
+.jokes {
+  padding: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.vertigo {
+  background-color: var(--highlight);
+  padding: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.vertigo > p {
+  width: 50%;
 }
 
 nav {
@@ -20,6 +100,20 @@ nav {
   top: 0;
   background-color: var(--nav-color);
   color: var(--text-light);
-  width: 5rem;
+  width: 6rem;
   height: 100vh;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+}
+
+nav ul > li {
+  transform: rotate(-90deg);
+  padding: 2rem;
+  width: auto;
+  height: 12rem;
+  transform-origin: left top 0;
+  text-align: center;
 }
