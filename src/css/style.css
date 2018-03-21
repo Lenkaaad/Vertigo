@@ -1,0 +1,25 @@
+@import 'vars.css';
+@import 'reset.css';
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*, *:before, *:after { /* stylelint-disable-line */
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  background-color: var(--nav-color);
+  color: var(--text-light);
+  width: 5rem;
+  height: 100vh;
+}
