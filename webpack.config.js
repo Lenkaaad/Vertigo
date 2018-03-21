@@ -16,7 +16,7 @@ const PATHS = {
 
 const commonConfig = merge([
   {
-    entry: [path.join(PATHS.src, "css/style.css"), path.join(PATHS.src, "js/script.js")],
+    entry: [path.join(PATHS.src, "css/style.css"), path.join(PATHS.src, "js/script.js"), path.join(PATHS.src, "js/App.js")],
     output: {
       path: PATHS.dist,
       filename: `js/script.[hash].js`
@@ -29,7 +29,13 @@ const commonConfig = merge([
           options: {
             attrs: [`img:src`, `source:srcset`]
           }
-        }, {
+        },
+        {
+          test: /\.(jsx?)$/,
+          exclude: /node_modules/,
+          loader: `babel-loader`
+        }
+        ,{
           test: /\.(jpe?g|png|gif|webp|svg)$/,
           use: [
             {
