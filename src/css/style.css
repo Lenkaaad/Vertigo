@@ -131,7 +131,13 @@ h3 {
 .twisted-youth > .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 4rem;
+  grid-gap: 6rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 6rem;
 }
 
 .obsession {
@@ -148,6 +154,8 @@ h3 {
   color: var(--text-light);
 }
 
+
+
 .jokes {
   padding: 4rem;
   display: flex;
@@ -156,13 +164,22 @@ h3 {
 
 .vertigo {
   background-color: var(--highlight);
-  padding: 4rem;
-  display: flex;
-  justify-content: center;
+  padding: 4rem 15rem;
+  height: 17rem;
+
+  
 }
 
-.vertigo > p {
-  width: 50%;
+.logo-vertigo {
+  position: relative;
+  top: 0rem;
+  float: left;
+  margin-right: 3rem;
+}
+
+
+.ending {
+  height: 10rem;
 }
 
 nav {
@@ -195,7 +212,13 @@ nav ul > li {
 
 .image-abs {
   position: relative;
-  right: 0;
+  right: -10%;
+}
+
+.humor .image-abs {
+  position: relative;
+  right: -10%;
+  top: -3rem;
 }
 
 section {
@@ -205,5 +228,18 @@ section {
 
 article {
   margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.yellow-quote {
+  position: relative;
+  background-color: var(--highlight);
+  padding: 2rem;
+  color: black;
+  float: left;
+  width: 35rem;
+  left: -4rem;
+  margin-right: -2rem;
+  top: 1rem;
   margin-bottom: 2rem;
 }
