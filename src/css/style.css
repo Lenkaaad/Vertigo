@@ -48,7 +48,7 @@ h3 {
 
 .header-bg {
   position: relative;
-  background-image: url(../assets/img/header-bg.png) ;
+  background-image: url(../assets/img/header-bg.png);
   height: 100vh;
   width: 100%;
   z-index: 1;
@@ -58,7 +58,7 @@ h3 {
 
 .filter {
   position: absolute;
-  background-color: rgba(0,0,0,0.45);
+  background-color: rgba(0, 0, 0, .45);
   z-index: 5;
   height: 100%;
   width: 100%;
