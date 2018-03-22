@@ -1,13 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import TestComponent from './TestComponent.jsx';
+import HighestFall from './HighestFall.jsx';
+import KillCharacter from './KillCharacter.jsx';
 
 ReactDOM.render(
-  <TestComponent />,
+  <KillCharacter />,
   document.getElementById('react-component-1')
 );
 
 ReactDOM.render(
-  <TestComponent />,
+  <HighestFall />,
   document.getElementById('react-component-2')
 );
