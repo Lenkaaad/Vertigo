@@ -22,6 +22,11 @@ p {
   margin-bottom: 1.2rem;
 }
 
+.highlight {
+  color: var(--highlight);
+  font-weight: 700;
+}
+
 h1 {
   font-family: Edo;
   font-size: 8rem;
@@ -120,6 +125,13 @@ h3 {
   padding: 4rem;
   background-color: var(--background-dark);
   color: var(--text-light);
+  overflow: hidden;
+}
+
+.twisted-youth > .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 4rem;
 }
 
 .obsession {
@@ -174,4 +186,24 @@ nav ul > li {
   height: 12rem;
   transform-origin: left top 0;
   text-align: center;
+}
+
+.left-border {
+  border-left: .5rem solid var(--highlight);
+  padding-left: 1.5rem;
+}
+
+.image-abs {
+  position: relative;
+  right: 0;
+}
+
+section {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+article {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
