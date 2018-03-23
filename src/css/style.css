@@ -172,6 +172,7 @@ h3 {
   padding: 4rem;
   background-color: var(--background-dark);
   color: var(--text-light);
+  overflow: hidden;
 }
 
 
