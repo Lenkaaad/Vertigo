@@ -2,6 +2,7 @@
     const sliderImages = document.querySelectorAll('.slide-in');
     const contentcontainers = document.querySelectorAll('.content-container');
 
+
     const debounce = (func, wait = 20, immediate = true) => {
         let timeout;
 
@@ -77,6 +78,36 @@
 
         debounce(checkSlide(e));
         debounce(updateMenu(e), 5);
+
+        const obsession = document.querySelector('.parallax-obsession');
+
+        if(obsession){
+        
+        const slideInAt = (window.scrollY + window.innerHeight) - obsession.height / 1;
+        const obsessionTop = obsession.getBoundingClientRect().top + window.scrollY;
+        const imageBottom = obsessionTop + obsession.height;
+        const isHalfShown = slideInAt > obsessionTop;
+        const isNotScrolledPast = window.scrollY < imageBottom;
+
+        
+
+        console.log(obsessionTop);
+        console.log(imageBottom);
+
+        if(isHalfShown && isNotScrolledPast){
+            console.log("AY");
+            let speed = obsession.getAttribute('data-speed');
+            let yPosObs = -(slideInAt * speed / 6) - (obsessionTop / 6);
+            console.log(yPosObs);
+            obsession.setAttribute('style', 'transform: translateX(' + yPosObs + 'px)');
+        }else{
+            // do nothing
+        }
+
+        
+        }
+
+
         
         // next step: check height of certain selected element
         // only start parallax effect at that height 
