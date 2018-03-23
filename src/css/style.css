@@ -18,6 +18,16 @@ body {
   background-color: var(--background-light);
 }
 
+section {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+article {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 p {
   margin-bottom: 1.2rem;
 }
@@ -34,7 +44,7 @@ h1 {
 
 h2 {
   font-family: Edo;
-  font-size: 4rem;
+  font-size: 6rem;
   margin-bottom: 2rem;
 }
 
@@ -137,9 +147,27 @@ h3 {
 
 .intro {
   padding: 4rem;
+  padding-top: 18rem;
+  padding-bottom: 10rem;
+  overflow: hidden;
+  position: relative;
+  margin-top: -8rem;
+  margin-bottom: 0;
+}
+
+.birds {
+  background-image: url(../assets/img/Birds.png);
+  width: 45vw;
+  height: 35.8vw;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
 }
 
 .twisted-youth {
+  margin-top: 0;
   padding: 4rem;
   background-color: var(--background-dark);
   color: var(--text-light);
@@ -175,15 +203,74 @@ h3 {
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 6rem;
+  grid-gap: 0 6rem;
 }
 
 .obsession {
   padding: 4rem;
+  overflow: hidden;
+  grid-template-rows: repeat(3, min-content);
+  grid-template-areas:
+    "obsession-title obsession-title"
+    "left-column right-column"
+    "obsession-quote obsession-quote"
+}
+
+.obsession-title {
+  grid-area: obsession-title;
+  justify-self: end;
+}
+
+.obsession-quote {
+  grid-area: obsession-quote;
+}
+
+.obsession-column-left {
+  grid-area: left-column;
+}
+
+.obsession-column-right {
+  grid-area: right-column;
+}
+
+.splitup-image {
+  position: relative;
+  width: 100%;
+  padding-bottom: 29vw;
+  margin-top: -2rem;
 }
 
 .fears {
   padding: 4rem;
+}
+
+.fears-grid {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr 1fr 4fr;
+  grid-template-rows: repeat(5, min-content);
+  grid-template-areas:
+    "fears-title fears-title fears-title fears-title fears-title"
+    "police fears eggs eggs top-column"
+    "police fears fears-quote fears-quote fears-quote"
+    "police fears . . bottom-column"
+    ". fears . . bottom-column";
+}
+
+.fears-title {
+  grid-area: fears-title;
+  justify-self: end;
+}
+
+.fears-top-column {
+  grid-area: top-column;
+}
+
+.fears-bottom-column {
+  grid-area: bottom-column;
+}
+
+.fears-quote {
+  grid-area: fears-quote;
 }
 
 .humor {
@@ -230,8 +317,6 @@ button {
 
 }
 
-
-
 .jokes {
   padding: 4rem;
   display: flex;
@@ -242,8 +327,6 @@ button {
   background-color: var(--highlight);
   padding: 4rem 15rem;
   height: 17rem;
-
-  
 }
 
 .logo-vertigo {
@@ -252,7 +335,6 @@ button {
   float: left;
   margin-right: 3rem;
 }
-
 
 .ending {
   height: 10rem;
@@ -315,20 +397,19 @@ nav ul > li a {
   right: -10%;
 }
 
+.image-abs-left {
+  position: absolute;
+  left: -10%;
+}
+
+.front {
+  z-index: 3;
+}
+
 .humor .image-abs {
   position: relative;
   right: -10%;
   top: -3rem;
-}
-
-section {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-article {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
 }
 
 .yellow-quote {
@@ -342,4 +423,79 @@ article {
   margin-right: -2rem;
   top: 1rem;
   margin-bottom: 2rem;
+}
+
+.yellow-quote.right {
+  float: right;
+  left: 4rem;
+  margin-right: 0;
+  margin-left: -2rem;
+}
+
+.focus-quote {
+  font-size: 3.2rem;
+  text-align: center;
+  line-height: 4rem;
+}
+
+input[type=range] {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 40rem; /* Specific width is required for Firefox. */
+  background: transparent; /* Otherwise white in Chrome */
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+/* Special styling for WebKit/Blink */
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-image: url(../assets/img/skull.png);
+  height: 6.7rem;
+  width: 6.5rem;
+  cursor: pointer;
+  margin-top: -3.2rem; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+}
+
+/* All the same stuff for Firefox */
+input[type=range]::-moz-range-thumb {
+  background-image: url(../assets/img/skull.png);
+  height: 36px;
+  width: 16px;
+  cursor: pointer;
+}
+
+/* All the same stuff for IE */
+input[type=range]::-ms-thumb {
+  background-image: url(../assets/img/skull.png);
+  height: 36px;
+  width: 16px;
+  cursor: pointer;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  height: .8rem;
+  cursor: pointer;
+  background: var(--highlight);
+}
+
+input[type=range]::-moz-range-track {
+  height: .8rem;
+  cursor: pointer;
+  background: var(--highlight);
+}
+
+input[type=range]::-ms-track {
+  height: .8rem;
+  cursor: pointer;
+  background: var(--highlight);
 }

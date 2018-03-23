@@ -1,8 +1,15 @@
 import React from 'react';
 
 const HighestFall = () => {
+  const handleChangeSlider = e => {
+    const {value} = e.currentTarget;
+    console.log(value);
+  }
   return (
-    <p>Dit is een react component voor highest fall.</p>
+    <article>
+      <h2>A Dying Fall</h2>
+      <input className="fallSlider" type="range"/>
+    </article>
   )
 }
 
