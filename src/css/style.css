@@ -128,6 +128,26 @@ h3 {
   overflow: hidden;
 }
 
+.kill-character {
+  background-color: var(--background-dark);
+  padding: 4rem;
+  color: white;
+}
+
+.kill-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.kill-flex {
+  display: flex;
+  align-items: center;
+}
+
+.kill-info {
+  margin-left: 2rem;
+}
+
 .twisted-youth > .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
