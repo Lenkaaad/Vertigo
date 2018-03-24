@@ -82,6 +82,7 @@ class KillCharacter extends Component {
   render() {
     return (
       <div className="kill-character">
+        <h2 className="small-title">How to kill a character</h2>
         <Kill data={this.state.kills[this.state.current.id]} id={this.state.current.id} onTake={this.handleTake.bind(this)} onAdd={this.handleAdd.bind(this)} />
       </div>
     

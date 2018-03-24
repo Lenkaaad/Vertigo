@@ -49,6 +49,10 @@ h2 {
   margin-bottom: 2rem;
 }
 
+.small-title {
+  font-size: 4rem;
+}
+
 h3 {
   font-size: 2.5rem;
   font-weight: 700;
@@ -209,6 +213,10 @@ h3 {
   background-color: var(--dark);
   color: var(--light);
   overflow: hidden;
+}
+
+.kill {
+  margin-bottom: 2rem;
 }
 
 .kill-character {
