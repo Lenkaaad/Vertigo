@@ -75,12 +75,12 @@ h3 {
 
 .wriggle.active {
   transform-origin: center top;
-  animation: wiggle 3s linear infinite;
+  animation: wiggle 3s ease-in-out infinite alternate;
 }
 
 @keyframes wiggle {
 
-  0% {
+  /* 0% {
     transform: rotate(0deg);
   }
 
@@ -94,6 +94,14 @@ h3 {
 
   100% {
     transform: rotate(0deg);
+  } */
+
+  from {
+    transform: rotate(2deg);
+  }
+
+  to {
+    transform: rotate(-2deg);
   }
 }
 
