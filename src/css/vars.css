@@ -1,9 +1,7 @@
 :root {
   --nav-color: #1D1D1D;
   --highlight: #F9B92B;
-  --background-dark: #2D2D2D;
-  --background-light: #EBEBEB;
-  --text-light: white;
-  --text-dark: black;
+  --dark: #2D2D2D;
+  --light: #EBEBEB;
   --text-size: 1.8rem;
 }

@@ -15,7 +15,8 @@ html {
 body {
   display: flex;
   font-size: var(--text-size);
-  background-color: var(--background-light);
+  background-color: var(--light);
+  color: var(--dark);
 }
 
 section {
@@ -70,6 +71,30 @@ h3 {
 .slide-in.active {
   opacity: 1;
   transform: translate(0%);
+}
+
+.wriggle.active {
+  transform-origin: center top;
+  animation: wiggle 3s linear infinite;
+}
+
+@keyframes wiggle {
+
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(2deg);
+  }
+
+  75% {
+    transform: rotate(-2deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 .header {
@@ -127,7 +152,7 @@ h3 {
 }
 
 .info {
-  color: white;
+  color: var(--light);
   position: absolute;
   right: 10rem;
   top: 20rem;
@@ -169,15 +194,15 @@ h3 {
 .twisted-youth {
   margin-top: 0;
   padding: 4rem;
-  background-color: var(--background-dark);
-  color: var(--text-light);
+  background-color: var(--dark);
+  color: var(--light);
   overflow: hidden;
 }
 
 .kill-character {
-  background-color: var(--background-dark);
+  background-color: var(--dark);
   padding: 4rem;
-  color: white;
+  color: var(--light);
 }
 
 .kill-nav {
@@ -211,9 +236,9 @@ h3 {
   overflow: hidden;
   grid-template-rows: repeat(3, min-content);
   grid-template-areas:
-    "obsession-title obsession-title"
-    "left-column right-column"
-    "obsession-quote obsession-quote"
+    'obsession-title obsession-title'
+    'left-column right-column'
+    'obsession-quote obsession-quote';
 }
 
 .obsession-title {
@@ -242,6 +267,9 @@ h3 {
 
 .fears {
   padding: 4rem;
+  padding-top: 6rem;
+  margin-top: 0;
+  overflow: hidden;
 }
 
 .fears-grid {
@@ -249,11 +277,11 @@ h3 {
   grid-template-columns: 2fr 2fr 1fr 1fr 4fr;
   grid-template-rows: repeat(5, min-content);
   grid-template-areas:
-    "fears-title fears-title fears-title fears-title fears-title"
-    "police fears eggs eggs top-column"
-    "police fears fears-quote fears-quote fears-quote"
-    "police fears . . bottom-column"
-    ". fears . . bottom-column";
+    'fears-title fears-title fears-title fears-title fears-title'
+    'police fears eggs eggs top-column'
+    'police fears fears-quote fears-quote fears-quote'
+    'police fears . . bottom-column'
+    '. fears . . bottom-column';
 }
 
 .fears-title {
@@ -273,17 +301,32 @@ h3 {
   grid-area: fears-quote;
 }
 
+.police-img {
+  grid-area: police;
+  margin-top: -24rem;
+}
+
+.fears-img {
+  grid-area: fears;
+  margin-top: -28rem;
+}
+
+.eggs-img {
+  grid-area: eggs;
+  margin-top: -30rem;
+}
+
 .humor {
   padding: 4rem;
-  background-color: var(--background-dark);
-  color: var(--text-light);
+  background-color: var(--dark);
+  color: var(--light);
   overflow: hidden;
 }
 
 button {
   border: 0;
   background: none;
-  color: white;
+  color: var(--light);
   font-family: Avenir;
   font-size: 1.8rem;
   font-weight: bold;
@@ -295,7 +338,7 @@ button {
   display: inline-block;
   position: relative;
   left: -1rem;
-  top: 0.3rem;
+  top: .3rem;
   height: 2rem;
   width: 2rem;
   background-image: url(../assets/img/arrow-left.svg);
@@ -308,7 +351,7 @@ button {
   display: inline-block;
   position: relative;
   right: -1rem;
-  top: 0.3rem;
+  top: .3rem;
   height: 2rem;
   width: 2rem;
   background-image: url(../assets/img/arrow-right.svg);
@@ -331,7 +374,7 @@ button {
 
 .logo-vertigo {
   position: relative;
-  top: 0rem;
+  top: 0;
   float: left;
   margin-right: 3rem;
 }
@@ -344,12 +387,11 @@ nav {
   position: sticky;
   top: 0;
   background-color: var(--nav-color);
-  color: var(--text-light);
+  color: var(--light);
   width: 6rem;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  
 }
 
 nav img {
@@ -378,20 +420,18 @@ nav ul > li {
 nav ul > li a {
   padding: 1.8rem 1rem;
   text-decoration: none;
-  color: white;
+  color: var(--light);
   transition: all .3s;
 }
 
 .active-section {
   background-color: var(--highlight);
-  
 }
 
 .left-border {
   border-left: .5rem solid var(--highlight);
   padding-left: 1.5rem;
 }
-
 
 .image-abs {
   position: relative;
@@ -439,6 +479,32 @@ nav ul > li a {
   line-height: 4rem;
 }
 
+.highest-fall {
+  padding: 4rem;
+}
+
+.fall-container {
+  display: flex;
+}
+
+.slider-container {
+  display: flex;
+  margin-left: -4rem;
+  margin-bottom: 12rem;
+}
+
+.fallSlider {
+  transform: rotate(-90deg);
+  margin-left: -8rem;
+  margin-top: 13rem;
+}
+
+.fall {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 input[type=range] {
   -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
   width: 40rem; /* Specific width is required for Firefox. */
@@ -449,18 +515,12 @@ input[type=range]:focus {
   outline: none;
 }
 
-input[type=range]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-}
-
-input[type=range]:focus {
-  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
-}
-
 /* Special styling for WebKit/Blink */
+
 input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
   background-image: url(../assets/img/skull.png);
+  transform: rotate(90deg);
   height: 6.7rem;
   width: 6.5rem;
   cursor: pointer;
@@ -468,6 +528,7 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 /* All the same stuff for Firefox */
+
 input[type=range]::-moz-range-thumb {
   background-image: url(../assets/img/skull.png);
   height: 36px;
@@ -476,6 +537,7 @@ input[type=range]::-moz-range-thumb {
 }
 
 /* All the same stuff for IE */
+
 input[type=range]::-ms-thumb {
   background-image: url(../assets/img/skull.png);
   height: 36px;

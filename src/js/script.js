@@ -1,5 +1,6 @@
 {
     const sliderImages = document.querySelectorAll('.slide-in');
+    const wriggleImages = document.querySelectorAll('.wriggle');
     const contentcontainers = document.querySelectorAll('.content-container');
 
 
@@ -34,6 +35,21 @@
                 sliderImage.classList.remove('active');
             }
         });
+    }
+
+    const checkWriggle = e =>{
+        wriggleImages.forEach(wriggleImage => {
+            const wriggleAt = (window.scrollY + window.innerHeight) - wriggleImage.height +100;
+            const imageBottom = wriggleImage.offsetTop + wriggleImage.height;
+            const isHalfShown = wriggleAt > wriggleImage.offsetTop;
+            const isNotScrolledPast = window.scrollY < imageBottom - 200;
+
+            if(isHalfShown && isNotScrolledPast) {
+                wriggleImage.classList.add('active');
+            }else{
+                wriggleImage.classList.remove('active');
+            }
+        })
     }
 
     const updateMenu = e => {
@@ -78,6 +94,7 @@
 
         debounce(checkSlide(e));
         debounce(updateMenu(e), 5);
+        debounce(checkWriggle(e));
 
         const obsession = document.querySelector('.parallax-obsession');
 
