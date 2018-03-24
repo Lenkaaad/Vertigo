@@ -1,5 +1,7 @@
 {
     const sliderImages = document.querySelectorAll('.slide-in');
+    const sliderImagesRight = document.querySelectorAll('.slide-in-right');
+    const sliderImagesLeft = document.querySelectorAll('.slide-in-left');
     const wriggleImages = document.querySelectorAll('.wriggle');
     const contentcontainers = document.querySelectorAll('.content-container');
 
@@ -133,7 +135,20 @@
     // to do: images come into page on scroll 
 
     const init = () => {
+
+
         document.addEventListener("scroll", handleScroll);
+
+        // note to future self (milenka): ipv klassen te gebruiken voor left-right, niet beter om adhv data-elementen te gebruiken? in dat geval moet je maar 1 x de images selecteren en dan switch case gebruiken om juiste klasse toe te voegen
+
+        sliderImagesRight.forEach(image => {
+            image.classList.add('slide-in-right-script');
+            image.classList.add('slide-in');
+        });
+        sliderImagesLeft.forEach(image => {
+            image.classList.add('slide-in-right-script');
+            image.classList.add('slide-in');
+        });
     }
     
     init();
