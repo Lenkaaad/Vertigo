@@ -56,6 +56,7 @@ h3 {
 }
 
 .slide-in {
+  will-change: transform;
   opacity: 0;
   transition: all ease-in-out .5s;
 }
@@ -138,6 +139,7 @@ h3 {
   width: 100%;
   z-index: 2;
   background-size: cover;
+  will-change: left;
 }
 
 .header-boat {
@@ -148,6 +150,7 @@ h3 {
   width: 100%;
   z-index: 3;
   background-size: cover;
+  will-change: left;
 }
 
 .header-hitchcock {
@@ -157,6 +160,7 @@ h3 {
   width: 100%;
   z-index: 4;
   background-size: cover;
+  will-change: left;
 }
 
 .info {
@@ -268,9 +272,9 @@ h3 {
 
 .splitup-image {
   position: relative;
-  width: 100%;
-  padding-bottom: 29vw;
-  margin-top: -2rem;
+  /* width: 100%; */
+  padding-bottom: 32vw;
+  margin-top: -7rem;
 }
 
 .fears {
@@ -449,6 +453,10 @@ nav ul > li a {
 .image-abs-left {
   position: absolute;
   left: -10%;
+}
+
+.parallax-obsession {
+  will-change: transform;
 }
 
 .front {
