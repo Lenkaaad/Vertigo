@@ -48,7 +48,8 @@ h1 {
 h2 {
   font-family: Edo;
   font-size: 6rem;
-  margin-bottom: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .small-title {
@@ -58,7 +59,7 @@ h2 {
 h3 {
   font-size: 2.5rem;
   font-weight: 900;
-  margin-bottom: 1.3rem;
+  margin-bottom: 2rem;
 }
 
 .playbutton {
@@ -496,7 +497,7 @@ h3 {
   background-image: url(../assets/img/background-texture.png), url(../assets/img/texture-patch.png);
   background-position: right, 20% -3%;
   background-repeat: repeat-y, no-repeat;
-  padding: 6rem 12rem 12rem 0;
+  padding: 3rem 12rem 0rem 0;
 }
 
 .highest-fall h2 {
@@ -669,7 +670,7 @@ nav ul > li a {
   position: relative;
   width: 50rem;
   height: 19rem;
-  margin-top: 5rem;
+  margin-top: 3rem;
   float: left;
   left: -12rem;
   margin-right: -10rem;
