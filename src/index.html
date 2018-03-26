@@ -10,17 +10,17 @@
   <script>
       WebFontConfig = {
         custom: {
-          families: ['Edo']
+          families: ['Edo', 'Avenir', 'Source Serif Pro'],
+          urls: ['assets/fonts/Edo/edo.css', 'assets/fonts/Avenir/avenir.css', 'assets/fonts/SourceSerifPro/sourceserif.css']
         }
       };
+      (function(d) {
+        var wf = d.createElement('script'), s = d.scripts[0];
+        wf.src = "https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js";
+        wf.async = true;
+        s.parentNode.insertBefore(wf, s);
+      })(document);
   </script>
-  <style>
-    @font-face {
-      font-family: Edo;
-      src:url("assets/fonts/edo.woff") format("woff");
-    }
-  </style>
-
 </head>
 <body>
     <nav>
@@ -152,17 +152,28 @@
                 <p>Sir Alfred Hitchcock was een, <strong class="highlight">van origine Britse</strong>, Amerikaanse filmregisseur wiens spannende films en televisie programma’s onmetelijke populariteit en goede kritieken verwierven tijdens een <strong class="highlight">lange en productieve cariere</strong>. Zijn films zijn onder andere te herkennen aan een macaber gevoel voor humor en een soms wat bleke kijk op de menselijke conditie.
                 </p>
             </div>
-            <img src="assets/img/Birds-729w.png"
-            alt="Bird silhouettes flying up."
-            width="729" height="580"
+            <picture>
+              <source media="(max-width: 249px)" srcset="assets/img/Birds-182w.webp" type="image/webp"/>
+              <source media="(max-width: 249px)" srcset="assets/img/Birds-182w.png" />
+              <source media="(min-width: 624px)" srcset="assets/img/Birds-729w.webp" type="image/webp"/>
+              <source media="(min-width: 624px)" srcset="assets/img/Birds-729w.png" />
+              <source media="(min-width: 438px)" srcset="assets/img/Birds-547w.webp" type="image/webp"/>
+              <source media="(min-width: 438px)" srcset="assets/img/Birds-547w.png" />
+              <source media="(min-width: 250px)" srcset="assets/img/Birds-365w.webp" type="image/webp"/>
+              <source media="(min-width: 250px)" srcset="assets/img/Birds-365w.png" />
+
+              <img src="assets/img/Birds-729w.png"
+              alt="Bird silhouettes flying up."
+              width="729" height="580"
             
-            srcset="assets/img/Birds-729w.png 729w,
-            assets/img/Birds-547w.png 547w,
-            assets/img/Birds-365w.png 365w,
-            assets/img/Birds-182w.png 182w"
+              srcset="assets/img/Birds-729w.png 729w,
+              assets/img/Birds-547w.png 547w,
+              assets/img/Birds-365w.png 365w,
+              assets/img/Birds-182w.png 182w"
             
-            sizes="(min-width: 100px) 35vw"
-            class="birds"/>
+              sizes="(min-width: 100px) 35vw"
+              class="birds"/>
+            </picture>
           </div>
         </article>
         <article class="twisted-youth content-container" id="jeugd">
@@ -184,17 +195,29 @@
           </section>
         </div>
           <section>
-            <img src="assets/img/mother-700w.png"
-            alt="Hitchcock's mother"
-            class="image-abs slide-in slide-in-right"
-            width="700" height="476"
+            <picture>
+              <source media="(max-width: 239px)" srcset="assets/img/mother-175w.webp" type="image/webp"/>
+              <source media="(max-width: 239px)" srcset="assets/img/mother-175w.png" />
+              <source media="(min-width: 598px)" srcset="assets/img/mother-700w.webp" type="image/webp"/>
+              <source media="(min-width: 598px)" srcset="assets/img/mother-700w.png" />
+              <source media="(min-width: 420px)" srcset="assets/img/mother-525w.webp" type="image/webp"/>
+              <source media="(min-width: 420px)" srcset="assets/img/mother-525w.png" />
+              <source media="(min-width: 240px)" srcset="assets/img/mother-350w.webp" type="image/webp"/>
+              <source media="(min-width: 240px)" srcset="assets/img/mother-350w.png" />
+  
+              <img src="assets/img/mother-700w.png"
+              alt="Hitchcock's mother"
+              class="image-abs slide-in slide-in-right"
+              width="700" height="476"
+          
+              srcset="assets/img/mother-700w.png 700w,
+              assets/img/mother-525w.png 525w,
+              assets/img/mother-350w.png 350w,
+              assets/img/mother-175w.png 175w"
+          
+              sizes="(min-width: 100px) 45vw"/>
+            </picture>
             
-            srcset="assets/img/mother-700w.png 700w,
-            assets/img/mother-525w.png 525w,
-            assets/img/mother-350w.png 350w,
-            assets/img/mother-175w.png 175w"
-            
-            sizes="(min-width: 100px) 45vw"/>
             <h3 class="hide">More</h3>
             <p>De priesters die hier lesgaven gebruikten harde rubberen stokken die ze gebruikten om de jongens te straffen als ze ongehoorzaam waren geweest. Ze deden dit altijd aan het einde van de dag, waardoor je vanaf het moment dat je opgeschreven was als ongehoorzaam rustig de rest van je lessen uit moest zitten, wachtend op de straf waarvan je wist dat die ging komen. Alfred vertelde dat hij hier zijn <strong class="highlight">gevoel voor angst ontwikkeld</strong> heeft. Ook uit deze periode komen veel zaken terug in zijn films. Zo is de katholieke kerk vaak een locatie waar nare dingen gebeuren, en komt het psychotische personage van zijn moeder ook aan bod.</p>
             <p>Toch ontwikkelde Hitchcock in deze nare periode zijn <strong class="highlight">liefde voor de fotografie</strong>. Deze voorliefde deed hem op zijn 21ste besluiten om naar Duitsland te vertrekken, waar hij een baan vond als fotograaf van tussentitels voor stomme films. Later werkte hij als assistent-regisseur mee aan een aantal Duitse films.
@@ -207,29 +230,51 @@
           <div>
               <section class="obsession-column-left">
                 <div class="splitup-image">
-                  <img src="assets/img/splitup-back-697w.png"
-                  alt="Hitchcock's obsession with Ingrid Bergman"
-                  class="image-abs-left"
-                  width="697" height="452"
-                  
-                  srcset="assets/img/splitup-back-697w.png 697w,
-                  assets/img/splitup-back-523w.png 523w,
-                  assets/img/splitup-back-349w.png 349w,
-                  assets/img/splitup-back-174w.png 174w"
-                  
-                  sizes="(min-width: 100px) 45vw"/>
-                  <img src="assets/img/splitup-front-697w.png"
-                  alt="Hitchcock's obsession with Ingrid Bergman"
-                  class="image-abs-left parallax-obsession"
-                  data-speed="-1"
-                  width="697" height="452"
-                  
-                  srcset="assets/img/splitup-front-697w.png 697w,
-                  assets/img/splitup-front-523w.png 523w,
-                  assets/img/splitup-front-349w.png 349w,
-                  assets/img/splitup-front-174w.png 174w"
-                  
-                  sizes="(min-width: 100px) 45vw"/>
+                  <picture>
+                    <source media="(max-width: 238px)" srcset="assets/img/splitup-back-174w.webp" type="image/webp"/>
+                    <source media="(max-width: 238px)" srcset="assets/img/splitup-back-174w.png" />
+                    <source media="(min-width: 596px)" srcset="assets/img/splitup-back-697w.webp" type="image/webp"/>
+                    <source media="(min-width: 596px)" srcset="assets/img/splitup-back-697w.png" />
+                    <source media="(min-width: 419px)" srcset="assets/img/splitup-back-523w.webp" type="image/webp"/>
+                    <source media="(min-width: 419px)" srcset="assets/img/splitup-back-523w.png" />
+                    <source media="(min-width: 239px)" srcset="assets/img/splitup-back-349w.webp" type="image/webp"/>
+                    <source media="(min-width: 239px)" srcset="assets/img/splitup-back-349w.png" />
+        
+                    <img src="assets/img/splitup-back-697w.png"
+                    alt="Hitchcock's obsession with Ingrid Bergman"
+                    class="image-abs-left"
+                    width="697" height="452"
+                    
+                    srcset="assets/img/splitup-back-697w.png 697w,
+                    assets/img/splitup-back-523w.png 523w,
+                    assets/img/splitup-back-349w.png 349w,
+                    assets/img/splitup-back-174w.png 174w"
+                    
+                    sizes="(min-width: 100px) 45vw"/>
+                  </picture>
+                  <picture>
+                    <source media="(max-width: 238px)" srcset="assets/img/splitup-front-174w.webp" type="image/webp"/>
+                    <source media="(max-width: 238px)" srcset="assets/img/splitup-front-174w.png" />
+                    <source media="(min-width: 596px)" srcset="assets/img/splitup-front-697w.webp" type="image/webp"/>
+                    <source media="(min-width: 596px)" srcset="assets/img/splitup-front-697w.png" />
+                    <source media="(min-width: 419px)" srcset="assets/img/splitup-front-523w.webp" type="image/webp"/>
+                    <source media="(min-width: 419px)" srcset="assets/img/splitup-front-523w.png" />
+                    <source media="(min-width: 239px)" srcset="assets/img/splitup-front-349w.webp" type="image/webp"/>
+                    <source media="(min-width: 239px)" srcset="assets/img/splitup-front-349w.png" />
+        
+                    <img src="assets/img/splitup-front-697w.png"
+                    alt="Hitchcock's obsession with Ingrid Bergman"
+                    class="image-abs-left parallax-obsession"
+                    data-speed="-1"
+                    width="697" height="452"
+                    
+                    srcset="assets/img/splitup-front-697w.png 697w,
+                    assets/img/splitup-front-523w.png 523w,
+                    assets/img/splitup-front-349w.png 349w,
+                    assets/img/splitup-front-174w.png 174w"
+                    
+                    sizes="(min-width: 100px) 45vw"/>
+                  </picture>
                 </div>
                   <h3 class="hide">Return</h3>
                   <p>Op zijn 26ste keerde hij terug naar Engeland, waar hij bij toeval (de beoogde regisseur was ziek, en Hitchcock was de enige met de nodige ervaring om voor hem in te vallen) de regie kreeg over de film The Pleasure Garden. The Pleasure Garden was een romantische komedie, die in niets leek op de films waarmee Hitchcock beroemd zou worden; de Thriller.</p>
@@ -325,9 +370,18 @@
         </div>
         <article class="fears content-container fears-grid" id="angsten">
           <h2 class="fears-title">The fears that followed him</h2>
-          <img class="police-img wriggle" src="assets/img/police.png" alt="Angst voor de Politie." width="214" height="1030"/>
-          <img class="fears-img wriggle" src="assets/img/fears.png" alt="Angst succes en angst om te falen." width="214" height="1374"/>
-          <img class="eggs-img wriggle" src="assets/img/eggs.png" alt="Angst voor eieren." width="190" height="587"/>
+          <picture class="police-img">
+            <source type="image/webp" srcSet="assets/img/police.webp" />
+            <img class="wriggle" src="assets/img/police.png" alt="Angst voor de Politie." width="214" height="1030"/>
+          </picture>
+          <picture class="fears-img">
+            <source type="image/webp" srcSet="assets/img/fears.webp" />
+            <img class="wriggle" src="assets/img/fears.png" alt="Angst succes en angst om te falen." width="214" height="1374"/>
+          </picture>
+          <picture class="eggs-img">
+            <source type="image/webp" srcSet="assets/img/eggs.webp" />
+            <img class="wriggle" src="assets/img/eggs.png" alt="Angst voor eieren." width="190" height="587"/>
+          </picture>
           <div class="fears-top-column">
             <p>Hitchcock was een man van angst. Hij had veel angsten, sommigen waren een logisch gevolg van zijn jeugd, anderen waren, vreemd of heel ironisch.</p>
             <section>
@@ -375,17 +429,28 @@
             <p>Naast vele voorbeelden bleek er wel 1 manier zijn om als medewerker van Hitchcocks zieke streken af te geraken en dat was door hem <strong class="highlight">terug te pakken op dezelfde manier</strong>. Zo heeft de camera-assistent Alfred Roome, wraak genomen door een rookbom onder Hitchcock’s auto te steken.</p>
           </section>
           <section>
-            <img src="assets/img/hitchcock-gun-705w.png"
-            alt="Hitchcock's solution for illness"
-            class="image-abs slide-in slide-in-right"
-            width="705" height="340"
+            <picture>
+              <source media="(max-width: 241px)" srcset="assets/img/hitchcock-gun-176w.webp" type="image/webp"/>
+              <source media="(max-width: 241px)" srcset="assets/img/hitchcock-gun-176w.png" />
+              <source media="(min-width: 603px)" srcset="assets/img/hitchcock-gun-705w.webp" type="image/webp"/>
+              <source media="(min-width: 603px)" srcset="assets/img/hitchcock-gun-705w.png" />
+              <source media="(min-width: 423px)" srcset="assets/img/hitchcock-gun-529w.webp" type="image/webp"/>
+              <source media="(min-width: 423px)" srcset="assets/img/hitchcock-gun-529w.png" />
+              <source media="(min-width: 242px)" srcset="assets/img/hitchcock-gun-353w.webp" type="image/webp"/>
+              <source media="(min-width: 242px)" srcset="assets/img/hitchcock-gun-353w.png" />
+      
+              <img src="assets/img/hitchcock-gun-705w.png"
+              alt="Hitchcock's solution for illness"
+              class="image-abs slide-in slide-in-right"
+              width="705" height="340"
             
-            srcset="assets/img/hitchcock-gun-705w.png 705w,
+              srcset="assets/img/hitchcock-gun-705w.png 705w,
               assets/img/hitchcock-gun-529w.png 529w,
               assets/img/hitchcock-gun-353w.png 353w,
               assets/img/hitchcock-gun-176w.png 176w"
               
-              sizes="(min-width: 100px) 45vw"/>
+              sizes="45vw"/>
+            </picture>
             <h3>Going Too Far?</h3>
             <p>Blijkbaar had Hitchcock onder andere een weddenschap afgesloten met een medewerker om een hele nacht aan de camera geketend te zitten in een donkere, achtergelaten studio. De man ging akkoord en bleef die nacht geketend aan de camera. Hitchcock maakte de man los, en bood hem een brandy aan. De dag erna bleek dat Hitchcock <strong class="highlight">sterke laxeermiddelen</strong> in het drankje had gedaan en dit leidde tot een uitgeputte, woedende en vernederde man. </p>
 
@@ -448,7 +513,10 @@
           </article>
         </div>
         <div class="vertigo">
+          <picture>
+            <source type="image/webp" srcSet="assets/img/logo-vertigo.webp" />
             <img src="assets/img/logo-vertigo.png" alt="Logo Vertigo" class="logo-vertigo" height="160">
+          </picture>
           <p>Vertigo is niet alleen de naam van één van Alfred Hitchcock's films, maar het is ook de naam van ons filmmagazine voor het laatste nieuws over alles rond film, cinema en de mensen achter en op de schermen! Wil je meer weten over acteurs, regisseurs en films? Neem dan snel eens een kijkje op onze website en ontdek alle voordelen van ons abonnement!</p>
           
         </div>

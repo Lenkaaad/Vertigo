@@ -141,8 +141,26 @@ class HighestFall extends Component {
         <div className="fall-container">
           <div className="slider-container">
             <picture>
-              <source type="image/webp" srcSet="./assets/img/ledge.webp" />
-              <img src="./assets/img/ledge.png" alt="Hitchcock on a cliff" width="409" height="509"/>
+              <source media="(max-width: 139px)" srcSet="./assets/img/ledge-102w.webp" type="image/webp"/>
+              <source media="(max-width: 139px)" srcSet="./assets/img/ledge-102w.png" />
+              <source media="(min-width: 350px)" srcSet="./assets/img/ledge-409w.webp" type="image/webp"/>
+              <source media="(min-width: 350px)" srcSet="./assets/img/ledge-409w.png" />
+              <source media="(min-width: 246px)" srcSet="./assets/img/ledge-307w.webp" type="image/webp"/>
+              <source media="(min-width: 246px)" srcSet="./assets/img/ledge-307w.png" />
+              <source media="(min-width: 140px)" srcSet="./assets/img/ledge-205w.webp" type="image/webp"/>
+              <source media="(min-width: 140px)" srcSet="./assets/img/ledge-205w.png" />
+
+              <img src="./assets/img/ledge-409w.png"
+              alt="Hitchcock on a cliff"
+              width="409" height="509"
+              className="ledge"
+              
+              srcSet="./assets/img/ledge-409w.png 409w,
+              ./assets/img/ledge-307w.png 307w,
+              ./assets/img/ledge-205w.png 205w,
+              ./assets/img/ledge-102w.png 102w"
+              
+              sizes="30vw"/>
             </picture>
             <input className="fallSlider" type="range" min="15" max="500" onChange={this.handleChangeSlider.bind(this)} defaultValue="500"/>
           </div>

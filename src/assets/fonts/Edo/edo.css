@@ -1,0 +1,9 @@
+/* stylelint-disable */
+@font-face {
+    font-family: 'Edo';
+    src: local('Edo'),
+        url('Edo.woff2') format('woff2'),
+        url('Edo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
