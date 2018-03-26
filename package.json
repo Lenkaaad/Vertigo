@@ -39,6 +39,7 @@
     "webpack-plugin-critical": "^1.0.0"
   },
   "dependencies": {
+    "babel-plugin-transform-class-properties": "^6.24.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   }

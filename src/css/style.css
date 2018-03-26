@@ -21,13 +21,13 @@ body {
 }
 
 section {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  /* margin-top: 2rem;
+  margin-bottom: 2rem; */
 }
 
 article {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  /* margin-top: 2rem;
+  margin-bottom: 2rem; */
 }
 
 p {
@@ -59,14 +59,6 @@ h3 {
   font-size: 2.5rem;
   font-weight: 900;
   margin-bottom: 1.3rem;
-}
-
-.video-container {
-  position: relative;
-  float: left;
-  margin-right: 1rem;
-  margin-top: -2rem;
-  margin-bottom: -3rem;
 }
 
 .playbutton {
@@ -243,13 +235,16 @@ h3 {
 }
 
 .intro {
-  padding: 4rem;
+  padding: 1rem 12rem;
   padding-top: 18rem;
   padding-bottom: 10rem;
   overflow: hidden;
   position: relative;
   margin-top: -8rem;
   margin-bottom: 0;
+  background-image: url(../assets/img/background-texture.png);
+  background-position: right;
+  background-repeat: no-repeat;
 }
 
 .birds {
@@ -261,12 +256,41 @@ h3 {
   height: auto;
 }
 
+.twisted-youth > .grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+
+  grid-template-areas:
+    'intro intro intro .'
+    'mother mother image image'
+    'mother mother . .'
+    'quote father father father';
+}
+
 .twisted-youth {
   margin-top: 0;
-  padding: 4rem;
+  padding: 6rem 12rem;
   background-color: var(--dark);
   color: var(--light);
   overflow: hidden;
+}
+
+.twisted-youth .first-paragraph {
+  grid-area: intro;
+}
+
+.twisted-youth .father {
+  grid-area: father;
+}
+
+.twisted-youth .mother {
+  grid-area: mother;
+}
+
+.twisted-youth .mother-image {
+  grid-area: image;
+
 }
 
 .kill {
@@ -309,69 +333,88 @@ h3 {
   margin-left: 2rem;
 }
 
-.twisted-youth > .grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 6rem;
-}
-
-.grid {
+.intro .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 0 6rem;
 }
 
+/* .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0 6rem;
+} */
+
 .obsession {
-  padding: 4rem;
+  padding: 6rem 12rem;
   overflow: hidden;
-  grid-template-rows: repeat(3, min-content);
+  background-image: url(../assets/img/background-texture.png), url(../assets/img/texture-patch.png);
+  background-position: right, 20% -3%;
+  background-repeat: repeat-y, no-repeat;
+
+}
+
+.obsession > .grid-obs {
+  display: grid;
+  grid-gap: 3rem;
+  grid-template-columns: repeat(2, 1fr);
   grid-template-areas:
-    'obsession-title obsession-title'
-    'left-column right-column'
-    'obsession-quote obsession-quote';
+    'title title'
+    'split text'
+    'quote text'
+    'more tipi';
 }
 
 .obsession-title {
-  grid-area: obsession-title;
-  justify-self: end;
+  grid-area: title;
 }
 
 .obsession-quote {
-  grid-area: obsession-quote;
-}
-
-.obsession-column-left {
-  grid-area: left-column;
-}
-
-.obsession-column-right {
-  grid-area: right-column;
+  grid-area: quote;
+  width: 85%;
 }
 
 .splitup-image {
   position: relative;
   /* width: 100%; */
   padding-bottom: 32vw;
+  left: -12rem;
   margin-top: -7rem;
+  grid-area: split;
+  top: 3rem;
+  margin-bottom: -3rem;
+}
+
+.obsession-column-right {
+  grid-area: right-column;
+  grid-area: text;
+}
+
+.obsession .return {
+  grid-area: more;
 }
 
 .fears {
-  padding: 4rem;
+  padding: 6rem 12rem;
   padding-top: 6rem;
   margin-top: 0;
   overflow: hidden;
+  background-image: url(../assets/img/background-texture.png), url(../assets/img/texture-patch.png);
+  background-position: right, 10% -3%;
+  background-repeat: repeat-y, no-repeat;
 }
 
 .fears-grid {
   display: grid;
   grid-template-columns: 2fr 2fr 1fr 1fr 4fr;
-  grid-template-rows: repeat(5, min-content);
+  /* grid-template-rows: repeat(5, min-content); */
   grid-template-areas:
     'fears-title fears-title fears-title fears-title fears-title'
     'police fears eggs eggs top-column'
     'police fears fears-quote fears-quote fears-quote'
     'police fears . . bottom-column'
-    '. fears . . bottom-column';
+    'police fears . . bottom-column'
+    '. fears extremes extremes extremes';
 }
 
 .fears-title {
@@ -389,6 +432,12 @@ h3 {
 
 .fears-quote {
   grid-area: fears-quote;
+  margin: 5rem 0;
+}
+
+.fear-extremes {
+  margin-top: 5rem;
+  grid-area: extremes;
 }
 
 .police-img {
@@ -407,10 +456,60 @@ h3 {
 }
 
 .humor {
-  padding: 4rem;
+  padding: 6rem 12rem;
   background-color: var(--dark);
   color: var(--light);
   overflow: hidden;
+  margin: 0;
+}
+
+.humor .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0 3rem;
+
+  grid-template-areas:
+    'blackhumor image'
+    'video jokes'
+    'toofar toofar'
+    'joke joke';
+}
+
+.black-humor {
+  grid-area: blackhumor;
+}
+
+.toofar {
+  grid-area: toofar;
+  width: 85%;
+}
+
+.video-container {
+  grid-area: video;
+  position: relative;
+  left: -14rem;
+  margin-right: -14rem;
+  margin-top: 2rem;
+}
+
+.highest-fall {
+  background-image: url(../assets/img/background-texture.png), url(../assets/img/texture-patch.png);
+  background-position: right, 20% -3%;
+  background-repeat: repeat-y, no-repeat;
+  padding: 6rem 12rem 12rem 0;
+}
+
+.highest-fall h2 {
+  margin-left: 6rem;
+}
+
+.practicaljokes {
+  grid-area: jokes;
+}
+
+.gun-image {
+  grid-area: image;
+  margin-top: 10rem;
 }
 
 button {
@@ -451,11 +550,13 @@ button {
 }
 
 .jokes {
+  margin-top: 5rem;
   background-color: white;
   color: black;
   padding: 4rem;
   display: flex;
   justify-content: center;
+  grid-area: joke;
 }
 
 .vertigo {
@@ -523,6 +624,7 @@ nav ul > li a {
 .left-border {
   border-left: .5rem solid var(--highlight);
   padding-left: 1.5rem;
+  margin-bottom: 4rem;
 }
 
 .image-abs {
@@ -548,41 +650,73 @@ nav ul > li a {
 }
 
 .humor .image-abs {
-  position: relative;
+  /* position: relative;
   right: -10%;
-  top: -3rem;
+  top: -3rem; */
+}
+
+.yellow-quote-happiness {
+  grid-area: quote;
+  position: relative;
+  width: 50rem;
+  height: 19rem;
+  margin-top: 5rem;
+  float: left;
+  left: -12rem;
+  margin-right: -10rem;
+
 }
 
 .yellow-quote {
   position: relative;
   background-color: var(--highlight);
-  padding: 2rem;
+  padding: 5rem;
+  color: black;
+  font-family: 'Source Serif Pro';
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+/* .yellow-quote {
+  position: relative;
+  background-color: var(--highlight);
+  padding: 5rem;
   color: black;
   float: left;
-  width: 35rem;
-  left: -4rem;
-  margin-right: -2rem;
+  width: 50rem;
+  height: min-content;
+  left: -12rem;
+  margin-top: 5rem;
+  /* margin-right: -2rem;
   top: 1rem;
   margin-bottom: 2rem;
   font-family: 'Source Serif Pro';
   font-weight: 300;
+  grid-area: quote;
+} */
+
+.yellow-quote-fear {
+  background-color: var(--highlight);
+  padding: 5rem;
+  float: right;
+  width: 40rem;
+  position: relative;
+  left: 12rem;
+  margin-left: -10rem;
 }
 
-.yellow-quote.right {
+.yellow-quote-tipi {
+  grid-area: tipi;
   float: right;
-  left: 4rem;
-  margin-right: 0;
-  margin-left: -2rem;
+  margin-top: 2rem;
+  left: 20rem;
+  height: 15rem;
 }
 
 .focus-quote {
   font-size: 3.2rem;
   text-align: center;
   line-height: 4rem;
-}
-
-.highest-fall {
-  padding: 4rem;
 }
 
 .fall-container {

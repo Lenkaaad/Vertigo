@@ -56,7 +56,7 @@ class KillCharacter extends Component {
 
 }
 
-  handleAdd(id) {
+  handleAdd = id => {
     console.log("add");
     let current = {...this.state.current};
 
