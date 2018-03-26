@@ -4,6 +4,8 @@
     const sliderImagesLeft = document.querySelectorAll('.slide-in-left');
     const wriggleImages = document.querySelectorAll('.wriggle');
     const contentcontainers = document.querySelectorAll('.content-container');
+    const videoplayer = document.querySelector('.videoplayer');
+    const playbutton = document.querySelector('.playbutton');
 
 
     const debounce = (func, wait = 20, immediate = true) => {
@@ -134,10 +136,25 @@
 
     // to do: images come into page on scroll 
 
+    const handlePlayback = e => {
+        console.log(e);
+
+        if (videoplayer.paused) {
+            videoplayer.play();
+            playbutton.classList.add('hide');
+        }else{
+            videoplayer.pause();
+            playbutton.classList.remove('hide');
+        }
+
+    }
+
     const init = () => {
 
 
         document.addEventListener("scroll", handleScroll);
+        videoplayer.addEventListener("click", handlePlayback);
+        playbutton.addEventListener("click", handlePlayback);
 
         // note to future self (milenka): ipv klassen te gebruiken voor left-right, niet beter om adhv data-elementen te gebruiken? in dat geval moet je maar 1 x de images selecteren en dan switch case gebruiken om juiste klasse toe te voegen
 
