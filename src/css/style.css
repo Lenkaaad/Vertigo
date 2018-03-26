@@ -19,6 +19,10 @@ body {
   color: var(--dark);
 }
 
+nav {
+  z-index: 999;
+}
+
 section {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -65,9 +69,9 @@ h3 {
   transition: all ease-in-out .5s;
 }
 
-/* .slide-in-right {
+.slide-in-right {
   transform: translateX(80%);
-} */
+}
 
 .slide-in-right-script {
   transform: translateX(80%);
@@ -93,22 +97,6 @@ h3 {
 
 @keyframes wiggle {
 
-  /* 0% {
-    transform: rotate(0deg);
-  }
-
-  25% {
-    transform: rotate(2deg);
-  }
-
-  75% {
-    transform: rotate(-2deg);
-  }
-
-  100% {
-    transform: rotate(0deg);
-  } */
-
   from {
     transform: rotate(2deg);
   }
@@ -122,57 +110,103 @@ h3 {
   display: flex;
   align-items: flex-end;
   flex-direction: column;
-  height: 100vh;
+  height: 56.25vw;
 }
 
-.header-bg {
+.header-img-container {
   position: relative;
-  background-image: url(../assets/img/header-bg.png);
+  width: 100%;
+  height: 56.25vw;
+  overflow: hidden;
+}
+
+/* .header-bg {
+  position: relative;
+  background-image: url(../assets/img/header-bg-1920w.png);
   height: 100vh;
   width: 100%;
   z-index: 1;
   background-size: cover;
   overflow: hidden;
+} */
+
+.header-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100vw;
+  height: auto;
 }
 
 .filter {
   position: absolute;
   background-color: rgba(0, 0, 0, .45);
   z-index: 5;
-  height: 100%;
+  height: auto;
   width: 100%;
 }
 
-.header-cloud {
+/* .header-cloud {
   position: absolute;
   top: 0;
-  background-image: url(../assets/img/header-clouds.png);
+  background-image: url(../assets/img/header-clouds-1920w.png);
   height: 100%;
   width: 100%;
   z-index: 2;
   background-size: cover;
   will-change: left;
+} */
+
+.header-cloud {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  will-change: left;
+  width: 100vw;
+  height: auto;
 }
 
-.header-boat {
+/* .header-boat {
   top: 0;
   position: absolute;
-  background-image: url(../assets/img/header-boat.png);
+  background-image: url(../assets/img/header-boat-1920w.png);
   height: 100%;
   width: 100%;
   z-index: 3;
   background-size: cover;
   will-change: left;
+} */
+
+.header-boat {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  will-change: left;
+  width: 100vw;
+  height: auto;
 }
 
-.header-hitchcock {
+/* .header-hitchcock {
   position: absolute;
-  background-image: url(../assets/img/header-hitchcock.png);
+  background-image: url(../assets/img/header-hitchcock-1920w.png);
   height: 100%;
   width: 100%;
   z-index: 4;
   background-size: cover;
   will-change: left;
+} */
+
+.header-hitchcock {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  will-change: left;
+  width: 100vw;
+  height: auto;
 }
 
 .info {
@@ -205,14 +239,12 @@ h3 {
 }
 
 .birds {
-  background-image: url(../assets/img/Birds.png);
-  width: 45vw;
-  height: 35.8vw;
-  background-size: contain;
   position: absolute;
   top: 0;
   right: 0;
   z-index: 10;
+  width: 45vw;
+  height: auto;
 }
 
 .twisted-youth {
@@ -480,11 +512,15 @@ nav ul > li a {
 .image-abs {
   position: relative;
   right: -10%;
+  width: 45vw;
+  height: auto;
 }
 
 .image-abs-left {
   position: absolute;
   left: -10%;
+  width: 45vw;
+  height: auto;
 }
 
 .parallax-obsession {
@@ -554,7 +590,7 @@ nav ul > li a {
 }
 
 input[type=range] {
-  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  appearance: none; /* Hides the slider so that custom slider can be made */
   width: 40rem; /* Specific width is required for Firefox. */
   background: transparent; /* Otherwise white in Chrome */
 }
@@ -566,7 +602,7 @@ input[type=range]:focus {
 /* Special styling for WebKit/Blink */
 
 input[type=range]::-webkit-slider-thumb {
-  -webkit-appearance: none;
+  appearance: none;
   background-image: url(../assets/img/skull.png);
   transform: rotate(90deg);
   height: 6.7rem;

@@ -22,7 +22,7 @@ class HighestFall extends Component {
         },
         3: {
           amount: 93,
-          height: "93",
+          height: "93m",
           character: "Fry",
           place: "off the Statue of Liberty",
           movie: "Saboteur"
@@ -140,7 +140,10 @@ class HighestFall extends Component {
         <h2>A Dying Fall</h2>
         <div className="fall-container">
           <div className="slider-container">
-            <img src="./assets/img/ledge.png" alt="Hitchcock on a cliff" width="409" height="509"/>
+            <picture>
+              <source type="image/webp" srcSet="./assets/img/ledge.webp" />
+              <img src="./assets/img/ledge.png" alt="Hitchcock on a cliff" width="409" height="509"/>
+            </picture>
             <input className="fallSlider" type="range" min="15" max="500" onChange={this.handleChangeSlider.bind(this)} defaultValue="500"/>
           </div>
           <Fall data={this.state.falls[this.state.current.id]}/>
