@@ -118,7 +118,7 @@
         if(isHalfShown && isNotScrolledPast){
             console.log("AY");
             let speed = obsession.getAttribute('data-speed');
-            let yPosObs = -(slideInAt * speed / 6) - (obsessionTop / 6);
+            let yPosObs = -(slideInAt * speed / 2.7) - (obsessionTop / 2.7);
             console.log(yPosObs);
             obsession.setAttribute('style', 'transform: translateX(' + yPosObs + 'px)');
         }else{

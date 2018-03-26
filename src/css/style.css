@@ -442,17 +442,17 @@ h3 {
 
 .police-img {
   grid-area: police;
-  margin-top: -24rem;
+  margin-top: -5rem;
 }
 
 .fears-img {
   grid-area: fears;
-  margin-top: -28rem;
+  margin-top: -5rem;
 }
 
 .eggs-img {
   grid-area: eggs;
-  margin-top: -30rem;
+  margin-top: -25rem;
 }
 
 .humor {
@@ -489,7 +489,7 @@ h3 {
   position: relative;
   left: -14rem;
   margin-right: -14rem;
-  margin-top: 2rem;
+  margin-top: 0rem;
 }
 
 .highest-fall {
@@ -627,9 +627,18 @@ nav ul > li a {
   margin-bottom: 4rem;
 }
 
+.twisted-youth .image-abs {
+  right: 0;
+}
+
+.humor .image-abs {
+  right: -13rem;
+  margin-left: -10rem;
+}
+
 .image-abs {
   position: relative;
-  right: -10%;
+  /* right: -12rem; */
   width: 45vw;
   height: auto;
 }
