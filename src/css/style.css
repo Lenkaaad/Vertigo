@@ -16,9 +16,13 @@ html {
 body {
   font-size: 100%;
   display: flex;
-  font-size: var(--text-size);
+  font-size: 1.7rem;
   background-color: var(--light);
   color: var(--dark);
+}
+
+.content {
+  overflow: hidden;
 }
 
 /* section {
@@ -630,7 +634,7 @@ nav img {
 nav ul {
   display: flex;
   flex-flow: row-reverse;
-  width: 80vh;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   /* flex-direction: column;
@@ -858,10 +862,15 @@ input[type=range]::-ms-track {
   background: var(--highlight);
 }
 
+.videoplayer {
+  height: 100%;
+  width: 100%;
+}
+
 @media (max-width: 1300px) {
   
   .intro {
-    padding: 8rem 1rem;
+    padding: 8rem 0rem 2rem 2rem;
   }
 
   .twisted-youth {
@@ -1066,7 +1075,7 @@ input[type=range]::-ms-track {
 
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
 
   /* html {
     font-size: 100%;
@@ -1160,25 +1169,6 @@ input[type=range]::-ms-track {
       'extremes'
       'yellow';
   }
-
-  .eggs-img {
-    width: 100%;
-    height: auto;
-  }
-
-  .police-img {
-    width: 100%;
-    height: auto;
-  }
-
-  .fears-img {
-    width: 100%;
-    height: auto;
-  }
-
-
-
- 
 
   .header-img-container picture {
     object-fit: cover;
