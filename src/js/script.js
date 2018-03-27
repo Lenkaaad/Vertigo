@@ -112,14 +112,14 @@
 
         
 
-        console.log(obsessionTop);
-        console.log(imageBottom);
+        // console.log(obsessionTop);
+        // console.log(imageBottom);
 
         if(isHalfShown && isNotScrolledPast){
-            console.log("AY");
+            // console.log("AY");
             let speed = obsession.getAttribute('data-speed');
             let yPosObs = -(slideInAt * speed / 2.7) - (obsessionTop / 2.7);
-            console.log(yPosObs);
+            // console.log(yPosObs);
             obsession.setAttribute('style', 'transform: translateX(' + yPosObs + 'px)');
         }else{
             // do nothing
@@ -137,7 +137,7 @@
     // to do: images come into page on scroll 
 
     const handlePlayback = e => {
-        console.log(e);
+        // console.log(e);
 
         if (videoplayer.paused) {
             videoplayer.play();

@@ -380,12 +380,13 @@
             srcset="assets/img/police.png 1000w" />
           </picture>
           <picture class="fears-img">
-            <source type="image/webp" srcSet="assets/img/fears.webp" />
+            <source type="image/webp" srcset="assets/img/fears.webp" />
             <img class="wriggle" src="assets/img/fears.png" alt="Angst succes en angst om te falen." width="214" height="1374"/>
           </picture>
           <picture class="eggs-img">
-            <source type="image/webp" srcSet="assets/img/eggs.webp" />
-            <img class="wriggle" src="assets/img/eggs.png" alt="Angst voor eieren." width="190" height="587"/>
+            <source media="(max-width: 1000px)" type="image/webp" srcset="assets/img/eggs.webp" />
+            <source media="(max-width: 700px)" type="image/webp" srcset="assets/img/eggs2.webp" />
+            <img class="wriggle" srcset="assets/img/eggs.png 1000w, assets/img/eggs2.png 700w" alt="Angst voor eieren." width="190" height="587"/>
           </picture>
           <div class="fears-top-column">
             <p>Hitchcock was een man van angst. Hij had veel angsten, sommigen waren een logisch gevolg van zijn jeugd, anderen waren, vreemd of heel ironisch.</p>

@@ -500,6 +500,11 @@ h3 {
   padding: 3rem 12rem 0rem 0;
 }
 
+.slider-container {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
 .highest-fall h2 {
   margin-left: 6rem;
 }
@@ -885,7 +890,7 @@ input[type=range]::-ms-track {
   }
 
   .twisted-youth {
-    overflow: visible;
+    /* overflow: visible; */
   }
 
   .twisted-youth > .grid {
@@ -905,16 +910,13 @@ input[type=range]::-ms-track {
     position: relative;
     height: max-content;
     width: 40%;
-    top: -5rem;
-    margin-bottom: -5rem;
-    
+    margin-bottom: 2rem;
   }
 
   .yellow-quote-happiness {
     display: none;
+
   }
-
-
 
   .obsession > .grid-obs {
     grid-gap: 1rem;
@@ -925,6 +927,21 @@ input[type=range]::-ms-track {
       'text text'
       'more more'
       'quote quote';
+  }
+
+  .yellow-quote-tipi {
+    height: max-content;
+    width: auto;
+    padding: 2rem;
+    left: -2rem;
+  }
+
+  .obsession-quote {
+    width: 100%;
+  }
+
+  .splitup-image {
+    left: 7rem;
   }
 
   .fears-grid {
@@ -964,9 +981,50 @@ input[type=range]::-ms-track {
       'image';
     }
 
+    .video-container {
+      margin: 0;
+      left: 0;
+    }
+
 }
 
 @media (max-width: 500px) {
+
+  /* body {
+    font-size: 350%;
+  } */
+
+  /* p {
+    font-size: 4rem;
+  } */
+
+  .intro picture {
+    display: none;
+  }
+
+  .intro .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .yellow-quote-happiness-mobile {
+    float: none;
+    padding: 2rem;
+    position: relative;
+    height: max-content;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .video-container {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .fall-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
   
   /* body::before {
     content: 'max: 500px';
