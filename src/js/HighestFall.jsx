@@ -7,14 +7,14 @@ class HighestFall extends Component {
     this.state = {
       'falls': {
         1: {
-          amount: 500,
+          amount: 110,
           height: "500m",
           character: "Mr Caypor",
           place: "off a mountain ledge",
           movie: "Secret Agent"
         },
         2: {
-          amount: 150,
+          amount: 100,
           height: "150m",
           character: "Valerian",
           place: "off Mount Rushmore",
@@ -83,29 +83,7 @@ class HighestFall extends Component {
     };
   }
 
-  setCurrentItem(value) {
-    const {falls} = this.state;
-    let heights = [];
-    let current = {...this.state.current};
-
-    for(i = 0; i<falls.count; i++){
-      heights[i] = falls[(i+1)].amount;
-    }
-
-    const closest = heights.reduce((prev, curr) => {
-      return (Math.abs(curr - value) < Math.abs(prev - value) ? curr : prev);
-    });
-
-    for(i = 0; i<falls.count; i++){
-      if (array[i+1][key] === closest) {
-        current.id = i+1;
-      }
-    }
-
-    this.setState({current});
-  }
-
-  handleChangeSlider(e) {
+  handleChangeSlider = e => {
     const {value} = e.currentTarget;
     console.log(value);
     console.log(this.state.current);
@@ -141,28 +119,28 @@ class HighestFall extends Component {
         <div className="fall-container">
           <div className="slider-container">
             <picture>
-              <source media="(max-width: 139px)" srcSet="./assets/img/ledge-102w.webp" type="image/webp"/>
-              <source media="(max-width: 139px)" srcSet="./assets/img/ledge-102w.png" />
-              <source media="(min-width: 350px)" srcSet="./assets/img/ledge-409w.webp" type="image/webp"/>
-              <source media="(min-width: 350px)" srcSet="./assets/img/ledge-409w.png" />
-              <source media="(min-width: 246px)" srcSet="./assets/img/ledge-307w.webp" type="image/webp"/>
-              <source media="(min-width: 246px)" srcSet="./assets/img/ledge-307w.png" />
-              <source media="(min-width: 140px)" srcSet="./assets/img/ledge-205w.webp" type="image/webp"/>
-              <source media="(min-width: 140px)" srcSet="./assets/img/ledge-205w.png" />
+              <source media="(max-width: 134px)" srcSet={"./assets/img/ledge" + this.state.current.id + "-98w.webp"} type="image/webp"/>
+              <source media="(max-width: 134px)" srcSet={"./assets/img/ledge" + this.state.current.id + "-98w.png"} />
+              <source media="(min-width: 334px)" srcSet={"./assets/img/ledge" + this.state.current.id + "-390w.webp"} type="image/webp"/>
+              <source media="(min-width: 334px)" srcSet={"./assets/img/ledge" + this.state.current.id + "-390w.png"} />
+              <source media="(min-width: 234px)" srcSet={"./assets/img/ledge" + this.state.current.id + "-293w.webp"} type="image/webp"/>
+              <source media="(min-width: 234px)" srcSet={"./assets/img/ledge" + this.state.current.id + "-293w.png"} />
+              <source media="(min-width: 135px)" srcSet={"./assets/img/ledge" + this.state.current.id + "-195w.webp"} type="image/webp"/>
+              <source media="(min-width: 135px)" srcSet={"./assets/img/ledge" + this.state.current.id + "-195w.png"} />
 
               <img src="./assets/img/ledge-409w.png"
               alt="Hitchcock on a cliff"
               width="409" height="509"
               className="ledge"
               
-              srcSet="./assets/img/ledge-409w.png 409w,
-              ./assets/img/ledge-307w.png 307w,
-              ./assets/img/ledge-205w.png 205w,
-              ./assets/img/ledge-102w.png 102w"
+              srcSet={"./assets/img/ledge" + this.state.current.id + "-390w.png 390w," +
+              "./assets/img/ledge" + this.state.current.id + "-293w.png 293w," +
+              "./assets/img/ledge" + this.state.current.id + "-195w.png 195w," +
+              "./assets/img/ledge" + this.state.current.id + "-98w.png 98w"}
               
               sizes="30vw"/>
             </picture>
-            <input className="fallSlider" type="range" min="15" max="500" onChange={this.handleChangeSlider.bind(this)} defaultValue="500"/>
+            <input className="fallSlider" type="range" min="15" max="110" onChange={this.handleChangeSlider} defaultValue="500"/>
           </div>
           <Fall data={this.state.falls[this.state.current.id]}/>
         </div>
