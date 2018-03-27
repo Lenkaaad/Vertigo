@@ -379,18 +379,26 @@
         <article class="fears content-container fears-grid" id="angsten">
           <h2 class="fears-title">The fears that followed him</h2>
           <picture class="police-img">
-            <source media="(max-width: 1000px)" type="image/webp" srcset="assets/img/police.webp" />
-            <img class="wriggle" src="assets/img/police.png" alt="Angst voor de Politie." width="214" height="1030"
-            srcset="assets/img/police.png 1000w" />
+            <source media="(max-width: 959px)" srcset="assets/img/police2.webp" type="image/webp"/>
+            <source media="(max-width: 959px)" srcset="assets/img/police2.png" />
+            <source media="(min-width: 960px)" srcset="assets/img/police.webp" type="image/webp"/>
+            <source media="(min-width: 960px)" srcset="assets/img/police.png" />
+            <img class="wriggle police-img-fallback" src="assets/img/police2.png" alt="Angst voor de Politie." width="214" height="261" />
           </picture>
           <picture class="fears-img">
-            <source type="image/webp" srcset="assets/img/fears.webp" />
-            <img class="wriggle" src="assets/img/fears.png" alt="Angst succes en angst om te falen." width="214" height="1374"/>
+            <source media="(max-width: 959px)" srcset="assets/img/fears2.webp" type="image/webp"/>
+            <source media="(max-width: 959px)" srcset="assets/img/fears2.png" />
+            <source media="(min-width: 960px)" srcset="assets/img/fears.webp" type="image/webp"/>
+            <source media="(min-width: 960px)" srcset="assets/img/fears.png" />
+            <img class="wriggle fears-img-fallback" src="assets/img/fears2.png" alt="Angst succes en angst om te falen." width="214" height="243"/>
           </picture>
           <picture class="eggs-img">
-            <source media="(max-width: 1000px)" type="image/webp" srcset="assets/img/eggs.webp" />
+            <source media="(max-width: 959px)" srcset="assets/img/eggs2.webp" type="image/webp"/>
+            <source media="(max-width: 959px)" srcset="assets/img/eggs2.png" />
+            <source media="(min-width: 960px)" srcset="assets/img/eggs.webp" type="image/webp"/>
+            <source media="(min-width: 960px)" srcset="assets/img/eggs.png" />
             <source media="(max-width: 700px)" type="image/webp" srcset="assets/img/eggs2.webp" />
-            <img class="wriggle" srcset="assets/img/eggs.png 1000w, assets/img/eggs2.png 700w" alt="Angst voor eieren." width="190" height="587"/>
+            <img class="wriggle eggs-img-fallback" src="assets/img/eggs2.png" alt="Angst voor eieren." width="190" height="265"/>
           </picture>
           <div class="fears-top-column">
             <p>Hitchcock was een man van angst. Hij had veel angsten, sommigen waren een logisch gevolg van zijn jeugd, anderen waren, vreemd of heel ironisch.</p>
@@ -515,50 +523,288 @@
         </article>
         
         <div id="react-component-2">
-          <article class="highest-fall">
-              <h2>A Dying Fall</h2>
+          <article class="highest-fall-noscript">
+            <h2>A Dying Fall</h2>
+            <div className="fall">
+              <picture>
+                <source media="(max-width: 134px)" srcSet="./assets/img/ledge1-98w.webp" type="image/webp"/>
+                <source media="(max-width: 134px)" srcSet="./assets/img/ledge1-98w.png" />
+                <source media="(min-width: 334px)" srcSet="./assets/img/ledge1-390w.webp" type="image/webp"/>
+                <source media="(min-width: 334px)" srcSet="./assets/img/ledge1-390w.png" />
+                <source media="(min-width: 234px)" srcSet="./assets/img/ledge1-293w.webp" type="image/webp"/>
+                <source media="(min-width: 234px)" srcSet="./assets/img/ledge1-293w.png" />
+                <source media="(min-width: 135px)" srcSet="./assets/img/ledge1-195w.webp" type="image/webp"/>
+                <source media="(min-width: 135px)" srcSet="./assets/img/ledge1-195w.png" />
+  
+                <img src="./assets/img/ledge1-390w.png"
+                alt="Hitchcock on a cliff"
+                width="390" height="560"
+                className="ledge"
+                
+                srcSet="./assets/img/ledge1-390w.png 390w,
+                ./assets/img/ledge1-293w.png 293w,
+                ./assets/img/ledge1-195w.png 195w,
+                ./assets/img/ledge1-98w.png 98w"
+                
+                sizes="10vw"/>
+              </picture>
               <div>
-                <div className="fall">
-                  <h3>500m</h3>
-                  <p>In the film Secret Agent a fatal fall was made by Mr Caypor off a mountain ledge.</p>
-                </div>
-                <div className="fall">
-                  <h3>150m</h3>
-                  <p>In the film North by Northwest a fatal fall was made by Valerian off Mount Rushmore.</p>
-                </div>
-                <div className="fall">
-                  <h3>93m</h3>
-                  <p>In the film Saboteur a fatal fall was made by Fry off the Statue of Liberty.</p>
-                </div>
-                <div className="fall">
-                  <h3>c. 75m</h3>
-                  <p>In the film Family Plot a fatal fall was made by Maloney off a cliff in a car.</p>
-                </div>
-                <div className="fall">
-                  <h3>64m</h3>
-                  <p>In the film Foreign Correspondent a fatal fall was made by Rowley off Westminster Cathedral Tower.</p>
-                </div>
-                <div className="fall">
-                  <h3>50m</h3>
-                  <p>In the film Vertigo a fatal fall was made by Judy/Madeleine off the tower of Mission San Juan Bautista.</p>
-                </div>
-                <div className="fall">
-                  <h3>c. 50m</h3>
-                  <p>In the film Vertigo a fatal fall was made by a Police Officer off an apartment building.</p>
-                </div>
-                <div className="fall">
-                  <h3>30m</h3>
-                  <p>In the film Blackmail a fatal fall was made by Tracy through the roof of the British Museum Reading Room.</p>
-                </div>
-                <div className="fall">
-                  <h3>20m</h3>
-                  <p>In the film Jamaica Inn a fatal fall was made by Squire Pengallon off the mast of a ship.</p>
-                </div>
-                <div className="fall">
-                  <h3>15m</h3>
-                  <p>In the film Topaz a fatal fall was made by Jarre through an apartment window.</p>
-                </div>
+                <h3>500m</h3>
+                <p>In the film Secret Agent a fatal fall was made by Mr Caypor off a mountain ledge.</p>
               </div>
+            </div>
+            <div className="fall">
+              <picture>
+                <source media="(max-width: 134px)" srcSet="./assets/img/ledge2-98w.webp" type="image/webp"/>
+                <source media="(max-width: 134px)" srcSet="./assets/img/ledge2-98w.png" />
+                <source media="(min-width: 334px)" srcSet="./assets/img/ledge2-390w.webp" type="image/webp"/>
+                <source media="(min-width: 334px)" srcSet="./assets/img/ledge2-390w.png" />
+                <source media="(min-width: 234px)" srcSet="./assets/img/ledge2-293w.webp" type="image/webp"/>
+                <source media="(min-width: 234px)" srcSet="./assets/img/ledge2-293w.png" />
+                <source media="(min-width: 135px)" srcSet="./assets/img/ledge2-195w.webp" type="image/webp"/>
+                <source media="(min-width: 135px)" srcSet="./assets/img/ledge2-195w.png" />
+  
+                <img rc="./assets/img/ledge2-390w.png"
+                alt="Hitchcock on a cliff"
+                width="390" height="560"
+                className="ledge"
+                
+                srcSet="./assets/img/ledge2-390w.png 390w,
+                ./assets/img/ledge2-293w.png 293w,
+                ./assets/img/ledge2-195w.png 195w,
+                ./assets/img/ledge2-98w.png 98w"
+                
+                sizes="10vw"/>
+              </picture>
+              <div>
+                <h3>150m</h3>
+                <p>In the film North by Northwest a fatal fall was made by Valerian off Mount Rushmore.</p>
+              </div>
+            </div>
+            <div className="fall">
+              <picture>
+                <source media="(max-width: 134px)" srcSet="./assets/img/ledge3-98w.webp" type="image/webp"/>
+                <source media="(max-width: 134px)" srcSet="./assets/img/ledge3-98w.png" />
+                <source media="(min-width: 334px)" srcSet="./assets/img/ledge3-390w.webp" type="image/webp"/>
+                <source media="(min-width: 334px)" srcSet="./assets/img/ledge3-390w.png" />
+                <source media="(min-width: 234px)" srcSet="./assets/img/ledge3-293w.webp" type="image/webp"/>
+                <source media="(min-width: 234px)" srcSet="./assets/img/ledge3-293w.png" />
+                <source media="(min-width: 135px)" srcSet="./assets/img/ledge3-195w.webp" type="image/webp"/>
+                <source media="(min-width: 135px)" srcSet="./assets/img/ledge3-195w.png" />
+  
+                <img rc="./assets/img/ledge3-390w.png"
+                alt="Hitchcock on a cliff"
+                width="390" height="560"
+                className="ledge"
+                
+                srcSet="./assets/img/ledge3-390w.png 390w,
+                ./assets/img/ledge3-293w.png 293w,
+                ./assets/img/ledge3-195w.png 195w,
+                ./assets/img/ledge3-98w.png 98w"
+                
+                sizes="10vw"/>
+              </picture>
+              <div>
+                <h3>93m</h3>
+                <p>In the film Saboteur a fatal fall was made by Fry off the Statue of Liberty.</p>
+              </div>
+            </div>
+            <div className="fall">
+              <picture>
+                <source media="(max-width: 134px)" srcSet="./assets/img/ledge4-98w.webp" type="image/webp"/>
+                <source media="(max-width: 134px)" srcSet="./assets/img/ledge4-98w.png" />
+                <source media="(min-width: 334px)" srcSet="./assets/img/ledge4-390w.webp" type="image/webp"/>
+                <source media="(min-width: 334px)" srcSet="./assets/img/ledge4-390w.png" />
+                <source media="(min-width: 234px)" srcSet="./assets/img/ledge4-293w.webp" type="image/webp"/>
+                <source media="(min-width: 234px)" srcSet="./assets/img/ledge4-293w.png" />
+                <source media="(min-width: 135px)" srcSet="./assets/img/ledge4-195w.webp" type="image/webp"/>
+                <source media="(min-width: 135px)" srcSet="./assets/img/ledge4-195w.png" />
+  
+                <img rc="./assets/img/ledge4-390w.png"
+                alt="Hitchcock on a cliff"
+                width="390" height="560"
+                className="ledge"
+                
+                srcSet="./assets/img/ledge4-390w.png 390w,
+                ./assets/img/ledge4-293w.png 293w,
+                ./assets/img/ledge4-195w.png 195w,
+                ./assets/img/ledge4-98w.png 98w"
+                
+                sizes="10vw"/>
+              </picture>
+              <div>
+                <h3>c. 75m</h3>
+                <p>In the film Family Plot a fatal fall was made by Maloney off a cliff in a car.</p>
+              </div>
+            </div>
+            <div className="fall">
+              <picture>
+                <source media="(max-width: 134px)" srcSet="./assets/img/ledge5-98w.webp" type="image/webp"/>
+                <source media="(max-width: 134px)" srcSet="./assets/img/ledge5-98w.png" />
+                <source media="(min-width: 334px)" srcSet="./assets/img/ledge5-390w.webp" type="image/webp"/>
+                <source media="(min-width: 334px)" srcSet="./assets/img/ledge5-390w.png" />
+                <source media="(min-width: 234px)" srcSet="./assets/img/ledge5-293w.webp" type="image/webp"/>
+                <source media="(min-width: 234px)" srcSet="./assets/img/ledge5-293w.png" />
+                <source media="(min-width: 135px)" srcSet="./assets/img/ledge5-195w.webp" type="image/webp"/>
+                <source media="(min-width: 135px)" srcSet="./assets/img/ledge5-195w.png" />
+  
+                <img rc="./assets/img/ledge5-390w.png"
+                alt="Hitchcock on a cliff"
+                width="390" height="560"
+                className="ledge"
+                
+                srcSet="./assets/img/ledge5-390w.png 390w,
+                ./assets/img/ledge5-293w.png 293w,
+                ./assets/img/ledge5-195w.png 195w,
+                ./assets/img/ledge5-98w.png 98w"
+                
+                sizes="10vw"/>
+              </picture>
+              <div>
+                <h3>64m</h3>
+                <p>In the film Foreign Correspondent a fatal fall was made by Rowley off Westminster Cathedral Tower.</p>
+              </div>
+            </div>
+            <div className="fall">
+              <picture>
+                <source media="(max-width: 134px)" srcSet="./assets/img/ledge6-98w.webp" type="image/webp"/>
+                <source media="(max-width: 134px)" srcSet="./assets/img/ledge6-98w.png" />
+                <source media="(min-width: 334px)" srcSet="./assets/img/ledge6-390w.webp" type="image/webp"/>
+                <source media="(min-width: 334px)" srcSet="./assets/img/ledge6-390w.png" />
+                <source media="(min-width: 234px)" srcSet="./assets/img/ledge6-293w.webp" type="image/webp"/>
+                <source media="(min-width: 234px)" srcSet="./assets/img/ledge6-293w.png" />
+                <source media="(min-width: 135px)" srcSet="./assets/img/ledge6-195w.webp" type="image/webp"/>
+                <source media="(min-width: 135px)" srcSet="./assets/img/ledge6-195w.png" />
+  
+                <img rc="./assets/img/ledge6-390w.png"
+                alt="Hitchcock on a cliff"
+                width="390" height="560"
+                className="ledge"
+                
+                srcSet="./assets/img/ledge6-390w.png 390w,
+                ./assets/img/ledge6-293w.png 293w,
+                ./assets/img/ledge6-195w.png 195w,
+                ./assets/img/ledge6-98w.png 98w"
+                
+                sizes="10vw"/>
+              </picture>
+              <div>
+                <h3>50m</h3>
+                <p>In the film Vertigo a fatal fall was made by Judy/Madeleine off the tower of Mission San Juan Bautista.</p>
+              </div>
+            </div>
+            <div className="fall">
+              <picture>
+                <source media="(max-width: 134px)" srcSet="./assets/img/ledge7-98w.webp" type="image/webp"/>
+                <source media="(max-width: 134px)" srcSet="./assets/img/ledge7-98w.png" />
+                <source media="(min-width: 334px)" srcSet="./assets/img/ledge7-390w.webp" type="image/webp"/>
+                <source media="(min-width: 334px)" srcSet="./assets/img/ledge7-390w.png" />
+                <source media="(min-width: 234px)" srcSet="./assets/img/ledge7-293w.webp" type="image/webp"/>
+                <source media="(min-width: 234px)" srcSet="./assets/img/ledge7-293w.png" />
+                <source media="(min-width: 135px)" srcSet="./assets/img/ledge7-195w.webp" type="image/webp"/>
+                <source media="(min-width: 135px)" srcSet="./assets/img/ledge7-195w.png" />
+  
+                <img rc="./assets/img/ledge7-390w.png"
+                alt="Hitchcock on a cliff"
+                width="390" height="560"
+                className="ledge"
+                
+                srcSet="./assets/img/ledge7-390w.png 390w,
+                ./assets/img/ledge7-293w.png 293w,
+                ./assets/img/ledge7-195w.png 195w,
+                ./assets/img/ledge7-98w.png 98w"
+                
+                sizes="10vw"/>
+              </picture>
+              <div>
+                <h3>c. 50m</h3>
+                <p>In the film Vertigo a fatal fall was made by a Police Officer off an apartment building.</p>
+              </div>
+            </div>
+            <div className="fall">
+              <picture>
+                <source media="(max-width: 134px)" srcSet="./assets/img/ledge8-98w.webp" type="image/webp"/>
+                <source media="(max-width: 134px)" srcSet="./assets/img/ledge8-98w.png" />
+                <source media="(min-width: 334px)" srcSet="./assets/img/ledge8-390w.webp" type="image/webp"/>
+                <source media="(min-width: 334px)" srcSet="./assets/img/ledge8-390w.png" />
+                <source media="(min-width: 234px)" srcSet="./assets/img/ledge8-293w.webp" type="image/webp"/>
+                <source media="(min-width: 234px)" srcSet="./assets/img/ledge8-293w.png" />
+                <source media="(min-width: 135px)" srcSet="./assets/img/ledge8-195w.webp" type="image/webp"/>
+                <source media="(min-width: 135px)" srcSet="./assets/img/ledge8-195w.png" />
+  
+                <img rc="./assets/img/ledge8-390w.png"
+                alt="Hitchcock on a cliff"
+                width="390" height="560"
+                className="ledge"
+                
+                srcSet="./assets/img/ledge8-390w.png 390w,
+                ./assets/img/ledge8-293w.png 293w,
+                ./assets/img/ledge8-195w.png 195w,
+                ./assets/img/ledge8-98w.png 98w"
+                
+                sizes="10vw"/>
+              </picture>
+              <div>
+                <h3>30m</h3>
+                <p>In the film Blackmail a fatal fall was made by Tracy through the roof of the British Museum Reading Room.</p>
+              </div>
+            </div>
+            <div className="fall">
+              <picture>
+                <source media="(max-width: 134px)" srcSet="./assets/img/ledge9-98w.webp" type="image/webp"/>
+                <source media="(max-width: 134px)" srcSet="./assets/img/ledge9-98w.png" />
+                <source media="(min-width: 334px)" srcSet="./assets/img/ledge9-390w.webp" type="image/webp"/>
+                <source media="(min-width: 334px)" srcSet="./assets/img/ledge9-390w.png" />
+                <source media="(min-width: 234px)" srcSet="./assets/img/ledge9-293w.webp" type="image/webp"/>
+                <source media="(min-width: 234px)" srcSet="./assets/img/ledge9-293w.png" />
+                <source media="(min-width: 135px)" srcSet="./assets/img/ledge9-195w.webp" type="image/webp"/>
+                <source media="(min-width: 135px)" srcSet="./assets/img/ledge9-195w.png" />
+  
+                <img rc="./assets/img/ledge9-390w.png"
+                alt="Hitchcock on a cliff"
+                width="390" height="560"
+                className="ledge"
+                
+                srcSet="./assets/img/ledge9-390w.png 390w,
+                ./assets/img/ledge9-293w.png 293w,
+                ./assets/img/ledge9-195w.png 195w,
+                ./assets/img/ledge9-98w.png 98w"
+                
+                sizes="10vw"/>
+              </picture>
+              <div>
+                <h3>20m</h3>
+                <p>In the film Jamaica Inn a fatal fall was made by Squire Pengallon off the mast of a ship.</p>
+              </div>
+            </div>
+            <div className="fall">
+              <picture>
+                <source media="(max-width: 134px)" srcSet="./assets/img/ledge10-98w.webp" type="image/webp"/>
+                <source media="(max-width: 134px)" srcSet="./assets/img/ledge10-98w.png" />
+                <source media="(min-width: 334px)" srcSet="./assets/img/ledge10-390w.webp" type="image/webp"/>
+                <source media="(min-width: 334px)" srcSet="./assets/img/ledge10-390w.png" />
+                <source media="(min-width: 234px)" srcSet="./assets/img/ledge10-293w.webp" type="image/webp"/>
+                <source media="(min-width: 234px)" srcSet="./assets/img/ledge10-293w.png" />
+                <source media="(min-width: 135px)" srcSet="./assets/img/ledge10-195w.webp" type="image/webp"/>
+                <source media="(min-width: 135px)" srcSet="./assets/img/ledge10-195w.png" />
+  
+                <img rc="./assets/img/ledge10-390w.png"
+                alt="Hitchcock on a cliff"
+                width="390" height="560"
+                className="ledge"
+                
+                srcSet="./assets/img/ledge10-390w.png 390w,
+                ./assets/img/ledge10-293w.png 293w,
+                ./assets/img/ledge10-195w.png 195w,
+                ./assets/img/ledge10-98w.png 98w"
+                
+                sizes="10vw"/>
+              </picture>
+              <div>
+                <h3>15m</h3>
+                <p>In the film Topaz a fatal fall was made by Jarre through an apartment window.</p>
+              </div>
+            </div>
           </article>
         </div>
         <div class="vertigo">

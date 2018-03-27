@@ -98,24 +98,6 @@ h3 {
   transform: translate(0%);
 }
 
-.wriggle.active {
-  transform-origin: center top;
-  animation: wiggle 3s ease-in-out infinite alternate;
-}
-
-@keyframes wiggle {
-
-  from {
-    transform: rotate(2deg);
-  }
-
-  to {
-    transform: rotate(-2deg);
-  }
-}
-
-
-
 .header {
   display: flex;
   align-items: flex-end;
@@ -467,6 +449,18 @@ h3 {
   margin-top: -25rem;
 }
 
+.police-img-fallback {
+  height: 126.6rem;
+}
+
+.fears-img-fallback {
+  height: 160.9rem;
+}
+
+.eggs-img-fallback {
+  height: 58.7rem;
+}
+
 .humor {
   padding: 6rem 12rem;
   background-color: var(--dark);
@@ -518,6 +512,29 @@ h3 {
 
 .highest-fall h2 {
   margin-left: 6rem;
+}
+
+.highest-fall-noscript {
+  background-image: url(../assets/img/background-texture.png), url(../assets/img/texture-patch.png);
+  background-position: right, 20% -3%;
+  background-repeat: repeat-y, no-repeat;
+  padding: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.highest-fall-noscript h2 {
+  width: 100vw;
+}
+
+.highest-fall-noscript .fall {
+  display: flex;
+  width: 40vw;
+}
+
+.highest-fall-noscript img {
+  width: 10vw;
+  height: auto;
 }
 
 .practicaljokes {
@@ -765,14 +782,12 @@ nav ul > li a {
 
 .slider-container {
   display: flex;
-  margin-left: -4rem;
-  margin-bottom: 12rem;
 }
 
 .fallSlider {
   transform: rotate(-90deg);
-  margin-left: -8rem;
-  margin-top: 13rem;
+  margin-left: -8vw;
+  margin-top: 13vw;
 }
 
 .fall {
@@ -781,9 +796,13 @@ nav ul > li a {
   justify-content: center;
 }
 
+.fall h3 {
+  color: var(--highlight);
+}
+
 input[type=range] {
   appearance: none; /* Hides the slider so that custom slider can be made */
-  width: 40rem; /* Specific width is required for Firefox. */
+  width: 30vw; /* Specific width is required for Firefox. */
   background: transparent; /* Otherwise white in Chrome */
 }
 
@@ -807,8 +826,8 @@ input[type=range]::-webkit-slider-thumb {
 
 input[type=range]::-moz-range-thumb {
   background-image: url(../assets/img/skull.png);
-  height: 36px;
-  width: 16px;
+  height: 6.7rem;
+  width: 6.5rem;
   cursor: pointer;
 }
 
@@ -816,8 +835,8 @@ input[type=range]::-moz-range-thumb {
 
 input[type=range]::-ms-thumb {
   background-image: url(../assets/img/skull.png);
-  height: 36px;
-  width: 16px;
+  height: 6.7rem;
+  width: 6.5rem;
   cursor: pointer;
 }
 
@@ -862,7 +881,7 @@ input[type=range]::-ms-track {
   }
 
   .highest-fall {
-    padding: 2rem;
+    padding: 2rem 2rem 0rem 0;
   }
 
   .yellow-quote-happiness {
@@ -966,6 +985,26 @@ input[type=range]::-ms-track {
       'police .  bottom-column'
       'fears extremes extremes'
       'yellow yellow yellow';
+  }
+
+  .fears-img {
+    margin-top: 5rem;
+  }
+
+  .eggs-img {
+    margin-top: 0;
+  }
+
+  .police-img-fallback {
+    height: 26.1rem;
+  }
+
+  .fears-img-fallback {
+    height: 24.3rem;
+  }
+
+  .eggs-img-fallback {
+    height: 26.5rem;
   }
 
   .yellow-quote-fear-mobile {
@@ -1103,4 +1142,23 @@ input[type=range]::-ms-track {
     content: 'max: 500px';
   } */
 
+}
+
+@media (min-width: 960px) {
+
+  .wriggle.active {
+    transform-origin: center top;
+    animation: wiggle 3s ease-in-out infinite alternate;
+  }
+  
+  @keyframes wiggle {
+  
+    from {
+      transform: rotate(2deg);
+    }
+  
+    to {
+      transform: rotate(-2deg);
+    }
+  }
 }

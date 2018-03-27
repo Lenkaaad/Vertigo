@@ -128,9 +128,9 @@ class HighestFall extends Component {
               <source media="(min-width: 135px)" srcSet={"./assets/img/ledge" + this.state.current.id + "-195w.webp"} type="image/webp"/>
               <source media="(min-width: 135px)" srcSet={"./assets/img/ledge" + this.state.current.id + "-195w.png"} />
 
-              <img src="./assets/img/ledge-409w.png"
+              <img src={"./assets/img/ledge" + this.state.current.id + "-390w.png"}
               alt="Hitchcock on a cliff"
-              width="409" height="509"
+              width="390" height="560"
               className="ledge"
               
               srcSet={"./assets/img/ledge" + this.state.current.id + "-390w.png 390w," +
