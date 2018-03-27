@@ -677,6 +677,10 @@ nav ul > li a {
 
 }
 
+.yellow-quote-hapiness-mobile {
+  display: none;
+}
+
 .yellow-quote {
   position: relative;
   background-color: var(--highlight);
@@ -880,21 +884,37 @@ input[type=range]::-ms-track {
     display: none;
   }
 
+  .twisted-youth {
+    overflow: visible;
+  }
+
   .twisted-youth > .grid {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
   
     grid-template-areas:
-      'intro quote'
+      'intro intro'
       'father father'
       'mother mother'
       '. image';
   }
 
-  .yellow-quote-happiness {
-    grid-area: quote;
+  .yellow-quote-happiness-mobile {
+    float: right;
+    padding: 2rem;
+    position: relative;
     height: max-content;
+    width: 40%;
+    top: -5rem;
+    margin-bottom: -5rem;
+    
   }
+
+  .yellow-quote-happiness {
+    display: none;
+  }
+
+
 
   .obsession > .grid-obs {
     grid-gap: 1rem;
