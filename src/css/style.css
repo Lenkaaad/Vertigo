@@ -74,12 +74,12 @@ h3 {
 .slide-in {
   will-change: transform;
   opacity: 0;
-  transition: all ease-in-out .5s;
+  transition: transform ease-in-out .5s;
 }
 
-/* .slide-in-right {
-  transform: translateX(80%);
-} */
+.slide-in-right {
+  transform: translateX(0%);
+}
 
 .slide-in-right-script {
   transform: translateX(80%);
@@ -89,9 +89,9 @@ h3 {
   transform: translateX(80%);
 }
 
-/* .slide-in-left {
-  transform: translateX(-80%);
-} */
+.slide-in-left {
+  transform: translateX(0%);
+}
 
 .slide-in.active {
   opacity: 1;
