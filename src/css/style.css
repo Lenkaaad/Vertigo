@@ -858,7 +858,7 @@ input[type=range]::-ms-track {
   background: var(--highlight);
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 80rem) {
   
   .intro {
     padding: 8rem 1rem;
@@ -914,7 +914,7 @@ input[type=range]::-ms-track {
 
 }
 
-@media (max-width: 960px) {
+@media (max-width: 70rem) {
 
   nav {
     display: none;
@@ -1043,7 +1043,10 @@ input[type=range]::-ms-track {
 
 }
 
-@media (max-width: 770px) {
+@media (max-width: 50rem) {
+
+
+
   .header {
     display: none;
   }
@@ -1063,10 +1066,10 @@ input[type=range]::-ms-track {
 
 }
 
-@media (max-width: 500px) {
+@media (max-width: 32rem) {
 
   html {
-    font-size: 150%;
+    font-size: 100%;
   }
 
     .intro {
@@ -1085,6 +1088,17 @@ input[type=range]::-ms-track {
 
   .button-next {
     color: var(--dark);
+  }
+
+  .obsession > .grid-obs {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'title'
+      'split'
+      'text'
+      'more'
+      'tipi'
+      'quote';
   }
 
   /* p {
@@ -1131,6 +1145,39 @@ input[type=range]::-ms-track {
     overflow: hidden;
   }
 
+  .fears-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-template-rows: repeat(5, min-content); */
+    grid-template-areas:
+      'fears-title'
+      'eggs'
+      'top-column'
+      'fears-quote'
+      'police'
+      'bottom-column'
+      'fears'
+      'extremes'
+      'yellow';
+  }
+
+  .eggs-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .police-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .fears-img {
+    width: 100%;
+    height: auto;
+  }
+
+
+
  
 
   .header-img-container picture {
@@ -1144,7 +1191,9 @@ input[type=range]::-ms-track {
 
 }
 
-@media (min-width: 960px) {
+@media (min-width: 70rem) {
+
+
 
   .wriggle.active {
     transform-origin: center top;
