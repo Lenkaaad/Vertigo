@@ -1089,14 +1089,29 @@ input[type=range]::-ms-track {
     font-size: 4rem;
   }
 
+  .kill-flex {
+    flex-direction: column;
+  }
+
   /* betere fix nodig */
 
   .button-prev {
     color: var(--dark);
+    font-size: 0.1rem;
   }
 
   .button-next {
     color: var(--dark);
+    font-size: 0.1rem;
+  }
+
+  .kill-nav {
+    margin-top: 2rem;
+  }
+
+  .intro {
+    top: -15rem;
+    margin-bottom: -13rem;
   }
 
   .obsession > .grid-obs {
@@ -1168,6 +1183,11 @@ input[type=range]::-ms-track {
       'fears'
       'extremes'
       'yellow';
+  }
+
+  .police-img {
+    object-fit: contain;
+    width: 100%;
   }
 
   .header-img-container picture {
