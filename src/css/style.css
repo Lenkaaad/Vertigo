@@ -1068,9 +1068,9 @@ input[type=range]::-ms-track {
 
 @media (max-width: 32rem) {
 
-  html {
+  /* html {
     font-size: 100%;
-  }
+  } */
 
     .intro {
     padding-top: 0;
