@@ -1171,8 +1171,7 @@ input[type=range]::-ms-track {
 
   .fears-grid {
     display: grid;
-    grid-template-columns: 1fr;
-    /* grid-template-rows: repeat(5, min-content); */
+    grid-template-columns: 100%;
     grid-template-areas:
       'fears-title'
       'eggs'
@@ -1186,8 +1185,18 @@ input[type=range]::-ms-track {
   }
 
   .police-img {
-    object-fit: contain;
-    width: 100%;
+    position: relative;
+    left: -2rem;
+  }
+
+  .eggs-img {
+    position: relative;
+    left: -2rem;
+  }
+
+  .fears-img {
+    position: relative;
+    left: -2rem;
   }
 
   .header-img-container picture {
