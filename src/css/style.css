@@ -715,6 +715,10 @@ nav ul > li a {
   margin-left: -10rem;
 }
 
+.yellow-quote-fear-mobile {
+  display: none;
+}
+
 .yellow-quote-tipi {
   grid-area: tipi;
   float: right;
@@ -836,6 +840,10 @@ input[type=range]::-ms-track {
     padding: 2rem;
   }
 
+  .highest-fall {
+    padding: 2rem;
+  }
+
   .yellow-quote-happiness {
     left: -2rem;
     width: auto;
@@ -877,11 +885,15 @@ input[type=range]::-ms-track {
     grid-gap: 1rem;
   
     grid-template-areas:
-      'intro intro'
+      'intro quote'
       'father father'
       'mother mother'
-      '. image'
-      'quote quote';
+      '. image';
+  }
+
+  .yellow-quote-happiness {
+    grid-area: quote;
+    height: max-content;
   }
 
   .obsession > .grid-obs {
@@ -895,12 +907,49 @@ input[type=range]::-ms-track {
       'quote quote';
   }
 
+  .fears-grid {
+    grid-template-columns: 1fr .5fr 3fr;
+    /* grid-template-rows: repeat(5, min-content); */
+    grid-template-areas:
+      'fears-title fears-title fears-title'
+      'eggs top-column top-column'
+      'fears-quote fears-quote fears-quote'
+      'police .  bottom-column'
+      'fears extremes extremes'
+      'yellow yellow yellow';
+  }
+
+  .yellow-quote-fear-mobile {
+    position: relative;
+    display: block;
+    width: auto;
+    margin: 4rem 0;
+    grid-area: yellow;
+  }
+
+  .yellow-quote-fear {
+    display: none;
+  }
+
+  .humor .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 0 3rem;
+
+    grid-template-areas:
+      'video'
+      'blackhumor'
+      'jokes'
+      'toofar'
+      'joke'
+      'image';
+    }
+
 }
 
 @media (max-width: 500px) {
   
-  body::before {
+  /* body::before {
     content: 'max: 500px';
-  }
+  } */
 
 }
