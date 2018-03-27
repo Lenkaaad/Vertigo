@@ -813,3 +813,94 @@ input[type=range]::-ms-track {
   cursor: pointer;
   background: var(--highlight);
 }
+
+@media (max-width: 1300px) {
+  
+  .intro {
+    padding: 8rem 1rem;
+  }
+
+  .twisted-youth {
+    padding: 2rem;
+  }
+
+  .obsession {
+    padding: 2rem;
+  }
+
+  .fears {
+    padding: 2rem;
+  }
+
+  .humor {
+    padding: 2rem;
+  }
+
+  .yellow-quote-happiness {
+    left: -2rem;
+    width: auto;
+    height: auto;
+    margin-right: -1rem;
+  }
+
+  .yellow-quote-fear {
+    left: 4rem;
+    /* width: auto; */
+    height: auto;
+    margin-left: 2rem;
+  }
+
+  .yellow-quote-tipi {
+    left: 4rem;
+  }
+
+  .splitup-image {
+    left: -2rem;
+  }
+
+  .video-container {
+    left: -14rem;
+    margin-right: -14rem;
+    margin-top: 0rem;
+  }
+
+}
+
+@media (max-width: 960px) {
+
+  nav {
+    display: none;
+  }
+
+  .twisted-youth > .grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  
+    grid-template-areas:
+      'intro intro'
+      'father father'
+      'mother mother'
+      '. image'
+      'quote quote';
+  }
+
+  .obsession > .grid-obs {
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      'title title'
+      'tipi split'
+      'text text'
+      'more more'
+      'quote quote';
+  }
+
+}
+
+@media (max-width: 500px) {
+  
+  body::before {
+    content: 'max: 500px';
+  }
+
+}
