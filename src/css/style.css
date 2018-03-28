@@ -580,10 +580,21 @@ input[type=range]::-ms-track {
 @media (min-width: 600px) {
 
   .mother-image .image-abs {
-    width: 70vw;
+    width: 60vw;
+    left: 32rem;
   }
+
   .gun-image .image-abs {
-    width: 70vw;
+    width: 60vw;
+    left: 32rem;
+  }
+
+  .splitup-image {
+    margin-bottom: -18rem;
+  }
+
+  .splitup-image .image-abs-left {
+    width: 60vw;
   }
 
   .obsession-column-right {
@@ -724,6 +735,14 @@ input[type=range]::-ms-track {
 }
 
 @media (min-width: 900px){
+
+  .mother-image .image-abs {
+    left: 5rem;
+  }
+
+  .gun-image .image-abs {
+    left: 5rem;
+  }
 
   h2 {
     font-size: 6rem;
@@ -1065,10 +1084,16 @@ article {
     flex-direction: column;
     z-index: 999;
   }
+
+  nav a {
+    width: 100%;
+    margin-top: 3rem;
+  }
   
   nav img {
     display: block;
     margin-top: 3rem;
+    margin: auto;
   }
   
   nav ul {
