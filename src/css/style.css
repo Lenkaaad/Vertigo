@@ -215,6 +215,12 @@ nav {
 
 .yellow-quote-happiness {
   display: none;
+  align-self: center;
+  justify-self: flex-end;
+}
+
+.mother-image {
+  grid-area: image;
 }
 
 /* end youth-section */
@@ -232,12 +238,19 @@ nav {
   padding-bottom: 65vw;
   /* left: -12rem; */
   /* margin-top: -7rem; */
-  grid-area: split;
+  grid-area: splitup;
   /* top: 3rem; */
   /* margin-bottom: -3rem; */
 }
 
 .yellow-quote-tipi {
+  margin-top: 3rem;
+  width: 100vw;
+  max-width: 40rem;
+  align-self: flex-end;
+}
+
+.yellow-quote-tipi-2 {
   margin-top: 3rem;
   width: 100vw;
   max-width: 40rem;
@@ -631,20 +644,25 @@ input[type=range]::-ms-track {
   .fear-subtitle.extremes {
     background-image: none;
   }
+
+  .fears-img-fallback, .police-img-fallback, .eggs-img-fallback {
+    width: 30vw;
+    max-width: 20rem;
+  }
   
   .police-img {
     display: inline;
-    grid-item: police;
+    grid-area: police;
   }
   
   .fears-img {
     display: inline;
-    grid-item: fears
+    grid-area: fears;
   }
   
   .eggs-img {
     display: inline;
-    grid-item: eggs;
+    grid-area: eggs;
   }
 
   .fears-grid {
@@ -679,7 +697,314 @@ input[type=range]::-ms-track {
   }
   
   .fear-extremes {
-    margin-top: 5rem;
+    margin-top: 0rem;
     grid-area: extremes;
   }
+
+  .yellow-quote-fear-mobile {
+    grid-area: yellow;
+  }
+
+  .humor-header {
+    max-width: 60rem;
+  }
+
+}
+
+@media (min-width: 900px){
+
+  h2 {
+    font-size: 6rem;
+  }
+
+  .intro .grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .intro .grid .birds {
+    width: 33vw;
+    height: auto;
+  }
+
+  .intro picture {
+    display: inline;
+  }
+
+  .yellow-quote-happiness-mobile {
+    display: none;
+  }
+  
+  .yellow-quote-happiness {
+    display: inline-block;
+    width: 33vw;
+    height: min-content;
+    margin-right: -2rem;
+  }
+
+  .mother-image {
+    align-self: center;
+    grid-area: image;
+    margin-right: -2rem;
+    margin-left: 2rem;
+  }
+
+  .mother-image .image-abs {
+    width: 40vw;
+    height: auto;
+}
+
+  .more-mother {
+    grid-area: more;
+  }
+
+  .mother {
+    grid-area: mother;
+  }
+
+  .father {
+    grid-area: father;
+  }
+
+  .twisted-youth .grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+    'intro intro'
+    'father father'
+    'mother image'
+    'more more';
+  }
+
+  .obsession .image-abs-left {
+    width: 50vw; 
+    height: auto;
+  }
+
+  .obsession .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    'title title'
+    'splitup return'
+    'obsession obsession'
+    'quote quote'
+    'tipi tipi';
+  }
+
+  .obsession-title {
+    grid-area: title;
+  }
+
+  .splitup-image {
+    grid-area: splitup;
+    width: 50vw;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    margin-top: 5rem;
+  }
+
+  .splitup-image .image-abs-left {
+    width: 45vw;
+    height: auto;
+}
+
+  .return {
+    grid-area: return;
+  }
+
+  .obsession-column-right {
+    grid-area: obsession;
+  }
+
+  .obsession-quote {
+    grid-area: quote;
+  }
+
+  .yellow-quote-tipi {
+    grid-area: tipi;
+  }
+
+  .humor .grid {
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    grid-template-areas:
+    'video video'
+    'black-humor black-humor'
+    'jokes image'
+    'toofar toofar'
+    'joke joke';
+}
+
+  .gun-image {
+    grid-area: image;
+    align-self: center;
+  }
+
+  .gun-image .image-abs {
+    width: 100%;
+    height: auto;
+}
+
+  .black-humor {
+    grid-area: black-humor;
+}
+
+.practicaljokes {
+  grid-area: jokes;
+}
+
+.video-container {
+  grid-area: video;
+}
+
+.toofar {
+  grid-area: toofar;
+}
+
+.slider-container {
+  flex-direction: row;
+}
+
+input[type=range] {
+  transform: rotate(-90deg);
+  width: 100vh;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  transform: rotate(90deg);
+}
+
+.fallSlider {
+  margin-left: -8vw;
+  /* margin-top: 13vw; */
+}
+
+.fall-container {
+  width: 100%;
+  grid-template-columns: repeat(2, 50%);
+}
+
+.fall {
+  width: 100%;
+}
+
+.humor-header {
+  max-width: 90rem;
+}
+
+.kill-flex {
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+}
+
+@media (min-width: 1100px){
+  .intro .grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .intro .birds {
+    width: 25vw;
+    height: auto;
+  }
+
+  .twisted-youth .grid {
+    display: grid;
+    grid-template-columns: 1fr .5fr 1fr;
+    grid-template-areas:
+    'intro intro intro'
+    'mother mother image'
+    'more more more'
+    'quote father father';
+}
+
+.mother-image {
+  align-self: center;
+}
+
+.mother {
+  align-self: center;
+}
+
+.mother-image .image-abs {
+  width: 33vw;
+}
+
+.yellow-quote-happiness {
+  grid-area: quote;
+  height: min-content;
+  margin-right: 2rem;
+  align-self: center;
+}
+
+.first-paragraph {
+  grid-area: intro;
+}
+
+.obsession .grid {
+  grid-gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+  'title title'
+  'splitup obsession'
+  'quote obsession'
+  'return tipi';
+}
+
+.obsession-quote {
+  align-self: center;
+  padding: 4rem;
+  height: 50%;
+}
+
+.focus-quote {
+  font-size: 3.5rem;
+  line-height: 1.4;
+}
+
+.yellow-quote-tipi-2 {
+  grid-area: tipi;
+  justify-self: end;
+  align-self: center;
+}
+
+.yellow-quote-tipi {
+  display: none;
+}
+
+/* display: grid;
+    grid-template-columns: 1fr .5fr 3fr;
+    grid-column-gap: 2rem;
+    grid-template-areas:
+      'fears-title fears-title fears-title'
+      'eggs top-column top-column'
+      'fears-quote fears-quote fears-quote'
+      'police .  bottom-column'
+      'fears extremes extremes'
+      'yellow yellow yellow'; */
+
+.fears-grid {
+
+  grid-template-columns: 2fr 2fr 1fr 1fr 4fr;
+  /* grid-template-rows: repeat(5, min-content); */
+  grid-template-areas:
+    'fears-title fears-title fears-title fears-title fears-title'
+    'police fears eggs top-column top-column'
+    'police fears fears-quote fears-quote fears-quote'
+    'police fears . . bottom-column'
+    'police fears . . bottom-column'
+    '. fears extremes extremes extremes'
+    'yellow yellow yellow yellow yellow';
+}
+
+}
+
+@media (min-width: 1300px) {
+  /* article {
+    padding: 3rem 8rem;
+  } */
 }
