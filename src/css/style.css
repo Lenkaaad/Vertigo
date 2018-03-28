@@ -13,6 +13,23 @@ html {
   box-sizing: inherit;
 }
 
+.cta-button {
+  background-color: var(--dark);
+  color: var(--light);
+  text-decoration: none;
+  padding: 1rem;
+  font-weight: 700;
+}
+
+.header .info {
+  color: var(--dark);
+}
+
+.align-right {
+  width: 100%;
+  text-align: right;
+}
+
 .hide {
   display: none;
 }
@@ -1299,6 +1316,11 @@ article {
 }
 
 @media (min-width: 1300px) {
+
+  .header .info {
+    top: 35%;
+  }
+
   /* article {
     padding: 3rem 8rem;
   } */
@@ -1430,5 +1452,10 @@ article {
     font-size: 2.5rem;
     margin-left: -18rem;
     margin-right: -20rem;
+  }
+
+  .vertigo .flex {
+    width: 70%;
+    margin: auto;
   }
 }
