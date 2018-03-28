@@ -564,6 +564,10 @@ input[type=range]::-ms-track {
   .fear-subtitle.extremes {
     background-position: 0 2rem;
   }
+
+  .kill-flex {
+    align-items: center;
+  }
 }
 
 @media (min-width: 450px) {
@@ -574,6 +578,13 @@ input[type=range]::-ms-track {
 }
 
 @media (min-width: 600px) {
+
+  .mother-image .image-abs {
+    width: 70vw;
+  }
+  .gun-image .image-abs {
+    width: 70vw;
+  }
 
   .obsession-column-right {
     display: inline;
@@ -1089,7 +1100,7 @@ article {
   }
 
   article {
-    padding: 3rem 12rem 5rem 12rem;
+    padding: 3rem 18rem 5rem 18rem;
   }
   
   .intro {
@@ -1279,6 +1290,16 @@ article {
     margin-top: -25rem;
   }
 
+  .fears {
+    padding-left: 2rem;
+  }
+
+  .yellow-quote-fear {
+    left: 20rem;
+    margin-left: -18rem;
+    width: 50rem;
+  }
+
   .fears-grid {
     grid-template-areas:
       'fears-title fears-title fears-title fears-title fears-title'
@@ -1288,5 +1309,101 @@ article {
       'police fears . bottom-column bottom-column'
       '. fears . extremes extremes'
       'yellow yellow yellow yellow yellow';
+  }
+
+  .intro {
+    padding: 0rem 4rem 0rem 4rem; /*top, side, bottom, side */
+  }
+  .intro .grid .birds {
+    width: 27vw;
+    height: auto;
+  }
+
+  .mother-image .image-abs {
+    left: 20rem;
+    margin-left: -15rem;
+  }
+
+  .yellow-quote-happiness {
+    position: relative;
+    left: -15rem;
+  }
+
+  .father {
+    margin-left: -13rem;
+  }
+
+  .splitup-image .image-abs-left {
+    left: -6rem;
+    width: 40vw;
+  }
+
+  .yellow-quote-tipi-2 {
+    display: block;
+    position: relative;
+    left: 16rem;
+  }
+
+  .return {
+    margin-right: -16rem;
+  }
+
+  .obsession-quote {
+    width: 100%;
+    margin-left: -5rem;
+  }
+
+  .kill-character {
+    padding: 3rem 8rem;
+  }
+
+  .kill-flex {
+    justify-content: flex-start;
+  }
+
+  .kill-flex picture {
+    margin-right: 3rem;
+  }
+
+  .gun-image .image-abs {
+    left: 20rem;
+    width: 40vw;
+  }
+
+  .black-humor {
+    margin-right: -18rem;
+  }
+
+  .video-container {
+    left: -20rem;
+    margin-right: -20rem;
+  }
+
+  .practicaljokes {
+    margin-bottom: 0;
+  }
+
+  .videoplayer {
+    width: 40vw;
+  }
+
+  .ledge {
+    position: relative;
+    left: -16rem;
+  }
+
+  .highest-fall {
+    padding-bottom: 0;
+  }
+
+  .logo-vertigo {
+    height: 15rem;
+    width: auto;
+  }
+
+  .jokes {
+    font-size: 2.5rem;
+    margin-left: -18rem;
+    margin-right: -20rem;
   }
 }
