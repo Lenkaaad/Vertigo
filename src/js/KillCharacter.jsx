@@ -16,7 +16,7 @@ class KillCharacter extends Component {
           name: `The Fall`,
           amount: 10,
           text: `Wist je dat uit alle Hitchcock films, 10 personen door hoogte stierven?`,
-          image: `./assets/img/kill-2`,
+          image: `./assets/img/kill-7`,
         },
         3: {
           name: `The Strangled`,
@@ -34,19 +34,19 @@ class KillCharacter extends Component {
           name: `The Suicide`,
           amount: 8,
           text: `Wist je dat uit alle Hitchcock films, 8 personen zelfmoord pleegden?`,
-          image: `./assets/img/kill-5`,
+          image: `./assets/img/kill-2`,
         },
         6: {
           name: `The Drowned`,
           amount: 5,
           text: `Wist je dat uit alle Hitchcock films, 5 personen zijn verdronken?`,
-          image: `./assets/img/kill-6`,
+          image: `./assets/img/kill-5`,
         },
         7: {
           name: `The Birds`,
           amount: 2,
           text: `Wist je dat uit alle Hitchcock films, 2 personen stierven door aanvallende vogels?`,
-          image: `./assets/img/kill-7`,
+          image: `./assets/img/kill-6`,
         },
       },
       current: {

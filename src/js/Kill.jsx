@@ -40,8 +40,8 @@ const Kill = ({data, id, onAdd, onTake}) => {
         </div>
       </div>
       <div className='kill-nav'>
-        <button className='button-prev' onClick={() => handleTakeCurrent(id)}>Vorige methode</button>
-        <button className='button-next' onClick={() => handleAddCurrent(id)}>Volgende methode</button>
+        <button className='button-prev' onClick={() => handleTakeCurrent(id)}><span className="button-text">Vorige methode</span></button>
+        <button className='button-next' onClick={() => handleAddCurrent(id)}><span className="button-text">Volgende methode</span></button>
       </div>
     </div>
   );

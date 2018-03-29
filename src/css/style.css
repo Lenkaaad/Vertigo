@@ -57,6 +57,10 @@ p {
   line-height: 1.6;
 }
 
+.button-text {
+  display: none;
+}
+
 .highlight {
   color: var(--highlight);
   font-weight: 700;
@@ -296,10 +300,6 @@ nav {
   justify-content: space-between;
 }
 
-.kill {
-  margin-bottom: 2rem;
-}
-
 .kill-flex {
   display: flex;
   flex-direction: column;
@@ -311,20 +311,35 @@ nav {
   align-self: center;
 }
 
+
 .kill-character-noscript {
   background-color: var(--dark);
   padding: 4rem;
   color: var(--light);
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .kill-character-noscript h2 {
-  width: 100vw;
+  width: 90vw;
+  margin: 0 1rem;
+
 }
 
 .kill-character-noscript .kill {
-  width: 40vw;
+  width: 80vw;
+  
+}
+
+.kill-character-noscript .kill-info h3 {
+  margin-top: 0;
+}
+
+.kill-character-noscript .kill-info {
+  border-bottom: 0.3rem solid var(--highlight);
 }
 
 .button-prev::before {
@@ -333,8 +348,8 @@ nav {
   position: relative;
   left: -1rem;
   top: .3rem;
-  height: 2rem;
-  width: 2rem;
+  height: 5rem;
+  width: 5rem;
   background-image: url(../assets/img/arrow-left.svg);
   background-size: auto;
   background-repeat: no-repeat;
@@ -356,8 +371,8 @@ button {
   position: relative;
   right: -1rem;
   top: .3rem;
-  height: 2rem;
-  width: 2rem;
+  height: 5rem;
+  width: 5rem;
   background-image: url(../assets/img/arrow-right.svg);
   background-size: auto;
   background-repeat: no-repeat;
@@ -624,6 +639,20 @@ input[type=range]::-ms-track {
 }
 
 @media (min-width: 600px) {
+
+  .button-text {
+    display: inline;
+  }
+
+  .button-next::after {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .button-prev::before {
+    width: 2rem;
+    height: 2rem;
+  }
 
   .mother-image .image-abs {
     width: 60vw;

@@ -101,6 +101,7 @@
     const obsession = document.querySelector(`.parallax-obsession`);
 
     if(obsession){
+
         
       const slideInAt = (window.scrollY + window.innerHeight) - obsession.height / 1;
       const obsessionTop = obsession.getBoundingClientRect().top + window.scrollY;
@@ -110,8 +111,9 @@
 
       if(isHalfShown && isNotScrolledPast){
         const speed = obsession.getAttribute(`data-speed`);
-        const yPosObs = -(slideInAt * speed / 5) - (obsessionTop / 5);
-        obsession.setAttribute(`style`, `transform: translateX(${yPosObs} px)`);
+        const yPosObs = parseInt(-(slideInAt * speed / 5) - (obsessionTop / 5));
+        console.log(yPosObs);
+        obsession.setAttribute('style', 'transform: translateX('+ yPosObs + 'px)');
       } else {
         // do nothing
       }
