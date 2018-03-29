@@ -44,7 +44,7 @@ body {
 
 .content {
   overflow: hidden;
-  padding-bottom: 10rem;
+  padding-bottom: 5rem;
 }
 
 article {
@@ -449,8 +449,12 @@ button {
 
 .video-container {
   position: relative;
-  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 80rem;
   object-fit: contain;
+  margin: auto;
 }
 
 .videoplayer {
@@ -460,10 +464,12 @@ button {
 
 .playbutton {
   position: absolute;
-  top: 40%;
-  left: 40%;
-  width: 6rem;
-  height: 6rem;
+  width: 8rem;
+  height: 8rem;
+  padding: 0;
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
 
 .jokes {
@@ -1522,7 +1528,7 @@ input[type=range]::-ms-track {
   }
 
   .video-container {
-    left: -20rem;
+    left: -22rem;
     margin-right: -20rem;
   }
 

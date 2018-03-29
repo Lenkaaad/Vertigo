@@ -127,10 +127,12 @@
 
     if (videoplayer.paused) {
       videoplayer.play();
-      playbutton.classList.add(`hide`);
+      // playbutton.classList.add(`hide`);
+      playbutton.style.opacity = 0;
     } else {
       videoplayer.pause();
-      playbutton.classList.remove(`hide`);
+      playbutton.style.opacity = 1;
+      // playbutton.classList.remove(`hide`);
     }
   };
 
