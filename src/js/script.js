@@ -140,6 +140,8 @@
     document.addEventListener(`scroll`, handleScroll);
     videoplayer.addEventListener(`click`, handlePlayback);
     playbutton.addEventListener(`click`, handlePlayback);
+    playbutton.style.opacity = 1;
+
 
     // note: ipv klassen te gebruiken voor left-right, niet beter om adhv data-elementen te gebruiken? in dat geval moet je maar 1 x de images selecteren en dan switch case gebruiken om juiste klasse toe te voegen
 
