@@ -1,474 +1,425 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width" initial-scale="1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Alfred Hitchcock - Vertigo</title>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.10/webfont.js"></script> -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Alfred Hitchcock - Vertigo</title>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.10/webfont.js"></script> -->
 
   <script>
-      WebFontConfig = {
-        custom: {
-          families: ['Edo', 'Avenir', 'Source Serif Pro'],
-          urls: ['assets/fonts/Edo/edo.css', 'assets/fonts/Avenir/avenir.css', 'assets/fonts/SourceSerifPro/sourceserif.css']
-        }
-      };
-      (function(d) {
-        var wf = d.createElement('script'), s = d.scripts[0];
-        wf.src = "js/webfontloader.js";
-        wf.async = true;
-        s.parentNode.insertBefore(wf, s);
-      })(document);
+    WebFontConfig = {
+      custom: {
+        families: ['Edo', 'Avenir', 'Source Serif Pro'],
+        urls: ['assets/fonts/Edo/edo.css', 'assets/fonts/Avenir/avenir.css', 'assets/fonts/SourceSerifPro/sourceserif.css']
+      }
+    };
+    (function(d) {
+      var wf = d.createElement('script'),
+        s = d.scripts[0];
+      wf.src = "js/webfontloader.js";
+      wf.async = true;
+      s.parentNode.insertBefore(wf, s);
+    })(document);
   </script>
 </head>
+
 <body>
-    <nav>
-      <a href="http://vertigoweb.be/" target="_blank"><img src="assets/img/logo-v.svg" alt="Logo" height="60"></a>
-      <ul>
-          <li><a href="#intro">Introductie</a></li>
-          <li><a href="#jeugd">Jeugd</a></li>
-          <li><a href="#obsessie">Obsessie</a></li>
-          <li><a href="#angsten">Angsten</a></li>
-          <li><a href="#humor">Humor</a></li>
-      </ul>
-    </nav>
-    <div class="content">
-        <div class="mobile-header">
-          <span class="header-subtitle">The dark side that made</span>
-          <h1>Alfred Hitchcock</h1>
-        </div>
-        <div class="header">
-          <div class="header-img-container">
-            <picture>
-              <source media="(max-width: 329px)" srcset="assets/img/header-bg-240w.webp" type="image/webp"/>
-              <source media="(max-width: 329px)" srcset="assets/img/header-bg-240w.png" />
-              <source media="(min-width: 1644px)" srcset="assets/img/header-bg-1920w.webp" type="image/webp"/>
-              <source media="(min-width: 1644px)" srcset="assets/img/header-bg-1920w.png" />
-              <source media="(min-width: 800px)" srcset="assets/img/header-bg-1440w.webp" type="image/webp"/>
-              <source media="(min-width: 800px)" srcset="assets/img/header-bg-1440w.png" />
-              <source media="(min-width: 660px)" srcset="assets/img/header-bg-960w.webp" type="image/webp"/>
-              <source media="(min-width: 660px)" srcset="assets/img/header-bg-960w.png" />
-              <source media="(min-width: 330px)" srcset="assets/img/header-bg-480w.webp" type="image/webp"/>
-              <source media="(min-width: 330px)" srcset="assets/img/header-bg-480w.png" />
+  <nav>
+    <a href="http://vertigoweb.be/" target="_blank"><img src="assets/img/logo-v.svg" alt="Logo" height="60"></a>
+    <ul>
+      <li><a href="#intro">Introductie</a></li>
+      <li><a href="#jeugd">Jeugd</a></li>
+      <li><a href="#obsessie">Obsessie</a></li>
+      <li><a href="#angsten">Angsten</a></li>
+      <li><a href="#humor">Humor</a></li>
+    </ul>
+  </nav>
+  <div class="content">
+    <div class="mobile-header">
+      <span class="header-subtitle">The dark side that made</span>
+      <h1>Alfred Hitchcock</h1>
+    </div>
+    <div class="header">
+      <div class="header-img-container">
+        <picture>
+          <source media="(max-width: 329px)" srcset="assets/img/header-bg-240w.webp" type="image/webp" />
+          <source media="(max-width: 329px)" srcset="assets/img/header-bg-240w.png" />
+          <source media="(min-width: 1644px)" srcset="assets/img/header-bg-1920w.webp" type="image/webp" />
+          <source media="(min-width: 1644px)" srcset="assets/img/header-bg-1920w.png" />
+          <source media="(min-width: 800px)" srcset="assets/img/header-bg-1440w.webp" type="image/webp" />
+          <source media="(min-width: 800px)" srcset="assets/img/header-bg-1440w.png" />
+          <source media="(min-width: 660px)" srcset="assets/img/header-bg-960w.webp" type="image/webp" />
+          <source media="(min-width: 660px)" srcset="assets/img/header-bg-960w.png" />
+          <source media="(min-width: 330px)" srcset="assets/img/header-bg-480w.webp" type="image/webp" />
+          <source media="(min-width: 330px)" srcset="assets/img/header-bg-480w.png" />
 
-              <img class="header-bg"
-              src="assets/img/header-bg-1920w.png"
-              alt="Header Image Background"
-              width="1920" height="1080"
+          <img class="header-bg" src="assets/img/header-bg-1920w.png" alt="Header Image Background" width="1920" height="1080" srcset="assets/img/header-bg-240w.png 240w, assets/img/header-bg-480w.png 480w, assets/img/header-bg-960w.png 960w, assets/img/header-bg-1440w.png 1440w, assets/img/header-bg-1920w.png 1920w" sizes="100vw" />
+        </picture>
+        <picture>
+          <source media="(max-width: 329px)" srcset="assets/img/header-clouds-240w.webp" type="image/webp" />
+          <source media="(max-width: 329px)" srcset="assets/img/header-clouds-240w.png" />
+          <source media="(min-width: 1644px)" srcset="assets/img/header-clouds-1920w.webp" type="image/webp" />
+          <source media="(min-width: 1644px)" srcset="assets/img/header-clouds-1920w.png" />
+          <source media="(min-width: 800px)" srcset="assets/img/header-clouds-1440w.webp" type="image/webp" />
+          <source media="(min-width: 800px)" srcset="assets/img/header-clouds-1440w.png" />
+          <source media="(min-width: 660px)" srcset="assets/img/header-clouds-960w.webp" type="image/webp" />
+          <source media="(min-width: 660px)" srcset="assets/img/header-clouds-960w.png" />
+          <source media="(min-width: 330px)" srcset="assets/img/header-clouds-480w.webp" type="image/webp" />
+          <source media="(min-width: 330px)" srcset="assets/img/header-clouds-480w.png" />
 
-              srcset="assets/img/header-bg-240w.png 240w,
-              assets/img/header-bg-480w.png 480w,
-              assets/img/header-bg-960w.png 960w,
-              assets/img/header-bg-1440w.png 1440w,
-              assets/img/header-bg-1920w.png 1920w"
+          <img class="header-cloud parallax" data-speed="-1" src="assets/img/header-clouds-1920w.png" alt="Header Image Clouds" width="1920" height="1080" srcset="assets/img/header-clouds-240w.png 240w, assets/img/header-clouds-480w.png 480w, assets/img/header-clouds-960w.png 960w, assets/img/header-clouds-1440w.png 1440w, assets/img/header-clouds-1920w.png 1920w" sizes="100vw" />
+        </picture>
+        <picture>
+          <source media="(max-width: 329px)" srcset="assets/img/header-boat-240w.webp" type="image/webp" />
+          <source media="(max-width: 329px)" srcset="assets/img/header-boat-240w.png" />
+          <source media="(min-width: 1644px)" srcset="assets/img/header-boat-1920w.webp" type="image/webp" />
+          <source media="(min-width: 1644px)" srcset="assets/img/header-boat-1920w.png" />
+          <source media="(min-width: 800px)" srcset="assets/img/header-boat-1440w.webp" type="image/webp" />
+          <source media="(min-width: 800px)" srcset="assets/img/header-boat-1440w.png" />
+          <source media="(min-width: 660px)" srcset="assets/img/header-boat-960w.webp" type="image/webp" />
+          <source media="(min-width: 660px)" srcset="assets/img/header-boat-960w.png" />
+          <source media="(min-width: 330px)" srcset="assets/img/header-boat-480w.webp" type="image/webp" />
+          <source media="(min-width: 330px)" srcset="assets/img/header-boat-480w.png" />
 
-              sizes="100vw"/>
-            </picture>
-            <picture>
-              <source media="(max-width: 329px)" srcset="assets/img/header-clouds-240w.webp" type="image/webp"/>
-              <source media="(max-width: 329px)" srcset="assets/img/header-clouds-240w.png" />
-              <source media="(min-width: 1644px)" srcset="assets/img/header-clouds-1920w.webp" type="image/webp"/>
-              <source media="(min-width: 1644px)" srcset="assets/img/header-clouds-1920w.png" />
-              <source media="(min-width: 800px)" srcset="assets/img/header-clouds-1440w.webp" type="image/webp"/>
-              <source media="(min-width: 800px)" srcset="assets/img/header-clouds-1440w.png" />
-              <source media="(min-width: 660px)" srcset="assets/img/header-clouds-960w.webp" type="image/webp"/>
-              <source media="(min-width: 660px)" srcset="assets/img/header-clouds-960w.png" />
-              <source media="(min-width: 330px)" srcset="assets/img/header-clouds-480w.webp" type="image/webp"/>
-              <source media="(min-width: 330px)" srcset="assets/img/header-clouds-480w.png" />
+          <img class="header-boat parallax" data-speed="-4" src="assets/img/header-boat-1920w.png" alt="Header Image Boat" width="1920" height="1080" srcset="assets/img/header-boat-240w.png 240w, assets/img/header-boat-480w.png 480w, assets/img/header-boat-960w.png 960w, assets/img/header-boat-1440w.png 1440w, assets/img/header-boat-1920w.png 1920w" sizes="100vw" />
+        </picture>
+        <picture>
+          <source media="(max-width: 329px)" srcset="assets/img/header-hitchcock-240w.webp" type="image/webp" />
+          <source media="(max-width: 329px)" srcset="assets/img/header-hitchcock-240w.png" />
+          <source media="(min-width: 1644px)" srcset="assets/img/header-hitchcock-1920w.webp" type="image/webp" />
+          <source media="(min-width: 1644px)" srcset="assets/img/header-hitchcock-1920w.png" />
+          <source media="(min-width: 800px)" srcset="assets/img/header-hitchcock-1440w.webp" type="image/webp" />
+          <source media="(min-width: 800px)" srcset="assets/img/header-hitchcock-1440w.png" />
+          <source media="(min-width: 660px)" srcset="assets/img/header-hitchcock-960w.webp" type="image/webp" />
+          <source media="(min-width: 660px)" srcset="assets/img/header-hitchcock-960w.png" />
+          <source media="(min-width: 330px)" srcset="assets/img/header-hitchcock-480w.webp" type="image/webp" />
+          <source media="(min-width: 330px)" srcset="assets/img/header-hitchcock-480w.png" />
 
-              <img class="header-cloud parallax"
-              data-speed="-1"
-              src="assets/img/header-clouds-1920w.png"
-              alt="Header Image Clouds"
-              width="1920" height="1080"
+          <img class="header-hitchcock parallax" data-speed="1" src="assets/img/header-hitchcock-1920w.png" alt="Header Image Hitchcock" width="1920" height="1080" srcset="assets/img/header-hitchcock-240w.png 240w, assets/img/header-hitchcock-480w.png 480w, assets/img/header-hitchcock-960w.png 960w, assets/img/header-hitchcock-1440w.png 1440w, assets/img/header-hitchcock-1920w.png 1920w" sizes="100vw" />
+        </picture>
+      </div>
+      <div class="info">
+        <span class="header-subtitle">The dark side that made</span>
+        <h1>Alfred Hitchcock</h1>
+      </div>
+    </div>
 
-              srcset="assets/img/header-clouds-240w.png 240w,
-              assets/img/header-clouds-480w.png 480w,
-              assets/img/header-clouds-960w.png 960w,
-              assets/img/header-clouds-1440w.png 1440w,
-              assets/img/header-clouds-1920w.png 1920w"
-            
-              sizes="100vw"/>                
-            </picture>
-            <picture>
-              <source media="(max-width: 329px)" srcset="assets/img/header-boat-240w.webp" type="image/webp"/>
-              <source media="(max-width: 329px)" srcset="assets/img/header-boat-240w.png" />
-              <source media="(min-width: 1644px)" srcset="assets/img/header-boat-1920w.webp" type="image/webp"/>
-              <source media="(min-width: 1644px)" srcset="assets/img/header-boat-1920w.png" />
-              <source media="(min-width: 800px)" srcset="assets/img/header-boat-1440w.webp" type="image/webp"/>
-              <source media="(min-width: 800px)" srcset="assets/img/header-boat-1440w.png" />
-              <source media="(min-width: 660px)" srcset="assets/img/header-boat-960w.webp" type="image/webp"/>
-              <source media="(min-width: 660px)" srcset="assets/img/header-boat-960w.png" />
-              <source media="(min-width: 330px)" srcset="assets/img/header-boat-480w.webp" type="image/webp"/>
-              <source media="(min-width: 330px)" srcset="assets/img/header-boat-480w.png" />
-
-              <img class="header-boat parallax"
-              data-speed="-4"
-              src="assets/img/header-boat-1920w.png"
-              alt="Header Image Boat"
-              width="1920" height="1080"
-
-              srcset="assets/img/header-boat-240w.png 240w,
-              assets/img/header-boat-480w.png 480w,
-              assets/img/header-boat-960w.png 960w,
-              assets/img/header-boat-1440w.png 1440w,
-              assets/img/header-boat-1920w.png 1920w"
-            
-              sizes="100vw"/>
-            </picture>
-            <picture>
-              <source media="(max-width: 329px)" srcset="assets/img/header-hitchcock-240w.webp" type="image/webp"/>
-              <source media="(max-width: 329px)" srcset="assets/img/header-hitchcock-240w.png" />
-              <source media="(min-width: 1644px)" srcset="assets/img/header-hitchcock-1920w.webp" type="image/webp"/>
-              <source media="(min-width: 1644px)" srcset="assets/img/header-hitchcock-1920w.png" />
-              <source media="(min-width: 800px)" srcset="assets/img/header-hitchcock-1440w.webp" type="image/webp"/>
-              <source media="(min-width: 800px)" srcset="assets/img/header-hitchcock-1440w.png" />
-              <source media="(min-width: 660px)" srcset="assets/img/header-hitchcock-960w.webp" type="image/webp"/>
-              <source media="(min-width: 660px)" srcset="assets/img/header-hitchcock-960w.png" />
-              <source media="(min-width: 330px)" srcset="assets/img/header-hitchcock-480w.webp" type="image/webp"/>
-              <source media="(min-width: 330px)" srcset="assets/img/header-hitchcock-480w.png" />
-
-              <img class="header-hitchcock parallax"
-              data-speed="1"
-              src="assets/img/header-hitchcock-1920w.png"
-              alt="Header Image Hitchcock"
-              width="1920" height="1080"
-
-              srcset="assets/img/header-hitchcock-240w.png 240w,
-              assets/img/header-hitchcock-480w.png 480w,
-              assets/img/header-hitchcock-960w.png 960w,
-              assets/img/header-hitchcock-1440w.png 1440w,
-              assets/img/header-hitchcock-1920w.png 1920w"
-            
-              sizes="100vw"/>
-            </picture>  
-          </div>
-          <div class="info">
-            <span class="header-subtitle">The dark side that made</span>
-            <h1>Alfred Hitchcock</h1>
-          </div>
-        </div>
-
-        <article class="intro content-container light-section" id="intro">
-          <div class="grid">
-            <div>
-                <h2>Who is Alfred?</h2>
-                <p>Sir Alfred Hitchcock was een, <strong class="highlight">van origine Britse</strong>, Amerikaanse filmregisseur wiens spannende films en televisie programma’s onmetelijke populariteit en goede kritieken verwierven tijdens een <strong class="highlight">lange en productieve cariere</strong>. Zijn films zijn onder andere te herkennen aan een macaber gevoel voor humor en een soms wat bleke kijk op de menselijke conditie.
-                </p>
-            </div>
-            <picture>
-              <source media="(max-width: 249px)" srcset="assets/img/Birds-182w.webp" type="image/webp"/>
-              <source media="(max-width: 249px)" srcset="assets/img/Birds-182w.png" />
-              <source media="(min-width: 624px)" srcset="assets/img/Birds-729w.webp" type="image/webp"/>
-              <source media="(min-width: 624px)" srcset="assets/img/Birds-729w.png" />
-              <source media="(min-width: 438px)" srcset="assets/img/Birds-547w.webp" type="image/webp"/>
-              <source media="(min-width: 438px)" srcset="assets/img/Birds-547w.png" />
-              <source media="(min-width: 250px)" srcset="assets/img/Birds-365w.webp" type="image/webp"/>
-              <source media="(min-width: 250px)" srcset="assets/img/Birds-365w.png" />
-
-              <img src="assets/img/Birds-729w.png"
-              alt="Bird silhouettes flying up."
-              width="729" height="580"
-            
-              srcset="assets/img/Birds-729w.png 729w,
-              assets/img/Birds-547w.png 547w,
-              assets/img/Birds-365w.png 365w,
-              assets/img/Birds-182w.png 182w"
-            
-              sizes="(min-width: 100px) 35vw"
-              class="birds"/>
-            </picture>
-          </div>
-        </article>
-
-        <blockquote class="yellow-quote yellow-quote-happiness-mobile">"Happiness is a clear horizon - nothing to worry about on your plate, only things that are creative and not destructive... I think hatred is wasted enegery, and it's all non-productive."</blockquote>
-        
-        <article class="twisted-youth content-container" id="jeugd">
-          <div class="grid">
-          <section class="first-paragraph">
-          <h2>The Twisted Youth</h2>
-          <p>Alfred Joseph Hitchcock werd geboren op 13 Augustus 1899 in Leytonstone een wijk in Londen’s East End. Een plek waar twintig jaar eerder de notoire seriemoordenaar <strong class="highlight">Jack the Ripper</strong> had huisgehouden, en waarover nog steeds uitgebreid werd gepraat in Hitchcock’s jeugd. Alhoewel Hitchcock een broer en een zus had heeft hij zijn jeugd vooral als <strong class="highlight">eenzaam</strong> ervaren. Hij heeft ooit gezegd dat hij zich niet kon herinneren ooit iemand te hebben gehad om mee te spelen.
+    <article class="intro content-container light-section" id="intro">
+      <div class="grid">
+        <div>
+          <h2>Who is Alfred?</h2>
+          <p>Sir Alfred Hitchcock was een, <strong class="highlight">van origine Britse</strong>, Amerikaanse filmregisseur wiens spannende films en televisie programma’s onmetelijke populariteit en goede kritieken verwierven tijdens een <strong class="highlight">lange en productieve cariere</strong>.
+            Zijn films zijn onder andere te herkennen aan een macaber gevoel voor humor en een soms wat bleke kijk op de menselijke conditie.
           </p>
-          </section>
-          <blockquote class="yellow-quote yellow-quote-happiness">"Happiness is a clear horizon - nothing to worry about on your plate, only things that are creative and not destructive... I think hatred is wasted enegery, and it's all non-productive."</blockquote>
-        
-          <section class="father">
-            <h3>The Father</h3>
-            <p>Hitchcock’s vader, William, was kruidenier van beroep, waarmee de familie Hitchcock tot de hoge lagere klasse behoorde in de Victoriaanse maatschappij. Zijn vader was <strong class="highlight">erg strikt</strong> in zijn opvoeding. Er gaat een verhaal de ronde dat zijn vader Alfred ooit naar het locale politiestation stuurde met een briefje waarop stond dat hij zich had misdragen en of hij niet <strong class="highlight">een paar minuten in de cel</strong> door kon brengen. De sergeant die op dat moment dienst had heeft hem daadwerkelijk een paar minuten opgesloten. Dit was lang genoeg voor Hitchcock om een fobie voor kleine ruimtes te ontwikkelen en een angst voor de politie. Beide angsten zouden later ook in zijn films terugkeren.</p> 
-          </section>
-          <section class="mother-image">
-            <h3 class="hide">Hitchcock's Mother</h3>
-            <picture>
-              <source media="(max-width: 239px)" srcset="assets/img/mother-175w.webp" type="image/webp"/>
-              <source media="(max-width: 239px)" srcset="assets/img/mother-175w.png" />
-              <source media="(min-width: 598px)" srcset="assets/img/mother-700w.webp" type="image/webp"/>
-              <source media="(min-width: 598px)" srcset="assets/img/mother-700w.png" />
-              <source media="(min-width: 420px)" srcset="assets/img/mother-525w.webp" type="image/webp"/>
-              <source media="(min-width: 420px)" srcset="assets/img/mother-525w.png" />
-              <source media="(min-width: 240px)" srcset="assets/img/mother-350w.webp" type="image/webp"/>
-              <source media="(min-width: 240px)" srcset="assets/img/mother-350w.png" />
-  
-              <img src="assets/img/mother-700w.png"
-              alt="Hitchcock's mother"
-              class="image-abs slide-in slide-in-right"
-              width="700" height="476"
-          
-              srcset="assets/img/mother-700w.png 700w,
+        </div>
+        <picture>
+          <source media="(max-width: 249px)" srcset="assets/img/Birds-182w.webp" type="image/webp" />
+          <source media="(max-width: 249px)" srcset="assets/img/Birds-182w.png" />
+          <source media="(min-width: 624px)" srcset="assets/img/Birds-729w.webp" type="image/webp" />
+          <source media="(min-width: 624px)" srcset="assets/img/Birds-729w.png" />
+          <source media="(min-width: 438px)" srcset="assets/img/Birds-547w.webp" type="image/webp" />
+          <source media="(min-width: 438px)" srcset="assets/img/Birds-547w.png" />
+          <source media="(min-width: 250px)" srcset="assets/img/Birds-365w.webp" type="image/webp" />
+          <source media="(min-width: 250px)" srcset="assets/img/Birds-365w.png" />
+
+          <img src="assets/img/Birds-729w.png" alt="Bird silhouettes flying up." width="729" height="580" srcset="assets/img/Birds-729w.png 729w, assets/img/Birds-547w.png 547w, assets/img/Birds-365w.png 365w, assets/img/Birds-182w.png 182w" sizes="(min-width: 100px) 35vw" class="birds" />
+        </picture>
+      </div>
+    </article>
+
+    <blockquote class="yellow-quote yellow-quote-happiness-mobile">"Happiness is a clear horizon - nothing to worry about on your plate, only things that are creative and not destructive... I think hatred is wasted enegery, and it's all non-productive."</blockquote>
+
+    <article class="twisted-youth content-container dark-section" id="jeugd">
+      <div class="grid">
+        <div class="first-paragraph">
+          <h2>The Twisted Youth</h2>
+          <p>Alfred Joseph Hitchcock werd geboren op 13 Augustus 1899 in Leytonstone een wijk in Londen’s East End. Een plek waar twintig jaar eerder de notoire seriemoordenaar <strong class="highlight">Jack the Ripper</strong> had huisgehouden, en waarover
+            nog steeds uitgebreid werd gepraat in Hitchcock’s jeugd. Alhoewel Hitchcock een broer en een zus had heeft hij zijn jeugd vooral als <strong class="highlight">eenzaam</strong> ervaren. Hij heeft ooit gezegd dat hij zich niet kon herinneren
+            ooit iemand te hebben gehad om mee te spelen.
+          </p>
+        </div>
+        <blockquote class="yellow-quote yellow-quote-happiness">"Happiness is a clear horizon - nothing to worry about on your plate, only things that are creative and not destructive... I think hatred is wasted enegery, and it's all non-productive."</blockquote>
+
+        <section class="father">
+          <h3>The Father</h3>
+          <p>Hitchcock’s vader, William, was kruidenier van beroep, waarmee de familie Hitchcock tot de hoge lagere klasse behoorde in de Victoriaanse maatschappij. Zijn vader was <strong class="highlight">erg strikt</strong> in zijn opvoeding. Er gaat een
+            verhaal de ronde dat zijn vader Alfred ooit naar het locale politiestation stuurde met een briefje waarop stond dat hij zich had misdragen en of hij niet <strong class="highlight">een paar minuten in de cel</strong> door kon brengen. De sergeant
+            die op dat moment dienst had heeft hem daadwerkelijk een paar minuten opgesloten. Dit was lang genoeg voor Hitchcock om een fobie voor kleine ruimtes te ontwikkelen en een angst voor de politie. Beide angsten zouden later ook in zijn films
+            terugkeren.</p>
+        </section>
+        <section class="mother-image">
+          <h3 class="hide">Hitchcock's Mother</h3>
+          <picture>
+            <source media="(max-width: 239px)" srcset="assets/img/mother-175w.webp" type="image/webp" />
+            <source media="(max-width: 239px)" srcset="assets/img/mother-175w.png" />
+            <source media="(min-width: 598px)" srcset="assets/img/mother-700w.webp" type="image/webp" />
+            <source media="(min-width: 598px)" srcset="assets/img/mother-700w.png" />
+            <source media="(min-width: 420px)" srcset="assets/img/mother-525w.webp" type="image/webp" />
+            <source media="(min-width: 420px)" srcset="assets/img/mother-525w.png" />
+            <source media="(min-width: 240px)" srcset="assets/img/mother-350w.webp" type="image/webp" />
+            <source media="(min-width: 240px)" srcset="assets/img/mother-350w.png" />
+
+            <img src="assets/img/mother-700w.png" alt="Hitchcock's mother" class="image-abs slide-in slide-in-right" width="700" height="476" srcset="assets/img/mother-700w.png 700w,
               assets/img/mother-525w.png 525w,
               assets/img/mother-350w.png 350w,
-              assets/img/mother-175w.png 175w"
-
-              sizes="(min-width: 100px) 100vw"/>
-            </picture>
-          </section>
-          <section class="mother">
-            <div class="left-border">
+              assets/img/mother-175w.png 175w" sizes="(min-width: 100px) 100vw" />
+          </picture>
+        </section>
+        <section class="mother">
+          <div class="left-border">
             <h3>The Mother</h3>
-            <p>Naast een strenge vader had Alfred over beschermende moeder, die hem vertroetelde en eten gebruikte als troost waaraan Hitchcock zijn bekende dikke buik aan over heeft gehouden. Zijn moeder kampte met <strong class="highlight">psychotische problemen</strong>, en toen hij op veertienjarige leeftijd zijn vader verloor was hij op haar aangewezen. Uiteindelijk kon zijn moeder de zorg voor haar kinderen niet goed meer aan en was Hitchcock meer en meer aangewezen op de <strong class="highlight">katholieke kostschool</strong> waar hij een zeer orthodoxe opleiding kreeg.
+            <p>Naast een strenge vader had Alfred over beschermende moeder, die hem vertroetelde en eten gebruikte als troost waaraan Hitchcock zijn bekende dikke buik aan over heeft gehouden. Zijn moeder kampte met <strong class="highlight">psychotische problemen</strong>,
+              en toen hij op veertienjarige leeftijd zijn vader verloor was hij op haar aangewezen. Uiteindelijk kon zijn moeder de zorg voor haar kinderen niet goed meer aan en was Hitchcock meer en meer aangewezen op de <strong class="highlight">katholieke kostschool</strong>              waar hij een zeer orthodoxe opleiding kreeg.
             </p>
           </div>
-         </section>
-          <section class="more-mother">
-            <h3 class="hide">More</h3>
-            <p>De priesters die hier lesgaven gebruikten harde rubberen stokken die ze gebruikten om de jongens te straffen als ze ongehoorzaam waren geweest. Ze deden dit altijd aan het einde van de dag, waardoor je vanaf het moment dat je opgeschreven was als ongehoorzaam rustig de rest van je lessen uit moest zitten, wachtend op de straf waarvan je wist dat die ging komen. Alfred vertelde dat hij hier zijn <strong class="highlight">gevoel voor angst ontwikkeld</strong> heeft. Ook uit deze periode komen veel zaken terug in zijn films. Zo is de katholieke kerk vaak een locatie waar nare dingen gebeuren, en komt het psychotische personage van zijn moeder ook aan bod.</p>
-            <p>Toch ontwikkelde Hitchcock in deze nare periode zijn <strong class="highlight">liefde voor de fotografie</strong>. Deze voorliefde deed hem op zijn 21ste besluiten om naar Duitsland te vertrekken, waar hij een baan vond als fotograaf van tussentitels voor stomme films. Later werkte hij als assistent-regisseur mee aan een aantal Duitse films.
-            </p>
-          </section>
+        </section>
+        <section class="more-mother">
+          <h3 class="hide">More</h3>
+          <p>De priesters die hier lesgaven gebruikten harde rubberen stokken die ze gebruikten om de jongens te straffen als ze ongehoorzaam waren geweest. Ze deden dit altijd aan het einde van de dag, waardoor je vanaf het moment dat je opgeschreven was
+            als ongehoorzaam rustig de rest van je lessen uit moest zitten, wachtend op de straf waarvan je wist dat die ging komen. Alfred vertelde dat hij hier zijn <strong class="highlight">gevoel voor angst ontwikkeld</strong> heeft. Ook uit deze
+            periode komen veel zaken terug in zijn films. Zo is de katholieke kerk vaak een locatie waar nare dingen gebeuren, en komt het psychotische personage van zijn moeder ook aan bod.</p>
+          <p>Toch ontwikkelde Hitchcock in deze nare periode zijn <strong class="highlight">liefde voor de fotografie</strong>. Deze voorliefde deed hem op zijn 21ste besluiten om naar Duitsland te vertrekken, waar hij een baan vond als fotograaf van tussentitels
+            voor stomme films. Later werkte hij als assistent-regisseur mee aan een aantal Duitse films.
+          </p>
+        </section>
 
-        </div>
-        </article>
+      </div>
+    </article>
 
-        <article class="obsession content-container light-section" id="obsessie">
-          <div class="grid">
-            <section class="obsession-title">
-              <h2 class="obsession-title">How obsession followed</h2>
-            </section>
-            <div class="splitup-image">
-              <picture>
-                <source media="(max-width: 238px)" srcset="assets/img/splitup-back-174w.webp" type="image/webp"/>
-                <source media="(max-width: 238px)" srcset="assets/img/splitup-back-174w.png" />
-                <source media="(min-width: 596px)" srcset="assets/img/splitup-back-697w.webp" type="image/webp"/>
-                <source media="(min-width: 596px)" srcset="assets/img/splitup-back-697w.png" />
-                <source media="(min-width: 419px)" srcset="assets/img/splitup-back-523w.webp" type="image/webp"/>
-                <source media="(min-width: 419px)" srcset="assets/img/splitup-back-523w.png" />
-                <source media="(min-width: 239px)" srcset="assets/img/splitup-back-349w.webp" type="image/webp"/>
-                <source media="(min-width: 239px)" srcset="assets/img/splitup-back-349w.png" />
-    
-                <img src="assets/img/splitup-back-697w.png"
-                alt="Hitchcock's obsession with Ingrid Bergman"
-                class="image-abs-left"
-                width="697" height="452"
-                
-                srcset="assets/img/splitup-back-697w.png 697w,
+    <article class="obsession content-container light-section" id="obsessie">
+      <div class="grid">
+          <h2 class="obsession-title">How obsession followed</h2>
+        <div class="splitup-image">
+          <picture>
+            <source media="(max-width: 238px)" srcset="assets/img/splitup-back-174w.webp" type="image/webp" />
+            <source media="(max-width: 238px)" srcset="assets/img/splitup-back-174w.png" />
+            <source media="(min-width: 596px)" srcset="assets/img/splitup-back-697w.webp" type="image/webp" />
+            <source media="(min-width: 596px)" srcset="assets/img/splitup-back-697w.png" />
+            <source media="(min-width: 419px)" srcset="assets/img/splitup-back-523w.webp" type="image/webp" />
+            <source media="(min-width: 419px)" srcset="assets/img/splitup-back-523w.png" />
+            <source media="(min-width: 239px)" srcset="assets/img/splitup-back-349w.webp" type="image/webp" />
+            <source media="(min-width: 239px)" srcset="assets/img/splitup-back-349w.png" />
+
+            <img src="assets/img/splitup-back-697w.png" alt="Hitchcock's obsession with Ingrid Bergman" class="image-abs-left" width="697" height="452" srcset="assets/img/splitup-back-697w.png 697w,
                 assets/img/splitup-back-523w.png 523w,
                 assets/img/splitup-back-349w.png 349w,
-                assets/img/splitup-back-174w.png 174w"
-                
-                sizes="(min-width: 100px) 45vw"/>
-              </picture>
-              <picture>
-                <source media="(max-width: 238px)" srcset="assets/img/splitup-front-174w.webp" type="image/webp"/>
-                <source media="(max-width: 238px)" srcset="assets/img/splitup-front-174w.png" />
-                <source media="(min-width: 596px)" srcset="assets/img/splitup-front-697w.webp" type="image/webp"/>
-                <source media="(min-width: 596px)" srcset="assets/img/splitup-front-697w.png" />
-                <source media="(min-width: 419px)" srcset="assets/img/splitup-front-523w.webp" type="image/webp"/>
-                <source media="(min-width: 419px)" srcset="assets/img/splitup-front-523w.png" />
-                <source media="(min-width: 239px)" srcset="assets/img/splitup-front-349w.webp" type="image/webp"/>
-                <source media="(min-width: 239px)" srcset="assets/img/splitup-front-349w.png" />
-    
-                <img src="assets/img/splitup-front-697w.png"
-                alt="Hitchcock's obsession with Ingrid Bergman"
-                class="image-abs-left parallax-obsession"
-                data-speed="-1"
-                width="697" height="452"
-                
-                srcset="assets/img/splitup-front-697w.png 697w,
+                assets/img/splitup-back-174w.png 174w" sizes="(min-width: 100px) 45vw" />
+          </picture>
+          <picture>
+            <source media="(max-width: 238px)" srcset="assets/img/splitup-front-174w.webp" type="image/webp" />
+            <source media="(max-width: 238px)" srcset="assets/img/splitup-front-174w.png" />
+            <source media="(min-width: 596px)" srcset="assets/img/splitup-front-697w.webp" type="image/webp" />
+            <source media="(min-width: 596px)" srcset="assets/img/splitup-front-697w.png" />
+            <source media="(min-width: 419px)" srcset="assets/img/splitup-front-523w.webp" type="image/webp" />
+            <source media="(min-width: 419px)" srcset="assets/img/splitup-front-523w.png" />
+            <source media="(min-width: 239px)" srcset="assets/img/splitup-front-349w.webp" type="image/webp" />
+            <source media="(min-width: 239px)" srcset="assets/img/splitup-front-349w.png" />
+
+            <img src="assets/img/splitup-front-697w.png" alt="Hitchcock's obsession with Ingrid Bergman" class="image-abs-left parallax-obsession" data-speed="-1" width="697" height="452" srcset="assets/img/splitup-front-697w.png 697w,
                 assets/img/splitup-front-523w.png 523w,
                 assets/img/splitup-front-349w.png 349w,
-                assets/img/splitup-front-174w.png 174w"
-                
-                sizes="(min-width: 100px) 45vw"/>
-              </picture>
-            </div>
-            <section class="return">
-              <h3 class="hide">Return</h3>
-              <p>Op zijn 26ste keerde hij terug naar Engeland, waar hij bij toeval (de beoogde regisseur was ziek, en Hitchcock was de enige met de nodige ervaring om voor hem in te vallen) de regie kreeg over de film The Pleasure Garden. The Pleasure Garden was een romantische komedie, die in niets leek op de films waarmee Hitchcock beroemd zou worden; de Thriller.</p>
-              <h3>Hitch in Hollywood</h3>
-              <p>Ook in Hollywood was Hitchcock zeer succesvol met onder andere films als Rebecca (1940) en Dial M for Murder (1954). Toch was Hitchcock zelf minder tevreden, omdat de regisseur in Hollywood niet dezelfde <strong class="highlight">artistieke vrijheid</strong> genoot als in Engeland.</p>
-            </section>
-            <section class="obsession-column-right">
-              <h3>A Perfectionist</h3>
-              <p>Hitchcock zag een film vooraf al helemaal in zijn hoofd. Hij schoot ook nooit een scene volledig vanuit een point of view. Hij gaf ook altijd in de opnames aan waar er moest worden geknipt door met zijn hand voor de camera te zwaaien. Eigenlijk filmde Hitchcock korte stukjes op zo’n manier dat je de film nog <strong class="highlight">maar op een manier</strong> aan elkaar kon editen.
-              <blockquote class="yellow-quote yellow-quote-tipi inline-quote"><p>"Hitchcock had a very strange mind."</p><p class="author">- Tipi Hedren</p> </blockquote>
-              <h3>Leading Ladies</h3>
-              <p>Vanaf de jaren vijftig ging Hitchcock meer de duistere kant van de menselijke psyche verkennen. Vaak ging dit gepaard met sluimerende seksuele spanning. Het is inmiddels al geen publiek geheim meer dat de <strong class="highlight">‘Hitckcock-blondes’</strong> projecties waren van de ideale begerenswaardige vrouw in de ogen van Hitchcock. Deze ideale vrouw was ongenaakbaar en ijzig en onbereikbaar voor de seksueel gefrustreerde leading man.</p>
-              <p class="left-border">Vanaf het moment dat hij samenwerkte met <strong class="highlight">Ingrid Bergman</strong> is Hitchcock zelf ook altijd geobsedeerd geweest door zijn, over het algemeen blonde, leading ladies. Daarnaast hield hij ervan dat hij mooie vrouwen kon commanderen. Hij heeft toegegeven dat in de film Notorious (1946) er, in de scenes waar Carrie Grant en Ingrid Bergman samen te zien zijn, eigenlijk <strong class="highlight">drie personages</strong> in de scene aanwezig zijn: Grant, Bergman, en Hitchcock die toekijkt vanuit het perspectief van de camera. Grant fungeerde in deze film als een soor surrogaat voor de man die Hitchcock zou willen zijn.</p>
-            </section>
-            <section class="obsession-quote">
-              <h3 class="hide">Too Obsessed?</h3>
-              <blockquote class="focus-quote">
-                In Vertigo zien we hoe die obsessie uit de hand kan lopen. Een obsessie die zo ver gaat dat zelfs de dood niet in de weg kan staan.
-              </blockquote>
-            </section>
-            <blockquote class="yellow-quote yellow-quote-tipi-2 inline-quote"><p>"Hitchcock had a very strange mind."</p><p class="author">- Tipi Hedren</p> </blockquote>
-          </div>
-        </article>
-
-        <div id="react-component-1">
-            <div class="kill-character-noscript">
-                <h2>How to kill a character</h2>
-                <div class="kill">
-                  <div class="kill-flex">
-                  <img src=assets/img/kill-1-smaller.png alt=""/>
-                  <div class="kill-info">
-                  <h3>The Gun</h3>
-                  <p>Wist je dat uit alle Hitchcock films, 33 personen werden doodgeschoten?</p>
-                  </div>
-                  </div>
-                </div>
-                <div class="kill">
-                  <div class="kill-flex">
-                  <img src=assets/img/kill-2-smaller.png alt=""/>
-                  <div class="kill-info">
-                  <h3>The Fall</h3>
-                  <p>Wist je dat uit alle Hitchcock films, 10 personen door hoogte stierven?</p>
-                  </div>
-                  </div>
-                </div>
-                <div class="kill">
-                  <div class="kill-flex">
-                  <img src=assets/img/kill-3-smaller.png alt=""/>
-                  <div class="kill-info">
-                  <h3>The Strangled</h3>
-                  <p>Wist je dat uit alle Hitchcock films, 9 personen werden gewurgd?</p>
-                  </div>
-                  </div>
-                </div>
-                <div class="kill">
-                  <div class="kill-flex">
-                  <img src=assets/img/kill-4-smaller.png alt=""/>
-                  <div class="kill-info">
-                  <h3>The Stabbed</h3>
-                  <p>Wist je dat uit alle Hitchcock films, 8 personen werden doorgestoken?</p>
-                  </div>
-                  </div>
-                </div>
-                <div class="kill">
-                  <div class="kill-flex">
-                  <img src=assets/img/kill-5-smaller.png alt=""/>
-                  <div class="kill-info">
-                  <h3>The Suicide</h3>
-                  <p>Wist je dat uit alle Hitchcock films, 8 personen zelfmoord pleegden?</p>
-                  </div>
-                  </div>
-                </div>
-                <div class="kill">
-                  <div class="kill-flex">
-                  <img src=assets/img/kill-6-smaller.png alt=""/>
-                  <div class="kill-info">
-                  <h3>The Drowned</h3>
-                  <p>Wist je dat uit alle Hitchcock films, 5 personen zijn verdronken?</p>
-                  </div>
-                  </div>
-                </div>
-                <div class="kill">
-                  <div class="kill-flex">
-                  <img src=assets/img/kill-7-smaller.png alt=""/>
-                  <div class="kill-info">
-                  <h3>The Birds</h3>
-                  <p>Wist je dat uit alle Hitchcock films, 2 personen stierven door aanvallende vogels?</p>
-                  </div>
-                  </div>
-                </div>
-            </div>
+                assets/img/splitup-front-174w.png 174w" sizes="(min-width: 100px) 45vw" />
+          </picture>
         </div>
-
-        <article class="fears content-container fears-grid light-section" id="angsten">
-          <h2 class="fears-title">The fears that followed him</h2>
-          <picture class="police-img">
-            <source media="(min-width: 1100px)" srcset="assets/img/police.webp" type="image/webp"/>
-            <source media="(min-width: 1100px)" srcset="assets/img/police.png" />
-            <source media="(min-width: 600px)" srcset="assets/img/police2.webp" type="image/webp"/>
-            <source media="(min-width: 600px)" srcset="assets/img/police2.png" />
-            
-            <img class="wriggle police-img-fallback" src="assets/img/police2.png" alt="Angst voor de Politie."  />
-            <!-- width="214" height="261" -->
-          </picture>
-          <picture class="fears-img">
-            <source media="(min-width: 1100px)" srcset="assets/img/fears.webp" type="image/webp"/>
-            <source media="(min-width: 1100px)" srcset="assets/img/fears.png" />
-            <source media="(min-width: 600px)" srcset="assets/img/fears2.webp" type="image/webp"/>
-            <source media="(min-width: 600px)" srcset="assets/img/fears2.png" />
-            
-            <img class="wriggle fears-img-fallback" src="assets/img/fears2.png" alt="Angst succes en angst om te falen." />
-            <!-- width="214" height="243" -->
-          </picture>
-          <picture class="eggs-img">
-            <source media="(min-width: 1100px)" srcset="assets/img/eggs.webp" type="image/webp"/>
-            <source media="(min-width: 1100px)" srcset="assets/img/eggs.png" />
-            <source media="(min-width: 600px)" srcset="assets/img/eggs2.webp" type="image/webp"/>
-            <source media="(min-width: 600px)" srcset="assets/img/eggs2.png" />
-
-            <source media="(max-width: 700px)" type="image/webp" srcset="assets/img/eggs2.webp" />
-            <img class="wriggle eggs-img-fallback" src="assets/img/eggs2.png" alt="Angst voor eieren." />
-            <!-- width="190" height="265" -->
-          </picture>
-          <div class="fears-top-column">
-            <p>Hitchcock was een man van angst. Hij had veel angsten, sommigen waren een logisch gevolg van zijn jeugd, anderen waren, vreemd of heel ironisch.</p>
-            <section>
-              <h3 class="fear-subtitle eggs">Eggs</h3>
-              <p>Zo had hij een angst voor eieren. Hij had een gedetailleerde beschrijving van eieren en waarom hij er bang voor was en ze niet at. Hij vind <strong class="highlight">bloed minder eng</strong> dan eidooiers, voornamelijk door de kleur. Intens rood lijkt hem minder te doen dan geel. Het breken van een ei en het morsen van het eiwit en het eigeel. Zijn brein lijkt in een rare knobbel te liggen, de manier waarop hij kleuren <strong class="highlight">linkt met emoties</strong> is heel bizar omdat ze niet overeenkomen met hoe de meeste mensen kleuren zien. </p>
-            </section>
-          </div>
-          <blockquote class="focus-quote fears-quote">
-            “I’m frightened of eggs, worse than frightened, they revolt me. That white round thing without any holes … have you ever seen anything more revolting than an egg yolk breaking and spilling its yellow liquid? Blood is jolly, red. But egg yolk is yellow, revolting. I’ve never tasted it.”
+        <section class="return">
+          <h3 class="hide">Return</h3>
+          <p>Op zijn 26ste keerde hij terug naar Engeland, waar hij bij toeval (de beoogde regisseur was ziek, en Hitchcock was de enige met de nodige ervaring om voor hem in te vallen) de regie kreeg over de film The Pleasure Garden. The Pleasure Garden
+            was een romantische komedie, die in niets leek op de films waarmee Hitchcock beroemd zou worden; de Thriller.</p>
+          <h3>Hitch in Hollywood</h3>
+          <p>Ook in Hollywood was Hitchcock zeer succesvol met onder andere films als Rebecca (1940) en Dial M for Murder (1954). Toch was Hitchcock zelf minder tevreden, omdat de regisseur in Hollywood niet dezelfde <strong class="highlight">artistieke vrijheid</strong>            genoot als in Engeland.</p>
+        </section>
+        <section class="obsession-column-right">
+          <h3>A Perfectionist</h3>
+          <p>Hitchcock zag een film vooraf al helemaal in zijn hoofd. Hij schoot ook nooit een scene volledig vanuit een point of view. Hij gaf ook altijd in de opnames aan waar er moest worden geknipt door met zijn hand voor de camera te zwaaien. Eigenlijk
+            filmde Hitchcock korte stukjes op zo’n manier dat je de film nog <strong class="highlight">maar op een manier</strong> aan elkaar kon editen.
+            <blockquote class="yellow-quote yellow-quote-tipi inline-quote">
+              <p>"Hitchcock had a very strange mind."</p>
+              <p class="author">- Tipi Hedren</p>
+            </blockquote>
+            <h3>Leading Ladies</h3>
+            <p>Vanaf de jaren vijftig ging Hitchcock meer de duistere kant van de menselijke psyche verkennen. Vaak ging dit gepaard met sluimerende seksuele spanning. Het is inmiddels al geen publiek geheim meer dat de <strong class="highlight">‘Hitckcock-blondes’</strong>              projecties waren van de ideale begerenswaardige vrouw in de ogen van Hitchcock. Deze ideale vrouw was ongenaakbaar en ijzig en onbereikbaar voor de seksueel gefrustreerde leading man.</p>
+            <p class="left-border">Vanaf het moment dat hij samenwerkte met <strong class="highlight">Ingrid Bergman</strong> is Hitchcock zelf ook altijd geobsedeerd geweest door zijn, over het algemeen blonde, leading ladies. Daarnaast hield hij ervan dat hij mooie vrouwen
+              kon commanderen. Hij heeft toegegeven dat in de film Notorious (1946) er, in de scenes waar Carrie Grant en Ingrid Bergman samen te zien zijn, eigenlijk <strong class="highlight">drie personages</strong> in de scene aanwezig zijn: Grant,
+              Bergman, en Hitchcock die toekijkt vanuit het perspectief van de camera. Grant fungeerde in deze film als een soor surrogaat voor de man die Hitchcock zou willen zijn.</p>
+        </section>
+        <section class="obsession-quote">
+          <h3 class="hide">Too Obsessed?</h3>
+          <blockquote class="focus-quote">
+            In Vertigo zien we hoe die obsessie uit de hand kan lopen. Een obsessie die zo ver gaat dat zelfs de dood niet in de weg kan staan.
           </blockquote>
-          <div class="fears-bottom-column">
-            <section class="left-border">
-              <h3 class="fear-subtitle police">The Police</h3>
-              <p>De angst voor politie en <strong class="highlight">autoritaire figuren</strong> was er één waar veel over te vinden was. Dit was dan ook het rechtstreeks gevolg van zijn vader, die hem naar het politiekantoor stuurde met een briefje toen hij amper 5 jaar oud was. Een politieagent las het briefje en stak hem in de cel voor een paar minuten en zei “dit is wat we doen met stoute jongens”. De ervaring was traumatisch en bleef hem zijn hele leven mee. Zo reed hij heel lang niet met een auto omdat hij bang was een <strong class="highlight">parkeerboete</strong> te krijgen. </p>
-            </section>
+        </section>
+        <blockquote class="yellow-quote yellow-quote-tipi-2 inline-quote">
+          <p>"Hitchcock had a very strange mind."</p>
+          <p class="author">- Tipi Hedren</p>
+        </blockquote>
+      </div>
+    </article>
+
+    <div id="react-component-1" class="dark-section">
+      <div class="kill-character-noscript">
+        <h2>How to kill a character</h2>
+        <div class="kill">
+          <div class="kill-flex">
+            <img src=assets/img/kill-1-smaller.png alt="" />
+            <div class="kill-info">
+              <h3>The Gun</h3>
+              <p>Wist je dat uit alle Hitchcock films, 33 personen werden doodgeschoten?</p>
+            </div>
           </div>
-          <!-- class="yellow-quote right" -->
-            
-            <section class="fear-extremes">
-              <h3 class="fear-subtitle extremes">Fear of the Extremes</h3>
-              <p>En ‘oh, the irony…’, hij had <strong class="highlight">faalangst</strong>. Maar niet alleen faalangst, hij had ook aan <strong class="highlight">angst voor succes</strong>. Hoe ironisch en tegenstrijdig dit klinkt, beide kanten voelden slecht aan in Hitchcock’s hoofd. Verder had hij zowel last van <strong class="highlight">pleinvrees</strong> als van <strong class="highlight">claustrophobie</strong>. Enkel de middelmaat kon Hitchcock gelukkig maken. </p>
-              <blockquote class="yellow-quote yellow-quote-fear">
-                “Fear isn't so difficult to understand. After all, weren't we all frightened as children? Nothing has changed since Little Red Riding Hood faced the big bad wolf. What frightens us today is exactly the same sort of thing that frightened us yesterday. It's just a different wolf. This fright complex is rooted in every individual.” 
-              </blockquote>
+        </div>
+        <div class="kill">
+          <div class="kill-flex">
+            <img src=assets/img/kill-2-smaller.png alt="" />
+            <div class="kill-info">
+              <h3>The Fall</h3>
+              <p>Wist je dat uit alle Hitchcock films, 10 personen door hoogte stierven?</p>
+            </div>
+          </div>
+        </div>
+        <div class="kill">
+          <div class="kill-flex">
+            <img src=assets/img/kill-3-smaller.png alt="" />
+            <div class="kill-info">
+              <h3>The Strangled</h3>
+              <p>Wist je dat uit alle Hitchcock films, 9 personen werden gewurgd?</p>
+            </div>
+          </div>
+        </div>
+        <div class="kill">
+          <div class="kill-flex">
+            <img src=assets/img/kill-4-smaller.png alt="" />
+            <div class="kill-info">
+              <h3>The Stabbed</h3>
+              <p>Wist je dat uit alle Hitchcock films, 8 personen werden doorgestoken?</p>
+            </div>
+          </div>
+        </div>
+        <div class="kill">
+          <div class="kill-flex">
+            <img src=assets/img/kill-5-smaller.png alt="" />
+            <div class="kill-info">
+              <h3>The Suicide</h3>
+              <p>Wist je dat uit alle Hitchcock films, 8 personen zelfmoord pleegden?</p>
+            </div>
+          </div>
+        </div>
+        <div class="kill">
+          <div class="kill-flex">
+            <img src=assets/img/kill-6-smaller.png alt="" />
+            <div class="kill-info">
+              <h3>The Drowned</h3>
+              <p>Wist je dat uit alle Hitchcock films, 5 personen zijn verdronken?</p>
+            </div>
+          </div>
+        </div>
+        <div class="kill">
+          <div class="kill-flex">
+            <img src=assets/img/kill-7-smaller.png alt="" />
+            <div class="kill-info">
+              <h3>The Birds</h3>
+              <p>Wist je dat uit alle Hitchcock films, 2 personen stierven door aanvallende vogels?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-              <p>Naast deze ironische, vreemde en ook wel logische angsten, kreeg hij later ook een <strong class="highlight">angst voor het kijken van zijn eigen films</strong>. Hij snapte niet hoe mensen zijn films konden bekijken, want zelf wilde hij dat niet. Ook was hij bang om omver gereden te worden door een auto en om ziek te worden. </p>
-            </section>
-            <blockquote class="yellow-quote yellow-quote-fear-mobile inline-quote">
-              “Fear isn't so difficult to understand. After all, weren't we all frightened as children? Nothing has changed since Little Red Riding Hood faced the big bad wolf. What frightens us today is exactly the same sort of thing that frightened us yesterday. It's just a different wolf. This fright complex is rooted in every individual.” 
-            </blockquote>
-          
-        </article>
+    <article class="fears content-container fears-grid light-section" id="angsten">
+      <h2 class="fears-title">The fears that followed him</h2>
+      <picture class="police-img">
+        <source media="(min-width: 1100px)" srcset="assets/img/police.webp" type="image/webp" />
+        <source media="(min-width: 1100px)" srcset="assets/img/police.png" />
+        <source media="(min-width: 600px)" srcset="assets/img/police2.webp" type="image/webp" />
+        <source media="(min-width: 600px)" srcset="assets/img/police2.png" />
 
-        <article class="humor content-container" id="humor">
-          <header class="humor-header">
-            <h2>The humor that came with it</h2>
-            <blockquote class="focus-quote subtitle-quote">
-              "I have a perfect cure for a sore throat: cut it."
-            </blockquote>
-          </header>
-          <div class="grid">
-            <div class="video-container">
-                <!-- width="700" height="380" -->
-              <video class="videoplayer">
+        <img class="wriggle police-img-fallback" src="assets/img/police2.png" alt="Angst voor de Politie." />
+        <!-- width="214" height="261" -->
+      </picture>
+      <picture class="fears-img">
+        <source media="(min-width: 1100px)" srcset="assets/img/fears.webp" type="image/webp" />
+        <source media="(min-width: 1100px)" srcset="assets/img/fears.png" />
+        <source media="(min-width: 600px)" srcset="assets/img/fears2.webp" type="image/webp" />
+        <source media="(min-width: 600px)" srcset="assets/img/fears2.png" />
+
+        <img class="wriggle fears-img-fallback" src="assets/img/fears2.png" alt="Angst succes en angst om te falen." />
+        <!-- width="214" height="243" -->
+      </picture>
+      <picture class="eggs-img">
+        <source media="(min-width: 1100px)" srcset="assets/img/eggs.webp" type="image/webp" />
+        <source media="(min-width: 1100px)" srcset="assets/img/eggs.png" />
+        <source media="(min-width: 600px)" srcset="assets/img/eggs2.webp" type="image/webp" />
+        <source media="(min-width: 600px)" srcset="assets/img/eggs2.png" />
+
+        <source media="(max-width: 700px)" type="image/webp" srcset="assets/img/eggs2.webp" />
+        <img class="wriggle eggs-img-fallback" src="assets/img/eggs2.png" alt="Angst voor eieren." />
+        <!-- width="190" height="265" -->
+      </picture>
+      <div class="fears-top-column">
+        <p>Hitchcock was een man van angst. Hij had veel angsten, sommigen waren een logisch gevolg van zijn jeugd, anderen waren, vreemd of heel ironisch.</p>
+        <section>
+          <h3 class="fear-subtitle eggs">Eggs</h3>
+          <p>Zo had hij een angst voor eieren. Hij had een gedetailleerde beschrijving van eieren en waarom hij er bang voor was en ze niet at. Hij vind <strong class="highlight">bloed minder eng</strong> dan eidooiers, voornamelijk door de kleur. Intens
+            rood lijkt hem minder te doen dan geel. Het breken van een ei en het morsen van het eiwit en het eigeel. Zijn brein lijkt in een rare knobbel te liggen, de manier waarop hij kleuren <strong class="highlight">linkt met emoties</strong> is heel
+            bizar omdat ze niet overeenkomen met hoe de meeste mensen kleuren zien. </p>
+        </section>
+      </div>
+      <blockquote class="focus-quote fears-quote">
+        “I’m frightened of eggs, worse than frightened, they revolt me. That white round thing without any holes … have you ever seen anything more revolting than an egg yolk breaking and spilling its yellow liquid? Blood is jolly, red. But egg yolk is yellow,
+        revolting. I’ve never tasted it.”
+      </blockquote>
+      <div class="fears-bottom-column">
+        <section class="left-border">
+          <h3 class="fear-subtitle police">The Police</h3>
+          <p>De angst voor politie en <strong class="highlight">autoritaire figuren</strong> was er één waar veel over te vinden was. Dit was dan ook het rechtstreeks gevolg van zijn vader, die hem naar het politiekantoor stuurde met een briefje toen hij
+            amper 5 jaar oud was. Een politieagent las het briefje en stak hem in de cel voor een paar minuten en zei “dit is wat we doen met stoute jongens”. De ervaring was traumatisch en bleef hem zijn hele leven mee. Zo reed hij heel lang niet met
+            een auto omdat hij bang was een <strong class="highlight">parkeerboete</strong> te krijgen. </p>
+        </section>
+      </div>
+      <!-- class="yellow-quote right" -->
+      <section class="fear-extremes">
+        <h3 class="fear-subtitle extremes">Fear of the Extremes</h3>
+        <p>En ‘oh, the irony…’, hij had <strong class="highlight">faalangst</strong>. Maar niet alleen faalangst, hij had ook aan <strong class="highlight">angst voor succes</strong>. Hoe ironisch en tegenstrijdig dit klinkt, beide kanten voelden slecht
+          aan in Hitchcock’s hoofd. Verder had hij zowel last van <strong class="highlight">pleinvrees</strong> als van <strong class="highlight">claustrophobie</strong>. Enkel de middelmaat kon Hitchcock gelukkig maken. </p>
+        <blockquote class="yellow-quote yellow-quote-fear">
+          “Fear isn't so difficult to understand. After all, weren't we all frightened as children? Nothing has changed since Little Red Riding Hood faced the big bad wolf. What frightens us today is exactly the same sort of thing that frightened us yesterday.
+          It's just a different wolf. This fright complex is rooted in every individual.”
+        </blockquote>
+
+        <p>Naast deze ironische, vreemde en ook wel logische angsten, kreeg hij later ook een <strong class="highlight">angst voor het kijken van zijn eigen films</strong>. Hij snapte niet hoe mensen zijn films konden bekijken, want zelf wilde hij dat niet.
+          Ook was hij bang om omver gereden te worden door een auto en om ziek te worden. </p>
+      </section>
+      <blockquote class="yellow-quote yellow-quote-fear-mobile inline-quote">
+        “Fear isn't so difficult to understand. After all, weren't we all frightened as children? Nothing has changed since Little Red Riding Hood faced the big bad wolf. What frightens us today is exactly the same sort of thing that frightened us yesterday.
+        It's just a different wolf. This fright complex is rooted in every individual.”
+      </blockquote>
+
+    </article>
+
+    <article class="humor content-container dark-section" id="humor">
+      <header class="humor-header">
+        <h2>The humor that came with it</h2>
+        <blockquote class="focus-quote subtitle-quote">
+          "I have a perfect cure for a sore throat: cut it."
+        </blockquote>
+      </header>
+      <div class="grid">
+        <div class="video-container">
+          <!-- width="700" height="380" -->
+          <video class="videoplayer">
                 <source src="assets/video/video.mp4" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
-              <button type="button" class="playbutton"><!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In  -->
+          <button type="button" class="playbutton"><!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In  -->
                 <svg version="1.1"
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                     x="0px" y="0px" width="60.6px" height="60.6px" viewBox="0 0 60.6 60.6" style="enable-background:new 0 0 60.6 60.6;"
                     xml:space="preserve">
                 <style type="text/css">
-                  .st0{fill:#2D2D2D;}
-                  .st1{fill:#FBBA00;}
+                  .st0 { fill: #2d2d2d; }
+
+                  .st1 { fill: #fbba00; }
                 </style>
                 <defs>
                 </defs>
@@ -478,358 +429,291 @@
                 </g>
                 </svg>
               </button>
-            </div>
-            <section class="black-humor">
-              <h3>Black humor</h3>
-              <p>Hitchcock had gevoel voor humor, ook al was een het donker gevoel voor humor, in het Engels vaak <strong class="highlight">‘black humor’</strong> genoemd. Anderen vonden zijn humor dan meer sick and twisted.</p>
+        </div>
+        <section class="black-humor">
+          <h3>Black humor</h3>
+          <p>Hitchcock had gevoel voor humor, ook al was een het donker gevoel voor humor, in het Engels vaak <strong class="highlight">‘black humor’</strong> genoemd. Anderen vonden zijn humor dan meer sick and twisted.</p>
 
-              <p>Thrillers zijn eng, niet grappig. Of toch? Hitchcock beschreef zijn thriller ‘Psycho’ nochtans als een <strong class="highlight">‘practical joke’</strong>. Psycho moest eigenlijk comedie worden, een donkere comedie. Hij zag zelf de humor er wel van in, maar de toeschouwers van de film vonden de film <strong class="highlight">eng in de plaats van grappig</strong>. Hij vond het moeilijk te begrijpen dat mensen de film zo serieus namen…</p>
+          <p>Thrillers zijn eng, niet grappig. Of toch? Hitchcock beschreef zijn thriller ‘Psycho’ nochtans als een <strong class="highlight">‘practical joke’</strong>. Psycho moest eigenlijk comedie worden, een donkere comedie. Hij zag zelf de humor er
+            wel van in, maar de toeschouwers van de film vonden de film <strong class="highlight">eng in de plaats van grappig</strong>. Hij vond het moeilijk te begrijpen dat mensen de film zo serieus namen…</p>
 
-              <p>Grapjes over leed en dood vind je dan ook terug in zijn films. Hiernaast speelt <strong class="highlight">satire</strong> ook vaak een relativerende rol in zijn films. Alsook werd <strong class="highlight">dramatische ironie</strong> gebruikt om spanning op te bouwen. </p>
-              <p>In zijn interviews vertelt hij over de soort donkere humor die Britten hebben en dat zelfs als ze ergens van walgen, toch nog een ongepaste grap zouden maken. Zelfs op begrafenissen lijkt zo een donkere grap gepast. </p>
+          <p>Grapjes over leed en dood vind je dan ook terug in zijn films. Hiernaast speelt <strong class="highlight">satire</strong> ook vaak een relativerende rol in zijn films. Alsook werd <strong class="highlight">dramatische ironie</strong> gebruikt
+            om spanning op te bouwen. </p>
+          <p>In zijn interviews vertelt hij over de soort donkere humor die Britten hebben en dat zelfs als ze ergens van walgen, toch nog een ongepaste grap zouden maken. Zelfs op begrafenissen lijkt zo een donkere grap gepast. </p>
 
-              <p>Zijn jeugd liet hem achter met veel filmtalent en angsten, maar zonder empathie. </p>
-            </section>
-            <section class="practicaljokes left-border">
-              <h3>Practical jokes</h3>
-              <p>Hitchcock was ook een practical joker, vaak ongevaarlijk en onschuldig maar sommige van zijn grappen waren <strong class="highlight">donkere mindgames</strong> en <strong class="highlight">sadistische vernedering</strong>. Ook hier komt het donker gevoel voor humor terug.</p>
-              <p>Zo maakte hij ook vaak gebruik van de angst van zijn acteurs en actrices, bijvoorbeeld toen hij rook in een telefooncel liet pompen waar Elsie Randolph in werd opgesloten. </p>
-              <p>Naast vele voorbeelden bleek er wel 1 manier zijn om als medewerker van Hitchcocks zieke streken af te geraken en dat was door hem <strong class="highlight">terug te pakken op dezelfde manier</strong>. Zo heeft de camera-assistent Alfred Roome, wraak genomen door een rookbom onder Hitchcock’s auto te steken.</p>
-            </section>
-            <section class="gun-image">
-              <h3 class="hide">Hitchcock's Solution for a Sore Throat</h3>
-              <picture>
-                <source media="(max-width: 241px)" srcset="assets/img/hitchcock-gun-176w.webp" type="image/webp"/>
-                <source media="(max-width: 241px)" srcset="assets/img/hitchcock-gun-176w.png" />
-                <source media="(min-width: 603px)" srcset="assets/img/hitchcock-gun-705w.webp" type="image/webp"/>
-                <source media="(min-width: 603px)" srcset="assets/img/hitchcock-gun-705w.png" />
-                <source media="(min-width: 423px)" srcset="assets/img/hitchcock-gun-529w.webp" type="image/webp"/>
-                <source media="(min-width: 423px)" srcset="assets/img/hitchcock-gun-529w.png" />
-                <source media="(min-width: 242px)" srcset="assets/img/hitchcock-gun-353w.webp" type="image/webp"/>
-                <source media="(min-width: 242px)" srcset="assets/img/hitchcock-gun-353w.png" />
-        
-                <img src="assets/img/hitchcock-gun-705w.png"
-                alt="Hitchcock's solution for illness"
-                class="image-abs slide-in slide-in-right"
-                width="705" height="340"
-              
-                srcset="assets/img/hitchcock-gun-705w.png 705w,
+          <p>Zijn jeugd liet hem achter met veel filmtalent en angsten, maar zonder empathie. </p>
+        </section>
+        <section class="practicaljokes left-border">
+          <h3>Practical jokes</h3>
+          <p>Hitchcock was ook een practical joker, vaak ongevaarlijk en onschuldig maar sommige van zijn grappen waren <strong class="highlight">donkere mindgames</strong> en <strong class="highlight">sadistische vernedering</strong>. Ook hier komt het
+            donker gevoel voor humor terug.</p>
+          <p>Zo maakte hij ook vaak gebruik van de angst van zijn acteurs en actrices, bijvoorbeeld toen hij rook in een telefooncel liet pompen waar Elsie Randolph in werd opgesloten. </p>
+          <p>Naast vele voorbeelden bleek er wel 1 manier zijn om als medewerker van Hitchcocks zieke streken af te geraken en dat was door hem <strong class="highlight">terug te pakken op dezelfde manier</strong>. Zo heeft de camera-assistent Alfred Roome,
+            wraak genomen door een rookbom onder Hitchcock’s auto te steken.</p>
+        </section>
+        <section class="gun-image">
+          <h3 class="hide">Hitchcock's Solution for a Sore Throat</h3>
+          <picture>
+            <source media="(max-width: 241px)" srcset="assets/img/hitchcock-gun-176w.webp" type="image/webp" />
+            <source media="(max-width: 241px)" srcset="assets/img/hitchcock-gun-176w.png" />
+            <source media="(min-width: 603px)" srcset="assets/img/hitchcock-gun-705w.webp" type="image/webp" />
+            <source media="(min-width: 603px)" srcset="assets/img/hitchcock-gun-705w.png" />
+            <source media="(min-width: 423px)" srcset="assets/img/hitchcock-gun-529w.webp" type="image/webp" />
+            <source media="(min-width: 423px)" srcset="assets/img/hitchcock-gun-529w.png" />
+            <source media="(min-width: 242px)" srcset="assets/img/hitchcock-gun-353w.webp" type="image/webp" />
+            <source media="(min-width: 242px)" srcset="assets/img/hitchcock-gun-353w.png" />
+
+            <img src="assets/img/hitchcock-gun-705w.png" alt="Hitchcock's solution for illness" class="image-abs slide-in slide-in-right" width="705" height="340" srcset="assets/img/hitchcock-gun-705w.png 705w,
                 assets/img/hitchcock-gun-529w.png 529w,
                 assets/img/hitchcock-gun-353w.png 353w,
-                assets/img/hitchcock-gun-176w.png 176w"
-                
-                sizes="45vw"/>
-              </picture>
-            </section>
-            <section class="toofar">
-              <h3>Going Too Far?</h3>
-              <p>Blijkbaar had Hitchcock onder andere een weddenschap afgesloten met een medewerker om een hele nacht aan de camera geketend te zitten in een donkere, achtergelaten studio. De man ging akkoord en bleef die nacht geketend aan de camera. Hitchcock maakte de man los, en bood hem een brandy aan. De dag erna bleek dat Hitchcock <strong class="highlight">sterke laxeermiddelen</strong> in het drankje had gedaan en dit leidde tot een uitgeputte, woedende en vernederde man. </p>
-
-              <p>Ook <strong class="highlight">Tippi Hedren</strong> werd slecht behandeld tijdens het filmen van ‘The Birds’ wanneer hij levende vogels gebruikte om haar aan te vallen. Het ging zelfs zo ver dat hij haar 6 jarige dochter een pop gaf in een kleine doodskist die op haar moeder leek. </p>
-
-              <p>Het leek alsof Hitchcock niet enkel een donker gevoel voor humor had, maar ook emoties van mensen en kinderen rondom hem niet kon inschatten.</p>
-
-              <p>Toen er op TV gevraagd werd over zijn ‘pranks’ werd Hitchcock op 72-jarige leeftijd vrij defensief en beweerde hij dat ze <strong class="highlight">onschuldig</strong> waren en het niet de bedoeling was om mensen te vernederen. </p>
-            </section>
-          </div>
-          <div class="jokes">
-            <blockquote>“I'm sure anyone who likes a good crime, provided it is not the victim.” </blockquote>
-          </div>
-        </article>
-        
-        <div id="react-component-2">
-          <article class="highest-fall-noscript">
-            <h2>A Dying Fall</h2>
-            <div className="fall">
-              <picture>
-                <source media="(max-width: 134px)" srcSet="./assets/img/ledge1-98w.webp" type="image/webp"/>
-                <source media="(max-width: 134px)" srcSet="./assets/img/ledge1-98w.png" />
-                <source media="(min-width: 334px)" srcSet="./assets/img/ledge1-390w.webp" type="image/webp"/>
-                <source media="(min-width: 334px)" srcSet="./assets/img/ledge1-390w.png" />
-                <source media="(min-width: 234px)" srcSet="./assets/img/ledge1-293w.webp" type="image/webp"/>
-                <source media="(min-width: 234px)" srcSet="./assets/img/ledge1-293w.png" />
-                <source media="(min-width: 135px)" srcSet="./assets/img/ledge1-195w.webp" type="image/webp"/>
-                <source media="(min-width: 135px)" srcSet="./assets/img/ledge1-195w.png" />
-  
-                <img src="./assets/img/ledge1-390w.png"
-                alt="Hitchcock on a cliff"
-                width="390" height="560"
-                className="ledge"
-                
-                srcSet="./assets/img/ledge1-390w.png 390w,
-                ./assets/img/ledge1-293w.png 293w,
-                ./assets/img/ledge1-195w.png 195w,
-                ./assets/img/ledge1-98w.png 98w"
-                
-                sizes="10vw"/>
-              </picture>
-              <div>
-                <h3>500m</h3>
-                <p>In the film Secret Agent a fatal fall was made by Mr Caypor off a mountain ledge.</p>
-              </div>
-            </div>
-            <div className="fall">
-              <picture>
-                <source media="(max-width: 134px)" srcSet="./assets/img/ledge2-98w.webp" type="image/webp"/>
-                <source media="(max-width: 134px)" srcSet="./assets/img/ledge2-98w.png" />
-                <source media="(min-width: 334px)" srcSet="./assets/img/ledge2-390w.webp" type="image/webp"/>
-                <source media="(min-width: 334px)" srcSet="./assets/img/ledge2-390w.png" />
-                <source media="(min-width: 234px)" srcSet="./assets/img/ledge2-293w.webp" type="image/webp"/>
-                <source media="(min-width: 234px)" srcSet="./assets/img/ledge2-293w.png" />
-                <source media="(min-width: 135px)" srcSet="./assets/img/ledge2-195w.webp" type="image/webp"/>
-                <source media="(min-width: 135px)" srcSet="./assets/img/ledge2-195w.png" />
-  
-                <img rc="./assets/img/ledge2-390w.png"
-                alt="Hitchcock on a cliff"
-                width="390" height="560"
-                className="ledge"
-                
-                srcSet="./assets/img/ledge2-390w.png 390w,
-                ./assets/img/ledge2-293w.png 293w,
-                ./assets/img/ledge2-195w.png 195w,
-                ./assets/img/ledge2-98w.png 98w"
-                
-                sizes="10vw"/>
-              </picture>
-              <div>
-                <h3>150m</h3>
-                <p>In the film North by Northwest a fatal fall was made by Valerian off Mount Rushmore.</p>
-              </div>
-            </div>
-            <div className="fall">
-              <picture>
-                <source media="(max-width: 134px)" srcSet="./assets/img/ledge3-98w.webp" type="image/webp"/>
-                <source media="(max-width: 134px)" srcSet="./assets/img/ledge3-98w.png" />
-                <source media="(min-width: 334px)" srcSet="./assets/img/ledge3-390w.webp" type="image/webp"/>
-                <source media="(min-width: 334px)" srcSet="./assets/img/ledge3-390w.png" />
-                <source media="(min-width: 234px)" srcSet="./assets/img/ledge3-293w.webp" type="image/webp"/>
-                <source media="(min-width: 234px)" srcSet="./assets/img/ledge3-293w.png" />
-                <source media="(min-width: 135px)" srcSet="./assets/img/ledge3-195w.webp" type="image/webp"/>
-                <source media="(min-width: 135px)" srcSet="./assets/img/ledge3-195w.png" />
-  
-                <img rc="./assets/img/ledge3-390w.png"
-                alt="Hitchcock on a cliff"
-                width="390" height="560"
-                className="ledge"
-                
-                srcSet="./assets/img/ledge3-390w.png 390w,
-                ./assets/img/ledge3-293w.png 293w,
-                ./assets/img/ledge3-195w.png 195w,
-                ./assets/img/ledge3-98w.png 98w"
-                
-                sizes="10vw"/>
-              </picture>
-              <div>
-                <h3>93m</h3>
-                <p>In the film Saboteur a fatal fall was made by Fry off the Statue of Liberty.</p>
-              </div>
-            </div>
-            <div className="fall">
-              <picture>
-                <source media="(max-width: 134px)" srcSet="./assets/img/ledge4-98w.webp" type="image/webp"/>
-                <source media="(max-width: 134px)" srcSet="./assets/img/ledge4-98w.png" />
-                <source media="(min-width: 334px)" srcSet="./assets/img/ledge4-390w.webp" type="image/webp"/>
-                <source media="(min-width: 334px)" srcSet="./assets/img/ledge4-390w.png" />
-                <source media="(min-width: 234px)" srcSet="./assets/img/ledge4-293w.webp" type="image/webp"/>
-                <source media="(min-width: 234px)" srcSet="./assets/img/ledge4-293w.png" />
-                <source media="(min-width: 135px)" srcSet="./assets/img/ledge4-195w.webp" type="image/webp"/>
-                <source media="(min-width: 135px)" srcSet="./assets/img/ledge4-195w.png" />
-  
-                <img rc="./assets/img/ledge4-390w.png"
-                alt="Hitchcock on a cliff"
-                width="390" height="560"
-                className="ledge"
-                
-                srcSet="./assets/img/ledge4-390w.png 390w,
-                ./assets/img/ledge4-293w.png 293w,
-                ./assets/img/ledge4-195w.png 195w,
-                ./assets/img/ledge4-98w.png 98w"
-                
-                sizes="10vw"/>
-              </picture>
-              <div>
-                <h3>c. 75m</h3>
-                <p>In the film Family Plot a fatal fall was made by Maloney off a cliff in a car.</p>
-              </div>
-            </div>
-            <div className="fall">
-              <picture>
-                <source media="(max-width: 134px)" srcSet="./assets/img/ledge5-98w.webp" type="image/webp"/>
-                <source media="(max-width: 134px)" srcSet="./assets/img/ledge5-98w.png" />
-                <source media="(min-width: 334px)" srcSet="./assets/img/ledge5-390w.webp" type="image/webp"/>
-                <source media="(min-width: 334px)" srcSet="./assets/img/ledge5-390w.png" />
-                <source media="(min-width: 234px)" srcSet="./assets/img/ledge5-293w.webp" type="image/webp"/>
-                <source media="(min-width: 234px)" srcSet="./assets/img/ledge5-293w.png" />
-                <source media="(min-width: 135px)" srcSet="./assets/img/ledge5-195w.webp" type="image/webp"/>
-                <source media="(min-width: 135px)" srcSet="./assets/img/ledge5-195w.png" />
-  
-                <img rc="./assets/img/ledge5-390w.png"
-                alt="Hitchcock on a cliff"
-                width="390" height="560"
-                className="ledge"
-                
-                srcSet="./assets/img/ledge5-390w.png 390w,
-                ./assets/img/ledge5-293w.png 293w,
-                ./assets/img/ledge5-195w.png 195w,
-                ./assets/img/ledge5-98w.png 98w"
-                
-                sizes="10vw"/>
-              </picture>
-              <div>
-                <h3>64m</h3>
-                <p>In the film Foreign Correspondent a fatal fall was made by Rowley off Westminster Cathedral Tower.</p>
-              </div>
-            </div>
-            <div className="fall">
-              <picture>
-                <source media="(max-width: 134px)" srcSet="./assets/img/ledge6-98w.webp" type="image/webp"/>
-                <source media="(max-width: 134px)" srcSet="./assets/img/ledge6-98w.png" />
-                <source media="(min-width: 334px)" srcSet="./assets/img/ledge6-390w.webp" type="image/webp"/>
-                <source media="(min-width: 334px)" srcSet="./assets/img/ledge6-390w.png" />
-                <source media="(min-width: 234px)" srcSet="./assets/img/ledge6-293w.webp" type="image/webp"/>
-                <source media="(min-width: 234px)" srcSet="./assets/img/ledge6-293w.png" />
-                <source media="(min-width: 135px)" srcSet="./assets/img/ledge6-195w.webp" type="image/webp"/>
-                <source media="(min-width: 135px)" srcSet="./assets/img/ledge6-195w.png" />
-  
-                <img rc="./assets/img/ledge6-390w.png"
-                alt="Hitchcock on a cliff"
-                width="390" height="560"
-                className="ledge"
-                
-                srcSet="./assets/img/ledge6-390w.png 390w,
-                ./assets/img/ledge6-293w.png 293w,
-                ./assets/img/ledge6-195w.png 195w,
-                ./assets/img/ledge6-98w.png 98w"
-                
-                sizes="10vw"/>
-              </picture>
-              <div>
-                <h3>50m</h3>
-                <p>In the film Vertigo a fatal fall was made by Judy/Madeleine off the tower of Mission San Juan Bautista.</p>
-              </div>
-            </div>
-            <div className="fall">
-              <picture>
-                <source media="(max-width: 134px)" srcSet="./assets/img/ledge7-98w.webp" type="image/webp"/>
-                <source media="(max-width: 134px)" srcSet="./assets/img/ledge7-98w.png" />
-                <source media="(min-width: 334px)" srcSet="./assets/img/ledge7-390w.webp" type="image/webp"/>
-                <source media="(min-width: 334px)" srcSet="./assets/img/ledge7-390w.png" />
-                <source media="(min-width: 234px)" srcSet="./assets/img/ledge7-293w.webp" type="image/webp"/>
-                <source media="(min-width: 234px)" srcSet="./assets/img/ledge7-293w.png" />
-                <source media="(min-width: 135px)" srcSet="./assets/img/ledge7-195w.webp" type="image/webp"/>
-                <source media="(min-width: 135px)" srcSet="./assets/img/ledge7-195w.png" />
-  
-                <img rc="./assets/img/ledge7-390w.png"
-                alt="Hitchcock on a cliff"
-                width="390" height="560"
-                className="ledge"
-                
-                srcSet="./assets/img/ledge7-390w.png 390w,
-                ./assets/img/ledge7-293w.png 293w,
-                ./assets/img/ledge7-195w.png 195w,
-                ./assets/img/ledge7-98w.png 98w"
-                
-                sizes="10vw"/>
-              </picture>
-              <div>
-                <h3>c. 50m</h3>
-                <p>In the film Vertigo a fatal fall was made by a Police Officer off an apartment building.</p>
-              </div>
-            </div>
-            <div className="fall">
-              <picture>
-                <source media="(max-width: 134px)" srcSet="./assets/img/ledge8-98w.webp" type="image/webp"/>
-                <source media="(max-width: 134px)" srcSet="./assets/img/ledge8-98w.png" />
-                <source media="(min-width: 334px)" srcSet="./assets/img/ledge8-390w.webp" type="image/webp"/>
-                <source media="(min-width: 334px)" srcSet="./assets/img/ledge8-390w.png" />
-                <source media="(min-width: 234px)" srcSet="./assets/img/ledge8-293w.webp" type="image/webp"/>
-                <source media="(min-width: 234px)" srcSet="./assets/img/ledge8-293w.png" />
-                <source media="(min-width: 135px)" srcSet="./assets/img/ledge8-195w.webp" type="image/webp"/>
-                <source media="(min-width: 135px)" srcSet="./assets/img/ledge8-195w.png" />
-  
-                <img rc="./assets/img/ledge8-390w.png"
-                alt="Hitchcock on a cliff"
-                width="390" height="560"
-                className="ledge"
-                
-                srcSet="./assets/img/ledge8-390w.png 390w,
-                ./assets/img/ledge8-293w.png 293w,
-                ./assets/img/ledge8-195w.png 195w,
-                ./assets/img/ledge8-98w.png 98w"
-                
-                sizes="10vw"/>
-              </picture>
-              <div>
-                <h3>30m</h3>
-                <p>In the film Blackmail a fatal fall was made by Tracy through the roof of the British Museum Reading Room.</p>
-              </div>
-            </div>
-            <div className="fall">
-              <picture>
-                <source media="(max-width: 134px)" srcSet="./assets/img/ledge9-98w.webp" type="image/webp"/>
-                <source media="(max-width: 134px)" srcSet="./assets/img/ledge9-98w.png" />
-                <source media="(min-width: 334px)" srcSet="./assets/img/ledge9-390w.webp" type="image/webp"/>
-                <source media="(min-width: 334px)" srcSet="./assets/img/ledge9-390w.png" />
-                <source media="(min-width: 234px)" srcSet="./assets/img/ledge9-293w.webp" type="image/webp"/>
-                <source media="(min-width: 234px)" srcSet="./assets/img/ledge9-293w.png" />
-                <source media="(min-width: 135px)" srcSet="./assets/img/ledge9-195w.webp" type="image/webp"/>
-                <source media="(min-width: 135px)" srcSet="./assets/img/ledge9-195w.png" />
-  
-                <img rc="./assets/img/ledge9-390w.png"
-                alt="Hitchcock on a cliff"
-                width="390" height="560"
-                className="ledge"
-                
-                srcSet="./assets/img/ledge9-390w.png 390w,
-                ./assets/img/ledge9-293w.png 293w,
-                ./assets/img/ledge9-195w.png 195w,
-                ./assets/img/ledge9-98w.png 98w"
-                
-                sizes="10vw"/>
-              </picture>
-              <div>
-                <h3>20m</h3>
-                <p>In the film Jamaica Inn a fatal fall was made by Squire Pengallon off the mast of a ship.</p>
-              </div>
-            </div>
-            <div className="fall">
-              <picture>
-                <source media="(max-width: 134px)" srcSet="./assets/img/ledge10-98w.webp" type="image/webp"/>
-                <source media="(max-width: 134px)" srcSet="./assets/img/ledge10-98w.png" />
-                <source media="(min-width: 334px)" srcSet="./assets/img/ledge10-390w.webp" type="image/webp"/>
-                <source media="(min-width: 334px)" srcSet="./assets/img/ledge10-390w.png" />
-                <source media="(min-width: 234px)" srcSet="./assets/img/ledge10-293w.webp" type="image/webp"/>
-                <source media="(min-width: 234px)" srcSet="./assets/img/ledge10-293w.png" />
-                <source media="(min-width: 135px)" srcSet="./assets/img/ledge10-195w.webp" type="image/webp"/>
-                <source media="(min-width: 135px)" srcSet="./assets/img/ledge10-195w.png" />
-  
-                <img rc="./assets/img/ledge10-390w.png"
-                alt="Hitchcock on a cliff"
-                width="390" height="560"
-                className="ledge"
-                
-                srcSet="./assets/img/ledge10-390w.png 390w,
-                ./assets/img/ledge10-293w.png 293w,
-                ./assets/img/ledge10-195w.png 195w,
-                ./assets/img/ledge10-98w.png 98w"
-                
-                sizes="10vw"/>
-              </picture>
-              <div>
-                <h3>15m</h3>
-                <p>In the film Topaz a fatal fall was made by Jarre through an apartment window.</p>
-              </div>
-            </div>
-          </article>
-        </div>
-        <div class="vertigo">
-          <div class="flex">
-          <picture>
-            <source type="image/webp" srcset="assets/img/logo-vertigo.webp" />
-            <img src="assets/img/logo-vertigo.png" alt="Logo Vertigo" class="logo-vertigo" height="160">
+                assets/img/hitchcock-gun-176w.png 176w" sizes="45vw" />
           </picture>
-          <p>Vertigo is niet alleen de naam van één van Alfred Hitchcock's films, maar het is ook de naam van ons filmmagazine voor het laatste nieuws over alles rond film, cinema en de mensen achter en op de schermen! Wil je meer weten over acteurs, regisseurs en films? Neem dan snel eens een kijkje op onze website en ontdek alle voordelen van ons abonnement! </p><p class="align-right"><a class="cta-button" href="vertigoweb.be" target="_blank">Ontdek Vertigo!</a></p>
+        </section>
+        <section class="toofar">
+          <h3>Going Too Far?</h3>
+          <p>Blijkbaar had Hitchcock onder andere een weddenschap afgesloten met een medewerker om een hele nacht aan de camera geketend te zitten in een donkere, achtergelaten studio. De man ging akkoord en bleef die nacht geketend aan de camera. Hitchcock
+            maakte de man los, en bood hem een brandy aan. De dag erna bleek dat Hitchcock <strong class="highlight">sterke laxeermiddelen</strong> in het drankje had gedaan en dit leidde tot een uitgeputte, woedende en vernederde man. </p>
+
+          <p>Ook <strong class="highlight">Tippi Hedren</strong> werd slecht behandeld tijdens het filmen van ‘The Birds’ wanneer hij levende vogels gebruikte om haar aan te vallen. Het ging zelfs zo ver dat hij haar 6 jarige dochter een pop gaf in een kleine
+            doodskist die op haar moeder leek. </p>
+
+          <p>Het leek alsof Hitchcock niet enkel een donker gevoel voor humor had, maar ook emoties van mensen en kinderen rondom hem niet kon inschatten.</p>
+
+          <p>Toen er op TV gevraagd werd over zijn ‘pranks’ werd Hitchcock op 72-jarige leeftijd vrij defensief en beweerde hij dat ze <strong class="highlight">onschuldig</strong> waren en het niet de bedoeling was om mensen te vernederen. </p>
+        </section>
+      </div>
+      <div class="jokes">
+        <blockquote>“I'm sure anyone who likes a good crime, provided it is not the victim.” </blockquote>
+      </div>
+    </article>
+
+    <div id="react-component-2">
+      <article class="highest-fall-noscript light-section">
+        <h2>A Dying Fall</h2>
+        <div class="fall">
+          <picture>
+            <source media="(max-width: 134px)" srcset="assets/img/ledge1-98w.webp" type="image/webp" />
+            <source media="(max-width: 134px)" srcset="assets/img/ledge1-98w.png" />
+            <source media="(min-width: 334px)" srcset="assets/img/ledge1-390w.webp" type="image/webp" />
+            <source media="(min-width: 334px)" srcset="assets/img/ledge1-390w.png" />
+            <source media="(min-width: 234px)" srcset="assets/img/ledge1-293w.webp" type="image/webp" />
+            <source media="(min-width: 234px)" srcset="assets/img/ledge1-293w.png" />
+            <source media="(min-width: 135px)" srcset="assets/img/ledge1-195w.webp" type="image/webp" />
+            <source media="(min-width: 135px)" srcset="assets/img/ledge1-195w.png" />
+
+            <img src="assets/img/ledge1-390w.png" alt="Hitchcock on a cliff" width="390" height="560" class="ledge" srcset="assets/img/ledge1-390w.png 390w,
+                assets/img/ledge1-293w.png 293w,
+                assets/img/ledge1-195w.png 195w,
+                assets/img/ledge1-98w.png 98w" sizes="10vw" />
+          </picture>
+          <div>
+            <h3>500m</h3>
+            <p>In the film Secret Agent a fatal fall was made by Mr Caypor off a mountain ledge.</p>
+          </div>
         </div>
+        <div class="fall">
+          <picture>
+            <source media="(max-width: 134px)" srcset="assets/img/ledge2-98w.webp" type="image/webp" />
+            <source media="(max-width: 134px)" srcset="assets/img/ledge2-98w.png" />
+            <source media="(min-width: 334px)" srcset="assets/img/ledge2-390w.webp" type="image/webp" />
+            <source media="(min-width: 334px)" srcset="assets/img/ledge2-390w.png" />
+            <source media="(min-width: 234px)" srcset="assets/img/ledge2-293w.webp" type="image/webp" />
+            <source media="(min-width: 234px)" srcset="assets/img/ledge2-293w.png" />
+            <source media="(min-width: 135px)" srcset="assets/img/ledge2-195w.webp" type="image/webp" />
+            <source media="(min-width: 135px)" srcset="assets/img/ledge2-195w.png" />
+
+            <img src="assets/img/ledge2-390w.png" alt="Hitchcock on a cliff" width="390" height="560" class="ledge" srcset="assets/img/ledge2-390w.png 390w,
+                assets/img/ledge2-293w.png 293w,
+                assets/img/ledge2-195w.png 195w,
+                assets/img/ledge2-98w.png 98w" sizes="10vw" />
+          </picture>
+          <div>
+            <h3>150m</h3>
+            <p>In the film North by Northwest a fatal fall was made by Valerian off Mount Rushmore.</p>
+          </div>
+        </div>
+        <div class="fall">
+          <picture>
+            <source media="(max-width: 134px)" srcset="assets/img/ledge3-98w.webp" type="image/webp" />
+            <source media="(max-width: 134px)" srcset="assets/img/ledge3-98w.png" />
+            <source media="(min-width: 334px)" srcset="assets/img/ledge3-390w.webp" type="image/webp" />
+            <source media="(min-width: 334px)" srcset="assets/img/ledge3-390w.png" />
+            <source media="(min-width: 234px)" srcset="assets/img/ledge3-293w.webp" type="image/webp" />
+            <source media="(min-width: 234px)" srcset="assets/img/ledge3-293w.png" />
+            <source media="(min-width: 135px)" srcset="assets/img/ledge3-195w.webp" type="image/webp" />
+            <source media="(min-width: 135px)" srcset="assets/img/ledge3-195w.png" />
+
+            <img src="assets/img/ledge3-390w.png" alt="Hitchcock on a cliff" width="390" height="560" class="ledge" srcset="assets/img/ledge3-390w.png 390w,
+                assets/img/ledge3-293w.png 293w,
+                assets/img/ledge3-195w.png 195w,
+                assets/img/ledge3-98w.png 98w" sizes="10vw" />
+          </picture>
+          <div>
+            <h3>93m</h3>
+            <p>In the film Saboteur a fatal fall was made by Fry off the Statue of Liberty.</p>
+          </div>
+        </div>
+        <div class="fall">
+          <picture>
+            <source media="(max-width: 134px)" srcset="assets/img/ledge4-98w.webp" type="image/webp" />
+            <source media="(max-width: 134px)" srcset="assets/img/ledge4-98w.png" />
+            <source media="(min-width: 334px)" srcset="assets/img/ledge4-390w.webp" type="image/webp" />
+            <source media="(min-width: 334px)" srcset="assets/img/ledge4-390w.png" />
+            <source media="(min-width: 234px)" srcset="assets/img/ledge4-293w.webp" type="image/webp" />
+            <source media="(min-width: 234px)" srcset="assets/img/ledge4-293w.png" />
+            <source media="(min-width: 135px)" srcset="assets/img/ledge4-195w.webp" type="image/webp" />
+            <source media="(min-width: 135px)" srcset="assets/img/ledge4-195w.png" />
+
+            <img src="assets/img/ledge4-390w.png" alt="Hitchcock on a cliff" width="390" height="560" class="ledge" srcset="assets/img/ledge4-390w.png 390w,
+                assets/img/ledge4-293w.png 293w,
+                assets/img/ledge4-195w.png 195w,
+                assets/img/ledge4-98w.png 98w" sizes="10vw" />
+          </picture>
+          <div>
+            <h3>c. 75m</h3>
+            <p>In the film Family Plot a fatal fall was made by Maloney off a cliff in a car.</p>
+          </div>
+        </div>
+        <div class="fall">
+          <picture>
+            <source media="(max-width: 134px)" srcset="assets/img/ledge5-98w.webp" type="image/webp" />
+            <source media="(max-width: 134px)" srcset="assets/img/ledge5-98w.png" />
+            <source media="(min-width: 334px)" srcset="assets/img/ledge5-390w.webp" type="image/webp" />
+            <source media="(min-width: 334px)" srcset="assets/img/ledge5-390w.png" />
+            <source media="(min-width: 234px)" srcset="assets/img/ledge5-293w.webp" type="image/webp" />
+            <source media="(min-width: 234px)" srcset="assets/img/ledge5-293w.png" />
+            <source media="(min-width: 135px)" srcset="assets/img/ledge5-195w.webp" type="image/webp" />
+            <source media="(min-width: 135px)" srcset="assets/img/ledge5-195w.png" />
+
+            <img src="assets/img/ledge5-390w.png" alt="Hitchcock on a cliff" width="390" height="560" class="ledge" srcset="assets/img/ledge5-390w.png 390w,
+                assets/img/ledge5-293w.png 293w,
+                assets/img/ledge5-195w.png 195w,
+                assets/img/ledge5-98w.png 98w" sizes="10vw" />
+          </picture>
+          <div>
+            <h3>64m</h3>
+            <p>In the film Foreign Correspondent a fatal fall was made by Rowley off Westminster Cathedral Tower.</p>
+          </div>
+        </div>
+        <div class="fall">
+          <picture>
+            <source media="(max-width: 134px)" srcset="assets/img/ledge6-98w.webp" type="image/webp" />
+            <source media="(max-width: 134px)" srcset="assets/img/ledge6-98w.png" />
+            <source media="(min-width: 334px)" srcset="assets/img/ledge6-390w.webp" type="image/webp" />
+            <source media="(min-width: 334px)" srcset="assets/img/ledge6-390w.png" />
+            <source media="(min-width: 234px)" srcset="assets/img/ledge6-293w.webp" type="image/webp" />
+            <source media="(min-width: 234px)" srcset="assets/img/ledge6-293w.png" />
+            <source media="(min-width: 135px)" srcset="assets/img/ledge6-195w.webp" type="image/webp" />
+            <source media="(min-width: 135px)" srcset="assets/img/ledge6-195w.png" />
+
+            <img src="assets/img/ledge6-390w.png" alt="Hitchcock on a cliff" width="390" height="560" class="ledge" srcset="assets/img/ledge6-390w.png 390w,
+                assets/img/ledge6-293w.png 293w,
+                assets/img/ledge6-195w.png 195w,
+                assets/img/ledge6-98w.png 98w" sizes="10vw" />
+          </picture>
+          <div>
+            <h3>50m</h3>
+            <p>In the film Vertigo a fatal fall was made by Judy/Madeleine off the tower of Mission San Juan Bautista.</p>
+          </div>
+        </div>
+        <div class="fall">
+          <picture>
+            <source media="(max-width: 134px)" srcset="assets/img/ledge7-98w.webp" type="image/webp" />
+            <source media="(max-width: 134px)" srcset="assets/img/ledge7-98w.png" />
+            <source media="(min-width: 334px)" srcset="assets/img/ledge7-390w.webp" type="image/webp" />
+            <source media="(min-width: 334px)" srcset="assets/img/ledge7-390w.png" />
+            <source media="(min-width: 234px)" srcset="assets/img/ledge7-293w.webp" type="image/webp" />
+            <source media="(min-width: 234px)" srcset="assets/img/ledge7-293w.png" />
+            <source media="(min-width: 135px)" srcset="assets/img/ledge7-195w.webp" type="image/webp" />
+            <source media="(min-width: 135px)" srcset="assets/img/ledge7-195w.png" />
+
+            <img src="assets/img/ledge7-390w.png" alt="Hitchcock on a cliff" width="390" height="560" class="ledge" srcset="assets/img/ledge7-390w.png 390w,
+                assets/img/ledge7-293w.png 293w,
+                assets/img/ledge7-195w.png 195w,
+                assets/img/ledge7-98w.png 98w" sizes="10vw" />
+          </picture>
+          <div>
+            <h3>c. 50m</h3>
+            <p>In the film Vertigo a fatal fall was made by a Police Officer off an apartment building.</p>
+          </div>
+        </div>
+        <div class="fall">
+          <picture>
+            <source media="(max-width: 134px)" srcset="assets/img/ledge8-98w.webp" type="image/webp" />
+            <source media="(max-width: 134px)" srcset="assets/img/ledge8-98w.png" />
+            <source media="(min-width: 334px)" srcset="assets/img/ledge8-390w.webp" type="image/webp" />
+            <source media="(min-width: 334px)" srcset="assets/img/ledge8-390w.png" />
+            <source media="(min-width: 234px)" srcset="assets/img/ledge8-293w.webp" type="image/webp" />
+            <source media="(min-width: 234px)" srcset="assets/img/ledge8-293w.png" />
+            <source media="(min-width: 135px)" srcset="assets/img/ledge8-195w.webp" type="image/webp" />
+            <source media="(min-width: 135px)" srcset="assets/img/ledge8-195w.png" />
+
+            <img src="assets/img/ledge8-390w.png" alt="Hitchcock on a cliff" width="390" height="560" class="ledge" srcset="assets/img/ledge8-390w.png 390w,
+                assets/img/ledge8-293w.png 293w,
+                assets/img/ledge8-195w.png 195w,
+                assets/img/ledge8-98w.png 98w" sizes="10vw" />
+          </picture>
+          <div>
+            <h3>30m</h3>
+            <p>In the film Blackmail a fatal fall was made by Tracy through the roof of the British Museum Reading Room.</p>
+          </div>
+        </div>
+        <div class="fall">
+          <picture>
+            <source media="(max-width: 134px)" srcset="assets/img/ledge9-98w.webp" type="image/webp" />
+            <source media="(max-width: 134px)" srcset="assets/img/ledge9-98w.png" />
+            <source media="(min-width: 334px)" srcset="assets/img/ledge9-390w.webp" type="image/webp" />
+            <source media="(min-width: 334px)" srcset="assets/img/ledge9-390w.png" />
+            <source media="(min-width: 234px)" srcset="assets/img/ledge9-293w.webp" type="image/webp" />
+            <source media="(min-width: 234px)" srcset="assets/img/ledge9-293w.png" />
+            <source media="(min-width: 135px)" srcset="assets/img/ledge9-195w.webp" type="image/webp" />
+            <source media="(min-width: 135px)" srcset="assets/img/ledge9-195w.png" />
+
+            <img src="assets/img/ledge9-390w.png" alt="Hitchcock on a cliff" width="390" height="560" class="ledge" srcset="assets/img/ledge9-390w.png 390w,
+                assets/img/ledge9-293w.png 293w,
+                assets/img/ledge9-195w.png 195w,
+                assets/img/ledge9-98w.png 98w" sizes="10vw" />
+          </picture>
+          <div>
+            <h3>20m</h3>
+            <p>In the film Jamaica Inn a fatal fall was made by Squire Pengallon off the mast of a ship.</p>
+          </div>
+        </div>
+        <div class="fall">
+          <picture>
+            <source media="(max-width: 134px)" srcset="assets/img/ledge10-98w.webp" type="image/webp" />
+            <source media="(max-width: 134px)" srcset="assets/img/ledge10-98w.png" />
+            <source media="(min-width: 334px)" srcset="assets/img/ledge10-390w.webp" type="image/webp" />
+            <source media="(min-width: 334px)" srcset="assets/img/ledge10-390w.png" />
+            <source media="(min-width: 234px)" srcset="assets/img/ledge10-293w.webp" type="image/webp" />
+            <source media="(min-width: 234px)" srcset="assets/img/ledge10-293w.png" />
+            <source media="(min-width: 135px)" srcset="assets/img/ledge10-195w.webp" type="image/webp" />
+            <source media="(min-width: 135px)" srcset="assets/img/ledge10-195w.png" />
+
+            <img src="assets/img/ledge10-390w.png" alt="Hitchcock on a cliff" width="390" height="560" class="ledge" srcset="assets/img/ledge10-390w.png 390w,
+                assets/img/ledge10-293w.png 293w,
+                assets/img/ledge10-195w.png 195w,
+                assets/img/ledge10-98w.png 98w" sizes="10vw" />
+          </picture>
+          <div>
+            <h3>15m</h3>
+            <p>In the film Topaz a fatal fall was made by Jarre through an apartment window.</p>
+          </div>
+        </div>
+      </article>
     </div>
+    <div class="vertigo">
+      <div class="flex">
+        <picture>
+          <source type="image/webp" srcset="assets/img/logo-vertigo.webp" />
+          <img src="assets/img/logo-vertigo.png" alt="Logo Vertigo" class="logo-vertigo" height="160">
+        </picture>
+        <p>Vertigo is niet alleen de naam van één van Alfred Hitchcock's films, maar het is ook de naam van ons filmmagazine voor het laatste nieuws over alles rond film, cinema en de mensen achter en op de schermen! Wil je meer weten over acteurs, regisseurs
+          en films? Neem dan snel eens een kijkje op onze website en ontdek alle voordelen van ons abonnement! </p>
+        <p class="align-right"><a class="cta-button" href="vertigoweb.be" target="_blank">Ontdek Vertigo!</a></p>
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>

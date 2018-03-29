@@ -113,29 +113,29 @@ class HighestFall extends Component {
 
   render() {
     return (
-      <article className='highest-fall'>
+      <article className='highest-fall light-section'>
         <h2>A Dying Fall</h2>
         <div className='fall-container'>
           <div className='slider-container'>
             <picture>
-              <source media='(max-width: 134px)' srcSet={`./assets/img/ledge${this.state.current.id}-98w.webp`} type='image/webp'/>
-              <source media='(max-width: 134px)' srcSet={`./assets/img/ledge${this.state.current.id}-98w.png`} />
-              <source media='(min-width: 334px)' srcSet={`./assets/img/ledge${this.state.current.id}-390w.webp`} type='image/webp'/>
-              <source media='(min-width: 334px)' srcSet={`./assets/img/ledge${this.state.current.id}-390w.png`} />
-              <source media='(min-width: 234px)' srcSet={`./assets/img/ledge${this.state.current.id}-293w.webp`} type='image/webp'/>
-              <source media='(min-width: 234px)' srcSet={`./assets/img/ledge${this.state.current.id}-293w.png`} />
-              <source media='(min-width: 135px)' srcSet={`./assets/img/ledge${this.state.current.id}-195w.webp`} type='image/webp'/>
-              <source media='(min-width: 135px)' srcSet={`./assets/img/ledge${this.state.current.id}-195w.png`} />
+              <source media='(max-width: 134px)' srcSet={`assets/img/ledge${this.state.current.id}-98w.webp`} type='image/webp'/>
+              <source media='(max-width: 134px)' srcSet={`assets/img/ledge${this.state.current.id}-98w.png`} />
+              <source media='(min-width: 334px)' srcSet={`assets/img/ledge${this.state.current.id}-390w.webp`} type='image/webp'/>
+              <source media='(min-width: 334px)' srcSet={`assets/img/ledge${this.state.current.id}-390w.png`} />
+              <source media='(min-width: 234px)' srcSet={`assets/img/ledge${this.state.current.id}-293w.webp`} type='image/webp'/>
+              <source media='(min-width: 234px)' srcSet={`assets/img/ledge${this.state.current.id}-293w.png`} />
+              <source media='(min-width: 135px)' srcSet={`assets/img/ledge${this.state.current.id}-195w.webp`} type='image/webp'/>
+              <source media='(min-width: 135px)' srcSet={`assets/img/ledge${this.state.current.id}-195w.png`} />
 
-              <img src={`./assets/img/ledge${this.state.current.id}-390w.png`}
+              <img src={`assets/img/ledge${this.state.current.id}-390w.png`}
                 alt='Hitchcock on a cliff'
                 width='390' height='560'
                 className='ledge'
               
-                srcSet={`./assets/img/ledge${this.state.current.id}-390w.png 390w, 
-                ./assets/img/ledge${this.state.current.id}-293w.png 293w,
-                ./assets/img/ledge${this.state.current.id}-195w.png 195w,
-                ./assets/img/ledge${this.state.current.id}-98w.png 98w"`}
+                srcSet={`assets/img/ledge${this.state.current.id}-390w.png 390w, 
+                assets/img/ledge${this.state.current.id}-293w.png 293w,
+                assets/img/ledge${this.state.current.id}-195w.png 195w,
+                assets/img/ledge${this.state.current.id}-98w.png 98w`}
               
                 sizes='30vw'/>
             </picture>
