@@ -1,25 +1,65 @@
 @import 'vars.css';
 @import 'reset.css';
 
+/* start general */
+
 html {
   font-size: 62.5%;
   box-sizing: border-box;
   height: 100%;
-  font-family: Avenir;
 }
 
 *, *:before, *:after { /* stylelint-disable-line */
   box-sizing: inherit;
 }
 
+.cta-button {
+  background-color: var(--dark);
+  color: var(--light);
+  text-decoration: none;
+  padding: 1rem;
+  font-weight: 700;
+}
+
+.header .info {
+  color: var(--dark);
+}
+
+.align-right {
+  width: 100%;
+  text-align: right;
+}
+
+.hide {
+  display: none;
+}
+
 body {
-  display: flex;
+  background-color: var(--light);
+  color: var(--dark);
+  font-family: Avenir;
+  font-weight: 300;
   font-size: var(--text-size);
-  background-color: var(--background-light);
+}
+
+.content {
+  overflow: hidden;
+  padding-bottom: 5rem;
+}
+
+article {
+  padding: 3rem 2rem 5rem;
 }
 
 p {
   margin-bottom: 1.2rem;
+  margin-top: 2rem;
+  line-height: 1.6;
+  max-width: 80rem;
+}
+
+.button-text {
+  display: none;
 }
 
 .highlight {
@@ -34,212 +74,1455 @@ h1 {
 
 h2 {
   font-family: Edo;
-  font-size: 4rem;
-  margin-bottom: 2rem;
+  font-size: 3.5rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 h3 {
   font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 1.3rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+  margin-top: 4rem;
 }
 
-.header {
+blockquote {
   display: flex;
-  align-items: flex-end;
   flex-direction: column;
-  height: 100vh;
+  align-items: flex-start;
 }
 
-.header-bg {
-  position: relative;
-  background-image: url(../assets/img/header-bg.png);
-  height: 100vh;
-  width: 100%;
-  z-index: 1;
-  background-size: cover;
-  overflow: hidden;
-}
-
-.filter {
-  position: absolute;
-  background-color: rgba(0, 0, 0, .45);
-  z-index: 5;
-  height: 100%;
-  width: 100%;
-}
-
-.header-cloud {
-  position: absolute;
-  top: 0;
-  background-image: url(../assets/img/header-clouds.png);
-  height: 100%;
-  width: 100%;
-  z-index: 2;
-  background-size: cover;
-}
-
-.header-boat {
-  top: 0;
-  position: absolute;
-  background-image: url(../assets/img/header-boat.png);
-  height: 100%;
-  width: 100%;
-  z-index: 3;
-  background-size: cover;
-}
-
-.header-hitchcock {
-  position: absolute;
-  background-image: url(../assets/img/header-hitchcock.png);
-  height: 100%;
-  width: 100%;
-  z-index: 4;
-  background-size: cover;
-}
-
-.info {
-  color: white;
-  position: absolute;
-  right: 10rem;
-  top: 20rem;
-  z-index: 6;
-  /* clip-path: inset(10px 20px 30px 40px); */
-}
-
-.hide {
-  display: none;
-}
-
-.info > span {
-  text-transform: uppercase;
-  font-size: 2.3rem;
-  font-weight: 700;
-}
-
-.intro {
-  padding: 4rem;
-}
-
-.twisted-youth {
-  padding: 4rem;
-  background-color: var(--background-dark);
-  color: var(--text-light);
-  overflow: hidden;
-}
-
-.twisted-youth > .grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 6rem;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 6rem;
-}
-
-.obsession {
-  padding: 4rem;
-}
-
-.fears {
-  padding: 4rem;
-}
-
-.humor {
-  padding: 4rem;
-  background-color: var(--background-dark);
-  color: var(--text-light);
-}
-
-
-
-.jokes {
-  padding: 4rem;
-  display: flex;
-  justify-content: center;
-}
-
-.vertigo {
+.yellow-quote {
   background-color: var(--highlight);
-  padding: 4rem 15rem;
-  height: 17rem;
-
-  
-}
-
-.logo-vertigo {
-  position: relative;
-  top: 0rem;
-  float: left;
-  margin-right: 3rem;
-}
-
-
-.ending {
-  height: 10rem;
-}
-
-nav {
-  position: sticky;
-  top: 0;
-  background-color: var(--nav-color);
-  color: var(--text-light);
-  width: 6rem;
-  height: 100vh;
-}
-
-nav ul {
-  display: flex;
-  flex-direction: column;
-}
-
-nav ul > li {
-  transform: rotate(-90deg);
   padding: 2rem;
-  width: auto;
-  height: 12rem;
-  transform-origin: left top 0;
+  color: var(--dark);
+  font-family: 'Source Serif Pro';
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+.focus-quote {
+  font-size: 2.2rem;
   text-align: center;
+  line-height: 3rem;
+  font-style: italic;
+  margin-top: 3rem;
+}
+
+.inline-quote {
+  margin-left: -2rem;
+  margin-right: -2rem;
 }
 
 .left-border {
   border-left: .5rem solid var(--highlight);
   padding-left: 1.5rem;
+  margin-bottom: 4rem;
 }
+
+.light-section {
+  background-image: url(../assets/img/background-texture.png);
+  background-position: right;
+  background-size: 50%;
+  background-repeat: repeat-y, no-repeat;
+  overflow: hidden;
+}
+
+/* end general */
+
+/* start images */
 
 .image-abs {
   position: relative;
-  right: -10%;
+  width: 100vw;
+  height: auto;
 }
 
-.humor .image-abs {
+.image-abs-left {
+  position: absolute;
+  left: -10%;
+  width: 100vw;
+  height: auto;
+  will-change: transform;
+}
+
+.slide-in {
+  will-change: transform, opacity;
+  opacity: 0;
+  transition: transform ease-in-out .5s;
+}
+
+.slide-in-right {
+  opacity: 1;
+}
+
+.slide-in-right-script {
+  transform: translateX(80%);
+}
+
+.slide-in-left-script {
+  transform: translateX(80%);
+}
+
+.slide-in-left {
+  opacity: 1;
+}
+
+.slide-in.active {
+  opacity: 1;
+  transform: translate(0%);
+}
+
+.intro .grid .birds {
+  margin-top: 4rem;
+  margin-bottom: -4rem;
+}
+
+/* end images */
+
+/* start navigation */
+
+nav {
+  display: none;
+}
+
+/* end navigation */
+
+/* start header */
+
+.header {
+  display: none;
+}
+
+.mobile-header {
+  background-image: url(../assets/img/background-mobile.png);
+  background-size: cover;
+  width: 100%;
+  height: 50rem;
+  color: var(--dark);
+  padding: 2rem;
+}
+
+.mobile-header h1 {
+  font-size: 6rem;
+}
+
+.header-subtitle {
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+/* end header */
+
+/* start introduction */
+
+.intro picture {
+  display: none;
+}
+
+.intro {
+  padding: 0 2rem 4rem; /*top, sides, bottom */
+  background-image: url(../assets/img/mobile-birds.png);
+  background-position: bottom right;
+  background-size: contain;
+}
+
+/* end introduction */
+
+/* start youth-section */
+
+.twisted-youth {
+  background-color: var(--dark);
+  color: var(--light);
+  overflow: hidden;
+}
+
+.yellow-quote-happiness-mobile {
   position: relative;
-  right: -10%;
-  top: -3rem;
+  height: max-content;
+  width: 100%;
 }
 
-section {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+.yellow-quote-happiness {
+  display: none;
+  align-self: center;
+  justify-self: flex-end;
 }
 
-article {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+.mother-image {
+  grid-area: image;
 }
 
-.yellow-quote {
+/* end youth-section */
+
+/* start obsession-section */
+
+.obsession-column-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.splitup-image {
   position: relative;
+  width: 100%;
+  padding-bottom: 65vw;
+  /* left: -12rem; */
+  /* margin-top: -7rem; */
+  grid-area: splitup;
+  /* top: 3rem; */
+  /* margin-bottom: -3rem; */
+}
+
+.yellow-quote-tipi {
+  margin-top: 3rem;
+  width: 100vw;
+  max-width: 40rem;
+  align-self: flex-end;
+}
+
+.yellow-quote-tipi-2 {
+  display: none;
+  margin-top: 3rem;
+  width: 100vw;
+  max-width: 40rem;
+  align-self: flex-end;
+}
+
+.author {
+  font-weight: bold;
+  margin-top: 0;
+  align-self: flex-end;
+}
+
+/* end obsession-section */
+
+/* start Kill-Character Component */
+
+.kill-character {
+  background-color: var(--dark);
+  color: var(--light);
+  padding: 3rem 2rem 5rem;
+}
+
+.kill-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.kill-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.kill img {
+  max-width: 20rem;
+  align-self: center;
+}
+
+.kill-character-noscript {
+  background-color: var(--dark);
+  padding: 4rem;
+  color: var(--light);
+  display: flex;
+  flex-flow: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.kill-character-noscript h2 {
+  width: 90vw;
+  margin: 0 1rem;
+}
+
+.kill-character-noscript .kill {
+  width: 80vw;
+}
+
+.kill-character-noscript .kill-info h3 {
+  margin-top: 0;
+}
+
+.kill-character-noscript .kill-info {
+  border-bottom: .3rem solid var(--highlight);
+}
+
+.button-prev::before {
+  content: '';
+  display: inline-block;
+  position: relative;
+  left: -1rem;
+  top: .3rem;
+  height: 5rem;
+  width: 5rem;
+  background-image: url(../assets/img/arrow-left.svg);
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+button {
+  border: 0;
+  background: none;
+  color: var(--light);
+  font-family: Avenir;
+  font-size: 1.8rem;
+  font-weight: bold;
+  outline: none;
+}
+
+.button-next::after {
+  content: '';
+  display: inline-block;
+  position: relative;
+  right: -1rem;
+  top: .3rem;
+  height: 5rem;
+  width: 5rem;
+  background-image: url(../assets/img/arrow-right.svg);
+  background-size: auto;
+  background-repeat: no-repeat;
+
+}
+
+/* end Kill-Character Component */
+
+/* start fears-section */
+
+.yellow-quote-fear {
+  display: none;
+}
+
+.yellow-quote-fear-mobile {
+  margin-top: 5rem;
+  margin-bottom: -5rem;
+  grid-area: yellow-quote;
+}
+
+.fear-subtitle {
+  background-color: var(--highlight);
+  margin-left: -2rem;
+  margin-right: -2rem;
+  padding: 7rem 2rem 7rem 18rem;
+}
+
+.fear-subtitle.eggs {
+  background-image: url(../assets/img/mobile-eggs.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.fear-subtitle.police {
+  margin-left: -4rem;
+  background-image: url(../assets/img/mobile-police.png);
+  background-repeat: no-repeat;
+  background-position: 0 1.5rem;
+}
+
+.fear-subtitle.extremes {
+  background-image: url(../assets/img/mobile-extremes.png);
+  background-repeat: no-repeat;
+  background-position: 0 3rem;
+}
+
+.police-img {
+  display: none;
+}
+
+.fears-img {
+  display: none;
+}
+
+.eggs-img {
+  display: none;
+}
+
+/* end fears-section */
+
+/* start humor-section */
+
+.humor {
+  background-color: var(--dark);
+  color: var(--light);
+  overflow: hidden;
+}
+
+.video-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 80rem;
+  object-fit: contain;
+  margin: auto;
+}
+
+.videoplayer {
+  height: 100%;
+  width: 100%;
+}
+
+.playbutton {
+  position: absolute;
+  width: 8rem;
+  height: 8rem;
+  padding: 0;
+  opacity: 0;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.jokes {
+  background-color: #f9f9f9;
+  color: var(--dark);
+  font-family: 'Source Serif Pro';
+  font-weight: 300;
+  line-height: 1.8;
+
+  padding: 2rem;
+  margin-left: -2rem;
+  margin-right: -2rem;
+
+  display: flex;
+  justify-content: center;
+}
+
+/* end humor-section */
+
+/* start Highest Fall Component */
+
+.fall {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fall h3 {
+  color: var(--highlight);
+  margin-bottom: -1rem;
+}
+
+.highest-fall h2 {
+  margin-bottom: 0;
+}
+
+.slider-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.fallSlider {
+  align-self: center;
+}
+
+.ledge {
+  width: 80vw;
+  max-width: 30rem;
+  height: auto;
+  margin-left: -2rem;
+}
+
+input[type=range] {
+  appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 80vw; /* Specific width is required for Firefox. */
+  background: transparent; /* Otherwise white in Chrome */
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+/* Special styling for WebKit/Blink */
+
+input[type=range]::-webkit-slider-thumb {
+  appearance: none;
+  background-image: url(../assets/img/skull.png);
+  height: 6.7rem;
+  width: 6.5rem;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  margin-top: -3.2rem; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+}
+
+/* All the same stuff for Firefox */
+
+input[type=range]::-moz-range-thumb {
+  background-image: url(../assets/img/skull.png);
+  height: 6.7rem;
+  width: 6.5rem;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+/* All the same stuff for IE */
+
+input[type=range]::-ms-thumb {
+  background-image: url(../assets/img/skull.png);
+  height: 6.7rem;
+  width: 6.5rem;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  height: .8rem;
+  cursor: pointer;
+  background: var(--highlight);
+}
+
+input[type=range]::-moz-range-track {
+  height: .8rem;
+  cursor: pointer;
+  background: var(--highlight);
+}
+
+input[type=range]::-ms-track {
+  height: .8rem;
+  cursor: pointer;
+  background: var(--highlight);
+}
+
+.highest-fall-noscript {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4rem;
+  justify-content: space-around;
+}
+
+.highest-fall-noscript .fall {
+  min-width: 28rem;
+  width: 40vw;
+  display: flex;
+  align-items: center;
+  border-bottom: .3rem solid var(--highlight);
+}
+
+.highest-fall-noscript .ledge {
+  min-width: 8rem;
+  width: 10vw;
+}
+
+.highest-fall-noscript h2 {
+  width: 100%;
+}
+
+/* end Highest Fall Component */
+
+/* start vertigo-section */
+
+.vertigo {
   background-color: var(--highlight);
   padding: 2rem;
-  color: black;
+}
+
+.logo-vertigo {
+  width: 50vw;
+  height: auto;
   float: left;
-  width: 35rem;
-  left: -4rem;
-  margin-right: -2rem;
-  top: 1rem;
-  margin-bottom: 2rem;
+  margin-right: 2rem;
+}
+
+/* end vertigo-section */
+
+@media (min-width: 321px) {
+
+  .fear-subtitle.police {
+    background-position: 0 .5rem;
+  }
+}
+
+@media (min-width: 331px) {
+
+  .fear-subtitle.extremes {
+    background-position: 0 2rem;
+  }
+
+  .kill-flex {
+    align-items: center;
+  }
+}
+
+@media (min-width: 450px) {
+
+  .fear-subtitle.extremes {
+    background-position: 0 1rem;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+
+  .mother-image .image-abs {
+    width: 60vw;
+    left: 32rem;
+  }
+
+  .gun-image .image-abs {
+    width: 60vw;
+    left: 32rem;
+  }
+}
+
+@media (min-width: 600px) {
+
+  .vertigo p {
+    max-width: 100%;
+  }
+
+  .highest-fall-noscript .fall {
+    border-bottom: none;
+  }
+
+  .button-text {
+    display: inline;
+  }
+
+  .button-next::after {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .button-prev::before {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .splitup-image {
+    margin-bottom: -18rem;
+  }
+
+  .splitup-image .image-abs-left {
+    width: 60vw;
+  }
+
+  .obsession-column-right {
+    display: inline;
+  }
+
+  .yellow-quote-tipi {
+    float: right;
+    max-width: 35rem;
+    margin-left: 2rem;
+  }
+
+  .fall-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'slider-container fall';
+    grid-column-gap: 2rem;
+  }
+
+  .slider-container {
+    grid-area: slider-container;
+  }
+
+  .fall {
+    grid-area: fall;
+  }
+
+  input[type=range] {
+    width: 45vw;
+  }
+
+  .logo-vertigo {
+    width: 20vw;
+    max-width: 50rem;
+  }
+
+  .jokes {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    margin-top: 4rem;
+  }
+
+  .humor-header {
+    display: flex;
+    flex-direction: column;
+    max-width: 60rem;
+  }
+
+  .subtitle-quote {
+    align-self: flex-end;
+    margin-top: -1rem;
+  }
+
+  .fear-subtitle {
+    background-color: transparent;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+  }
+
+  .fear-subtitle.eggs {
+    background-image: none;
+  }
+
+  .fear-subtitle.police {
+    margin-left: 0;
+    background-image: none;
+  }
+
+  .fear-subtitle.extremes {
+    background-image: none;
+  }
+
+  .fears-img-fallback, .police-img-fallback, .eggs-img-fallback {
+    width: 30vw;
+    max-width: 20rem;
+  }
+
+  .police-img {
+    display: inline;
+    grid-area: police;
+  }
+
+  .fears-img {
+    display: inline;
+    grid-area: fears;
+  }
+
+  .eggs-img {
+    display: inline;
+    grid-area: eggs;
+  }
+
+  .fears-grid {
+    display: grid;
+    grid-template-columns: 1fr .5fr 3fr;
+    grid-column-gap: 2rem;
+    grid-template-areas:
+      'fears-title fears-title fears-title'
+      'eggs top-column top-column'
+      'fears-quote fears-quote fears-quote'
+      'police .  bottom-column'
+      'fears extremes extremes'
+      'yellow-quote yellow-quote yellow-quote';
+  }
+
+  .fears-title {
+    grid-area: fears-title;
+    justify-self: end;
+  }
+
+  .fears-top-column {
+    grid-area: top-column;
+  }
+
+  .fears-bottom-column {
+    grid-area: bottom-column;
+  }
+
+  .fears-quote {
+    grid-area: fears-quote;
+    margin: 5rem 0;
+  }
+
+  .fear-extremes {
+    margin-top: 0;
+    grid-area: extremes;
+  }
+
+  .yellow-quote-fear-mobile {
+    grid-area: yellow-quote;
+  }
+
+  .light-section {
+    background-size: 40rem;
+  }
+
+}
+
+@media (min-width: 900px) {
+
+  .ledge {
+    margin-left: -4rem;
+  }
+
+  .mother-image .image-abs {
+    left: 5rem;
+  }
+
+  .kill-character-noscript .kill-info {
+    border-bottom: none;
+  }
+
+  .gun-image .image-abs {
+    left: 5rem;
+  }
+
+  h2 {
+    font-size: 6rem;
+  }
+
+  .intro {
+    background-image: none;
+    padding: 0 4rem 4rem; /*top, side, bottom, side */
+  }
+
+  .intro .grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .intro .grid .birds {
+    width: 33vw;
+    height: auto;
+  }
+
+  .intro picture {
+    display: inline;
+  }
+
+  .yellow-quote-happiness-mobile {
+    display: none;
+  }
+
+  .yellow-quote-happiness {
+    display: inline-block;
+    width: 33vw;
+    height: min-content;
+    margin-left: -4rem;
+    margin-right: 2rem;
+    grid-area: yellow-quote;
+    align-self: center;
+  }
+
+  .mother-image {
+    align-self: center;
+    grid-area: image;
+    margin-right: -2rem;
+    margin-left: 2rem;
+  }
+
+  .mother-image, .image-abs {
+    width: 40vw;
+  }
+
+  .more-mother {
+    grid-area: more;
+  }
+
+  .mother {
+    grid-area: mother;
+  }
+
+  .father {
+    grid-area: father;
+  }
+
+  .twisted-youth .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      'intro intro intro'
+      'yellow-quote father father'
+      'mother mother image'
+      'more more more';
+  }
+
+  .first-paragraph {
+    grid-area: intro;
+  }
+
+  .obsession .image-abs-left {
+    width: 50vw;
+    height: auto;
+  }
+
+  .obsession .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      'title title'
+      'splitup return'
+      'obsession obsession'
+      'quote quote'
+      'tipi tipi';
+  }
+
+  .obsession-title {
+    grid-area: title;
+  }
+
+  .splitup-image {
+    grid-area: splitup;
+    width: 50vw;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    margin-top: 5rem;
+  }
+
+  .splitup-image .image-abs-left {
+    width: 45vw;
+    height: auto;
+  }
+
+  .return {
+    grid-area: return;
+  }
+
+  .obsession-column-right {
+    grid-area: obsession;
+  }
+
+  .obsession-quote {
+    grid-area: quote;
+  }
+
+  .yellow-quote-tipi {
+    grid-area: tipi;
+    margin-right: -4rem;
+  }
+
+  .humor .grid {
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    grid-template-areas:
+      'video video'
+      'black-humor black-humor'
+      'jokes image'
+      'toofar toofar'
+      'joke joke';
+  }
+
+  .gun-image {
+    grid-area: image;
+    align-self: center;
+  }
+
+  .gun-image, .image-abs {
+    width: 100%;
+    height: auto;
+  }
+
+  .black-humor {
+    grid-area: black-humor;
+  }
+
+  .practicaljokes {
+    grid-area: jokes;
+  }
+
+  .video-container {
+    grid-area: video;
+  }
+
+  .toofar {
+    grid-area: toofar;
+  }
+
+  .slider-container {
+    flex-direction: row;
+  }
+
+  input[type=range] {
+    transform: rotate(-90deg);
+    width: 100vh;
+  }
+
+  input[type=range]::-webkit-slider-thumb {
+    transform: rotate(90deg);
+  }
+
+  input[type=range]::-moz-range-thumb {
+    transform: rotate(90deg);
+  }
+
+  input[type=range]::-ms-thumb {
+    transform: rotate(90deg);
+  }
+
+  .fallSlider {
+    margin-left: -8vw;
+    /* margin-top: 13vw; */
+  }
+
+  .fall-container {
+    width: 100%;
+    grid-template-columns: repeat(2, 50%);
+  }
+
+  .fall {
+    width: 100%;
+  }
+
+  .humor-header {
+    max-width: 90rem;
+  }
+
+  .kill-flex {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .mobile-header {
+    display: none;
+  }
+
+  .header {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    height: 56.25vw;
+  }
+
+  .header-img-container {
+    position: relative;
+    width: 100%;
+    height: 56.25vw;
+    overflow: hidden;
+  }
+
+  .filter {
+    position: absolute;
+    background-color: rgba(0, 0, 0, .45);
+    z-index: 5;
+    height: auto;
+    width: 100%;
+  }
+
+  .header-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100vw;
+    height: auto;
+  }
+
+  .header-cloud {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    will-change: left;
+    width: 100vw;
+    height: auto;
+  }
+
+  .header-boat {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    will-change: left;
+    width: 100vw;
+    height: auto;
+  }
+
+  .header-hitchcock {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    will-change: left;
+    width: 100vw;
+    height: auto;
+  }
+
+  .info {
+    color: var(--light);
+    position: absolute;
+    right: 10rem;
+    top: 4vw;
+    z-index: 6;
+  }
+
+  .info > span {
+    text-transform: uppercase;
+    font-size: 2.3rem;
+    font-weight: 700;
+  }
+
+  article {
+    padding: 3rem 4rem 5rem;
+  }
+
+  .jokes {
+    margin-left: -4rem;
+    margin-right: -4rem;
+  }
+
+  .yellow-quote-fear-mobile {
+    margin-left: -4rem;
+    margin-right: -4rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+@media (min-width: 1100px) {
+
+  .light-section {
+    background-image: url(../assets/img/background-texture.png), url(../assets/img/texture-patch.png), url(../assets/img/texture-patch.png);
+    background-position: right, 20% -30%, 50% 108%;
+    background-repeat: repeat-y, no-repeat, no-repeat;
+  }
+
+  .obsession.light-section {
+    background-position: right, 30% -2%, 40% 101%;
+  }
+
+  .fears.light-section {
+    background-position: right, 50% -1.5%, 20% 101%;
+  }
+
+  .highest-fall.light-section, .highest-fall-noscript.light-section {
+    background-position: right, 60% -4%, 50% 112%;
+  }
+
+  .fears-grid {
+
+    grid-template-columns: 2fr 2fr 1fr 1fr 4fr;
+    /* grid-template-rows: repeat(5, min-content); */
+    grid-template-areas:
+      'fears-title fears-title fears-title fears-title fears-title'
+      'police fears eggs top-column top-column'
+      'police fears fears-quote fears-quote fears-quote'
+      'police fears bottom-column bottom-column bottom-column'
+      'police fears bottom-column bottom-column bottom-column'
+      '. fears extremes extremes extremes'
+      'yellow-quote yellow-quote yellow-quote yellow-quote yellow-quote';
+  }
+
+  .police-img {
+    margin-top: -30rem;
+  }
+
+  .fears-img {
+    margin-top: -20rem;
+  }
+
+  .eggs-img {
+    margin-top: -25rem;
+  }
+
+  .mother-image .image-abs {
+    width: 40vw;
+  }
+
+  .gun-image .image-abs {
+    left: 5rem;
+    width: 40vw;
+  }
+
+}
+
+@media (min-width: 1300px) {
+
+  .header .info {
+    top: 35%;
+  }
+
+  .police-img {
+    margin-top: -40rem;
+  }
+
+  .fears-img {
+    margin-top: -40rem;
+  }
+
+  .eggs-img {
+    margin-top: -25rem;
+  }
+
+  .fears {
+    padding-left: 2rem;
+  }
+
+  .yellow-quote-fear {
+    display: block;
+    padding: 5rem;
+    float: right;
+    position: relative;
+    left: 20rem;
+    margin-left: -18rem;
+    width: 50rem;
+  }
+
+  .fears-grid {
+    grid-template-areas:
+      'fears-title fears-title fears-title fears-title fears-title'
+      'police fears eggs top-column top-column'
+      'police fears fears-quote fears-quote fears-quote'
+      'police fears . bottom-column bottom-column'
+      'police fears . bottom-column bottom-column'
+      '. fears extremes extremes extremes'
+      'yellow-quote yellow-quote yellow-quote yellow-quote yellow-quote';
+  }
+
+  .intro {
+    padding: 2rem 18rem; /*top, sides, bottom */
+  }
+
+  .intro .grid .birds {
+    width: 27vw;
+    height: auto;
+  }
+
+  .mother {
+    margin-right: -15rem;
+    align-self: center;
+  }
+
+  .mother-image .image-abs {
+    left: 20rem;
+    width: 40vw;
+  }
+
+  .yellow-quote-happiness {
+    position: relative;
+    left: -15rem;
+    grid-area: quote;
+    height: min-content;
+    margin-right: 2rem;
+    align-self: center;
+  }
+
+  .father {
+    margin-left: -13rem;
+  }
+
+  .splitup-image .image-abs-left {
+    left: -6rem;
+    width: 40vw;
+  }
+
+  .yellow-quote-tipi-2 {
+    grid-area: tipi;
+    display: flex;
+    position: relative;
+    left: 16rem;
+    justify-self: end;
+    align-self: center;
+  }
+
+  .return {
+    margin-right: -16rem;
+  }
+
+  .obsession-quote {
+    width: 100%;
+    margin-left: -5rem;
+    align-self: center;
+    padding: 4rem;
+    height: 50%;
+  }
+
+  .kill-character {
+    padding: 3rem 8rem;
+  }
+
+  .kill-flex {
+    justify-content: flex-start;
+  }
+
+  .kill-flex picture {
+    margin-right: 3rem;
+  }
+
+  .gun-image .image-abs {
+    left: 13rem;
+    width: 40vw;
+  }
+
+  .black-humor {
+    margin-right: -13rem;
+    margin-bottom: 3rem;
+  }
+
+  .video-container {
+    left: -22rem;
+  }
+
+  .practicaljokes {
+    margin-bottom: 0;
+    margin-left: -20rem;
+  }
+
+  .videoplayer {
+    width: 40vw;
+  }
+
+  .ledge {
+    position: relative;
+    left: -16rem;
+    margin-left: -2rem;
+  }
+
+  .highest-fall {
+    padding-bottom: 0;
+  }
+
+  .logo-vertigo {
+    height: 15rem;
+    width: auto;
+  }
+
+  .jokes {
+    font-size: 2.5rem;
+    margin-left: -18rem;
+    margin-right: -20rem;
+  }
+
+  .vertigo .flex {
+    width: 70%;
+    margin: auto;
+  }
+
+  body {
+    display: flex;
+  }
+
+  nav {
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: var(--nav-color);
+    color: var(--light);
+    width: 6rem;
+    height: 100vh;
+    flex-direction: column;
+    z-index: 999;
+  }
+
+  nav a {
+    width: 100%;
+    margin-top: 3rem;
+  }
+
+  nav img {
+    display: block;
+    margin: auto;
+  }
+
+  nav ul {
+    display: flex;
+    flex-flow: row-reverse;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-direction: column;
+    justify-content: space-between; */
+    transform-origin: left top 0;
+    margin-top: 3rem;
+    height: 6rem;
+    transform: rotate(-90deg) translate(-100%);
+  }
+
+  nav ul > li {
+    padding: 2rem 1rem;
+  }
+
+  nav ul > li a {
+    padding: 1.8rem 1rem;
+    text-decoration: none;
+    color: var(--light);
+  }
+
+  .active-section {
+    background-color: var(--highlight);
+  }
+
+  article {
+    padding: 3rem 18rem 5rem;
+  }
+
+  .intro .grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .intro .birds {
+    width: 25vw;
+    height: auto;
+  }
+
+  .twisted-youth .grid {
+    display: grid;
+    grid-template-columns: 1fr .5fr 1fr;
+    grid-template-areas:
+      'intro intro intro'
+      'mother mother image'
+      'more more more'
+      'quote father father';
+  }
+
+  .mother-image {
+    align-self: center;
+  }
+
+  /* .mother-image .image-abs {
+    width: 33vw;
+  } */
+
+  .first-paragraph {
+    grid-area: intro;
+  }
+
+  .obsession .grid {
+    grid-gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      'title title'
+      'splitup obsession'
+      'quote obsession'
+      'return tipi';
+  }
+
+  .splitup-image {
+    width: 100%;
+    left: -12rem;
+  }
+
+  .focus-quote {
+    /* font-size: 4.5rem;
+    line-height: 1.4; */
+    font-size: 2.5rem;
+    margin: 2rem 0;
+  }
+
+  .yellow-quote-tipi {
+    display: none;
+  }
+
+  .yellow-quote-fear-mobile {
+    display: none;
+  }
+
+  .fear-subtitle.eggs {
+    margin-top: 6rem;
+  }
+
+  .wriggle.active {
+    transform-origin: center top;
+    animation: wiggle 3s ease-in-out infinite alternate;
+  }
+
+  @keyframes wiggle {
+
+    from {
+      transform: rotate(2deg);
+    }
+
+    to {
+      transform: rotate(-2deg);
+    }
+  }
+
+  .humor .grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0 3rem;
+
+    grid-template-areas:
+      'black-humor image'
+      'video jokes'
+      'toofar toofar'
+      'joke joke';
+  }
 }
