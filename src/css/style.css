@@ -584,6 +584,7 @@ input[type=range]::-ms-track {
   width: 40vw;
   display: flex;
   align-items: center;
+  border-bottom: .3rem solid var(--highlight);
 }
 
 .highest-fall-noscript .ledge {
@@ -639,6 +640,10 @@ input[type=range]::-ms-track {
 }
 
 @media (min-width: 600px) {
+
+  .highest-fall-noscript .fall {
+    border-bottom: none;
+  }
 
   .button-text {
     display: inline;
@@ -813,6 +818,10 @@ input[type=range]::-ms-track {
 
   .mother-image .image-abs {
     left: 5rem;
+  }
+
+  .kill-character-noscript .kill-info {
+    border-bottom: none;
   }
 
   .gun-image .image-abs {
