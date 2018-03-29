@@ -55,6 +55,7 @@ p {
   margin-bottom: 1.2rem;
   margin-top: 2rem;
   line-height: 1.6;
+  max-width: 80rem;
 }
 
 .button-text {
@@ -142,16 +143,17 @@ blockquote {
   left: -10%;
   width: 100vw;
   height: auto;
+  will-change: transform;
 }
 
 .slide-in {
-  will-change: transform;
+  will-change: transform, opacity;
   opacity: 0;
   transition: transform ease-in-out .5s;
 }
 
 .slide-in-right {
-  transform: translateX(0%);
+  opacity: 1;
 }
 
 .slide-in-right-script {
@@ -163,12 +165,17 @@ blockquote {
 }
 
 .slide-in-left {
-  transform: translateX(0%);
+  opacity: 1;
 }
 
 .slide-in.active {
   opacity: 1;
   transform: translate(0%);
+}
+
+.intro .grid .birds {
+  margin-top: 4rem;
+  margin-bottom: -4rem;
 }
 
 /* end images */
@@ -192,7 +199,7 @@ nav {
   background-size: cover;
   width: 100%;
   height: 50rem;
-  color: var(--light);
+  color: var(--dark);
   padding: 2rem;
 }
 
@@ -216,6 +223,9 @@ nav {
 
 .intro {
   padding: 0 2rem 4rem; /*top, sides, bottom */
+  background-image: url(../assets/img/mobile-birds.png);
+  background-position: bottom right;
+  background-size: contain;
 }
 
 /* end introduction */
@@ -311,13 +321,12 @@ nav {
   align-self: center;
 }
 
-
 .kill-character-noscript {
   background-color: var(--dark);
   padding: 4rem;
   color: var(--light);
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: wrap;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -326,12 +335,10 @@ nav {
 .kill-character-noscript h2 {
   width: 90vw;
   margin: 0 1rem;
-
 }
 
 .kill-character-noscript .kill {
   width: 80vw;
-  
 }
 
 .kill-character-noscript .kill-info h3 {
@@ -339,7 +346,7 @@ nav {
 }
 
 .kill-character-noscript .kill-info {
-  border-bottom: 0.3rem solid var(--highlight);
+  border-bottom: .3rem solid var(--highlight);
 }
 
 .button-prev::before {
@@ -453,10 +460,10 @@ button {
 
 .playbutton {
   position: absolute;
-  top: 35%;
+  top: 40%;
   left: 40%;
-  width: 3rem;
-  height: 3rem;
+  width: 6rem;
+  height: 6rem;
 }
 
 .jokes {
@@ -816,6 +823,10 @@ input[type=range]::-ms-track {
 
 @media (min-width: 900px) {
 
+  .ledge {
+    margin-left: -4rem;
+  }
+
   .mother-image .image-abs {
     left: 5rem;
   }
@@ -830,6 +841,11 @@ input[type=range]::-ms-track {
 
   h2 {
     font-size: 6rem;
+  }
+
+  .intro {
+    background-image: none;
+    padding: 0 4rem 4rem; /*top, side, bottom, side */
   }
 
   .intro .grid {
@@ -1113,10 +1129,6 @@ input[type=range]::-ms-track {
     padding: 3rem 4rem 5rem;
   }
 
-  .intro {
-    padding: 0 4rem 4rem; /*top, side, bottom, side */
-  }
-
   .jokes {
     margin-left: -4rem;
     margin-right: -4rem;
@@ -1134,7 +1146,7 @@ input[type=range]::-ms-track {
 
   .light-section {
     background-image: url(../assets/img/background-texture.png), url(../assets/img/texture-patch.png), url(../assets/img/texture-patch.png);
-    background-position: right, 20% -12%, 50% 108%;
+    background-position: right, 20% -30%, 50% 108%;
     background-repeat: repeat-y, no-repeat, no-repeat;
   }
 
@@ -1175,6 +1187,11 @@ input[type=range]::-ms-track {
   .eggs-img {
     margin-top: -25rem;
   }
+
+  .mother-image .image-abs {
+    width: 40vw;
+  }
+
 }
 
 @media (min-width: 1300px) {
@@ -1270,9 +1287,9 @@ input[type=range]::-ms-track {
     align-self: center;
   }
 
-  .mother-image .image-abs {
+  /* .mother-image .image-abs {
     width: 33vw;
-  }
+  } */
 
   .yellow-quote-happiness {
     grid-area: quote;
@@ -1432,7 +1449,7 @@ input[type=range]::-ms-track {
       'police fears fears-quote fears-quote fears-quote'
       'police fears . bottom-column bottom-column'
       'police fears . bottom-column bottom-column'
-      '. fears . extremes extremes'
+      '. fears extremes extremes extremes'
       'yellow yellow yellow yellow yellow';
   }
 
@@ -1445,9 +1462,13 @@ input[type=range]::-ms-track {
     height: auto;
   }
 
+  .mother {
+    margin-right: -15rem;
+  }
+
   .mother-image .image-abs {
     left: 20rem;
-    margin-left: -15rem;
+    width: 40vw;
   }
 
   .yellow-quote-happiness {
@@ -1516,6 +1537,7 @@ input[type=range]::-ms-track {
   .ledge {
     position: relative;
     left: -16rem;
+    margin-left: -2rem;
   }
 
   .highest-fall {
